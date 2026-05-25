@@ -1,0 +1,23 @@
+version: 1
+applications:
+  - frontend:
+      phases:
+        preBuild:
+          commands:
+            - node --version
+            - npm install -g pnpm@10.30.3
+            - pnpm --version
+            - pnpm install --frozen-lockfile
+        build:
+          commands:
+            - pnpm --filter @jplc/web build
+      artifacts:
+        baseDirectory: apps/web/.next
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+          - apps/web/.next/cache/**/*
+          - apps/web/node_modules/**/*
+    appRoot: apps/web

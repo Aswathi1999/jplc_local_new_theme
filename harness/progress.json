@@ -1,0 +1,29 @@
+{
+  "lastUpdated": "2026-05-19T05:48:26.620Z",
+  "sprint": "Sprint 1",
+  "progress": 50,
+  "tasks": {
+    "total": 2,
+    "done": 1,
+    "inProgress": 0,
+    "inReview": 0,
+    "inQa": 0,
+    "todo": 1,
+    "blocked": 0
+  },
+  "bugs": {
+    "total": 0,
+    "open": 0,
+    "inProgress": 0,
+    "verified": 0,
+    "closed": 0
+  },
+  "tests": {
+    "total": 0,
+    "automated": 0,
+    "passed": 0,
+    "failed": 0,
+    "notRun": 0
+  },
+  "velocity": {}
+}
