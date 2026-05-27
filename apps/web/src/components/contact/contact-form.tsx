@@ -42,7 +42,9 @@ export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
 
   function handleChange(
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
@@ -66,7 +68,13 @@ export function ContactForm() {
 
         <div className="relative z-10 flex flex-col items-center">
           <div className="w-16 h-16 rounded-full bg-[#2F43B7]/10 border border-[#2F43B7]/30 flex items-center justify-center mb-6 shadow-[0_0_24px_rgba(47,67,183,0.15)]">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              aria-hidden="true"
+            >
               <path
                 d="M6 14l6 6 10-12"
                 stroke="#2F43B7"
@@ -77,15 +85,25 @@ export function ContactForm() {
             </svg>
           </div>
 
-          <h3 className="font-sans font-bold text-3xl text-[#0F172A] mb-3">Message Sent</h3>
+          <h3 className="font-sans font-bold text-3xl text-[#0F172A] mb-3">
+            Message Sent
+          </h3>
           <p className="text-[#64748B] text-base leading-relaxed max-w-sm mb-8">
-            Thank you for reaching out. A member of the JPLC team will be in touch within one business day.
+            Thank you for reaching out. A member of the JPLC team will be in
+            touch within one business day.
           </p>
 
           <button
             onClick={() => {
               setSubmitted(false);
-              setForm({ name: "", company: "", email: "", businessType: "", inquiryType: "", message: "" });
+              setForm({
+                name: "",
+                company: "",
+                email: "",
+                businessType: "",
+                inquiryType: "",
+                message: "",
+              });
             }}
             className="text-[#2F43B7] text-xs font-mono tracking-widest uppercase border border-[#2F43B7]/25 px-6 py-2.5 rounded-sm hover:border-[#2F43B7]/50 hover:bg-[#2F43B7]/5 transition-all duration-200"
           >
@@ -116,17 +134,22 @@ export function ContactForm() {
       <div className="relative z-10 p-8 lg:p-10">
         {/* Form header */}
         <div className="mb-8 pb-6 border-b border-[#E5E7EB]">
-          <p className="text-[#2F43B7] text-[10px] font-mono tracking-[0.35em] uppercase mb-2">Enterprise Inquiry</p>
-          <h3 className="text-[#0F172A] font-bold text-xl tracking-tight">Send Us a Message</h3>
+          <p className="text-[#2F43B7] text-[10px] font-mono tracking-[0.35em] uppercase mb-2">
+            Enterprise Inquiry
+          </p>
+          <h3 className="text-[#0F172A] font-bold text-xl tracking-tight">
+            Send Us a Message
+          </h3>
         </div>
 
         <form onSubmit={handleSubmit} noValidate>
           <div className="space-y-5">
-
             {/* Row 1: Name + Company */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="name" className={labelClass}>Full Name</label>
+                <label htmlFor="name" className={labelClass}>
+                  Full Name
+                </label>
                 <input
                   id="name"
                   name="name"
@@ -140,7 +163,9 @@ export function ContactForm() {
                 />
               </div>
               <div>
-                <label htmlFor="company" className={labelClass}>Company / Organisation</label>
+                <label htmlFor="company" className={labelClass}>
+                  Company / Organisation
+                </label>
                 <input
                   id="company"
                   name="company"
@@ -157,7 +182,9 @@ export function ContactForm() {
             {/* Row 2: Email + Business Type */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="email" className={labelClass}>Email Address</label>
+                <label htmlFor="email" className={labelClass}>
+                  Email Address
+                </label>
                 <input
                   id="email"
                   name="email"
@@ -171,7 +198,9 @@ export function ContactForm() {
                 />
               </div>
               <div>
-                <label htmlFor="businessType" className={labelClass}>Business Type</label>
+                <label htmlFor="businessType" className={labelClass}>
+                  Business Type
+                </label>
                 <select
                   id="businessType"
                   name="businessType"
@@ -179,7 +208,9 @@ export function ContactForm() {
                   onChange={handleChange}
                   className={selectClass}
                 >
-                  <option value="" disabled>Select type...</option>
+                  <option value="" disabled>
+                    Select type...
+                  </option>
                   <option value="hospitality">Hospitality / F&amp;B</option>
                   <option value="retail">Coffee Retail Brand</option>
                   <option value="distributor">Distributor / Importer</option>
@@ -191,7 +222,9 @@ export function ContactForm() {
 
             {/* Row 3: Service Interest */}
             <div>
-              <label htmlFor="inquiryType" className={labelClass}>Service Interest</label>
+              <label htmlFor="inquiryType" className={labelClass}>
+                Service Interest
+              </label>
               <select
                 id="inquiryType"
                 name="inquiryType"
@@ -200,7 +233,9 @@ export function ContactForm() {
                 onChange={handleChange}
                 className={selectClass}
               >
-                <option value="" disabled>Select service...</option>
+                <option value="" disabled>
+                  Select service...
+                </option>
                 <option value="partnership">Partnership</option>
                 <option value="training">Training &amp; Education</option>
                 <option value="hospitality">Hospitality Supply</option>
@@ -211,7 +246,9 @@ export function ContactForm() {
 
             {/* Row 4: Message */}
             <div>
-              <label htmlFor="message" className={labelClass}>Message</label>
+              <label htmlFor="message" className={labelClass}>
+                Message
+              </label>
               <textarea
                 id="message"
                 name="message"
@@ -257,7 +294,6 @@ export function ContactForm() {
                 />
               </motion.svg>
             </motion.button>
-
           </div>
         </form>
       </div>

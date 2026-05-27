@@ -20,8 +20,10 @@ const stats = [
 
 export function AboutSection() {
   return (
-    <section id="about" className="relative pt-8 pb-20 lg:pt-12 lg:pb-28 bg-[#F8FAFC] overflow-hidden">
-
+    <section
+      id="about"
+      className="relative pt-8 pb-20 lg:pt-12 lg:pb-28 bg-[#F8FAFC] overflow-hidden"
+    >
       {/* â"€â"€ BACKGROUND TECHNICAL TEXTURE â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.028]"
@@ -38,7 +40,6 @@ export function AboutSection() {
       <div className="absolute bottom-0 -left-40 w-[500px] h-[400px] rounded-full bg-[#4056D6] opacity-[0.05] blur-[100px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 lg:px-8">
-
         {/* â"€â"€ EYEBROW â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
         <motion.div
           custom={0}
@@ -56,7 +57,6 @@ export function AboutSection() {
 
         {/* â"€â"€ MAIN GRID â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
         <div className="grid lg:grid-cols-[5fr_7fr] gap-14 lg:gap-20 items-start">
-
           {/* â"€â"€ LEFT COLUMN â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
           <motion.div
             custom={0.05}
@@ -74,7 +74,8 @@ export function AboutSection() {
               <span
                 className="relative inline-block"
                 style={{
-                  background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
+                  background:
+                    "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -110,7 +111,8 @@ export function AboutSection() {
                   <p
                     className="font-extrabold text-3xl lg:text-[38px] tracking-tight mb-1.5 leading-none"
                     style={{
-                      background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                      background:
+                        "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
@@ -135,9 +137,16 @@ export function AboutSection() {
               Discover Our Story
               <svg
                 className="w-4 h-4 translate-x-0 group-hover:translate-x-1 transition-transform duration-300"
-                fill="none" viewBox="0 0 16 16"
+                fill="none"
+                viewBox="0 0 16 16"
               >
-                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path
+                  d="M3 8h10M9 4l4 4-4 4"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </a>
           </motion.div>
@@ -153,7 +162,6 @@ export function AboutSection() {
           >
             {/* Subtle glass panel */}
             <div className="relative p-8 lg:p-10 rounded-sm border border-[#E2E8F0]/80 bg-white/60 backdrop-blur-sm shadow-[0_4px_40px_rgba(15,23,42,0.04)]">
-
               {/* Corner accent — top right */}
               <div className="absolute top-0 right-0 w-12 h-px bg-[#2F43B7]/40" />
               <div className="absolute top-0 right-0 w-px h-12 bg-[#2F43B7]/40" />
@@ -163,22 +171,23 @@ export function AboutSection() {
 
               <div className="space-y-5 text-[#374151] text-base lg:text-[17px] leading-[1.75]">
                 <p>
-                  JPLC operates at a professional scale across sourcing, roasting,
-                  research and development, equipment engineering, manufacturing,
-                  technical support, distribution, and café operations — delivering
-                  a fully integrated specialty coffee ecosystem.
+                  JPLC operates at a professional scale across sourcing,
+                  roasting, research and development, equipment engineering,
+                  manufacturing, technical support, distribution, and café
+                  operations — delivering a fully integrated specialty coffee
+                  ecosystem.
                 </p>
                 <p>
                   From direct-trade green coffee procurement and roast profile
-                  engineering to PID-controlled machine systems, beverage R&D, and
-                  HoReCa supply infrastructure — every vertical within JPLC is
-                  designed to interlock and amplify the others.
+                  engineering to PID-controlled machine systems, beverage R&D,
+                  and HoReCa supply infrastructure — every vertical within JPLC
+                  is designed to interlock and amplify the others.
                 </p>
                 <p>
-                  This vertically integrated model enables extraction consistency,
-                  product innovation, engineering reliability, and supply-chain
-                  control — positioning JPLC as a premium global specialty coffee
-                  infrastructure platform.
+                  This vertically integrated model enables extraction
+                  consistency, product innovation, engineering reliability, and
+                  supply-chain control — positioning JPLC as a premium global
+                  specialty coffee infrastructure platform.
                 </p>
               </div>
 
@@ -223,14 +232,16 @@ export function AboutSection() {
           <div
             className="absolute inset-0"
             style={{
-              background: "linear-gradient(to bottom, rgba(15,23,42,0.30) 0%, rgba(15,23,42,0.10) 40%, rgba(15,23,42,0.55) 100%)",
+              background:
+                "linear-gradient(to bottom, rgba(15,23,42,0.30) 0%, rgba(15,23,42,0.10) 40%, rgba(15,23,42,0.55) 100%)",
             }}
           />
           {/* Side vignettes */}
           <div
             className="absolute inset-0"
             style={{
-              background: "linear-gradient(to right, rgba(15,23,42,0.40) 0%, transparent 30%, transparent 70%, rgba(15,23,42,0.40) 100%)",
+              background:
+                "linear-gradient(to right, rgba(15,23,42,0.40) 0%, transparent 30%, transparent 70%, rgba(15,23,42,0.40) 100%)",
             }}
           />
           {/* Blue atmosphere */}
@@ -244,8 +255,10 @@ export function AboutSection() {
               backgroundImage:
                 "linear-gradient(rgba(79,107,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(79,107,255,1) 1px, transparent 1px)",
               backgroundSize: "80px 80px",
-              maskImage: "linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%)",
-              WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%)",
+              maskImage:
+                "linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%)",
+              WebkitMaskImage:
+                "linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%)",
             }}
           />
 
@@ -258,7 +271,11 @@ export function AboutSection() {
           {/* â"€â"€ GLASS INFO STRIP â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
           <div
             className="absolute bottom-0 left-0 right-0 px-8 py-5 flex items-center justify-between"
-            style={{ background: "linear-gradient(to right, rgba(15,23,42,0.70) 0%, rgba(15,23,42,0.50) 100%)", backdropFilter: "blur(12px)" }}
+            style={{
+              background:
+                "linear-gradient(to right, rgba(15,23,42,0.70) 0%, rgba(15,23,42,0.50) 100%)",
+              backdropFilter: "blur(12px)",
+            }}
           >
             <div className="flex items-center gap-4">
               <div className="w-5 h-px bg-[#4F6BFF]" />
@@ -268,11 +285,12 @@ export function AboutSection() {
             </div>
             <div className="hidden sm:flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-[#4F6BFF] animate-pulse" />
-              <span className="text-white/40 text-[10px] tracking-[0.3em] uppercase">Live Operations</span>
+              <span className="text-white/40 text-[10px] tracking-[0.3em] uppercase">
+                Live Operations
+              </span>
             </div>
           </div>
         </motion.div>
-
       </div>
     </section>
   );

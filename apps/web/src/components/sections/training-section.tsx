@@ -47,14 +47,18 @@ const stagger: Variants = {
 
 const rowVariant: Variants = {
   hidden: { opacity: 0, y: 16 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.55, ease: "easeOut" },
+  },
 };
 
 export function TrainingSection() {
   return (
     <section
       id="training"
-      className="bg-[#F8FAFC] py-20 lg:py-28 relative overflow-hidden"
+      className="bg-[#F8FAFC] py-20 lg:py-28 relative overflow-hidden mt-8"
     >
       {/* Blueprint grid texture */}
       <div
@@ -73,7 +77,6 @@ export function TrainingSection() {
       <div className="absolute -bottom-16 -left-16 w-[360px] h-[280px] rounded-full bg-[#4056D6] opacity-[0.04] blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8">
-
         {/* Eyebrow */}
         <motion.div
           variants={fadeUp}
@@ -90,7 +93,6 @@ export function TrainingSection() {
 
         {/* Main grid */}
         <div className="grid lg:grid-cols-5 gap-16 lg:gap-24">
-
           {/* LEFT — Heading + Description */}
           <motion.div
             variants={fadeUp}
@@ -103,7 +105,8 @@ export function TrainingSection() {
               The JPLC{" "}
               <span
                 style={{
-                  background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
+                  background:
+                    "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -137,7 +140,6 @@ export function TrainingSection() {
 
           {/* RIGHT — Programme List */}
           <div className="lg:col-span-3">
-
             {/* Column labels */}
             <motion.div
               variants={fadeUp}
@@ -208,7 +210,6 @@ export function TrainingSection() {
               Contact us to register your interest.
             </motion.p>
           </div>
-
         </div>
       </div>
     </section>

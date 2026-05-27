@@ -58,7 +58,6 @@ const offerings = [
   },
 ];
 
-
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 36 },
   visible: (delay: number = 0) => ({
@@ -70,23 +69,37 @@ const fadeUp: Variants = {
 
 const slideLeft: Variants = {
   hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.85, ease: "easeOut" } },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.85, ease: "easeOut" },
+  },
 };
 
 const slideRight: Variants = {
   hidden: { opacity: 0, x: 50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.85, ease: "easeOut" } },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.85, ease: "easeOut" },
+  },
 };
 
 const contentFade: Variants = {
   hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, delay: 0.2, ease: "easeOut" } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, delay: 0.2, ease: "easeOut" },
+  },
 };
 
 export function ManufacturingSection() {
   return (
-    <section id="manufacturing" className="relative bg-[#F8FAFC] overflow-hidden">
-
+    <section
+      id="manufacturing"
+      className="relative bg-[#F8FAFC] overflow-hidden"
+    >
       {/* â"€â"€ BACKGROUND TEXTURE â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.022]"
@@ -99,7 +112,7 @@ export function ManufacturingSection() {
       <div className="absolute top-0 right-0 w-[500px] h-[400px] rounded-full bg-[#2F43B7] opacity-[0.04] blur-[130px] pointer-events-none" />
 
       {/* â"€â"€ CINEMATIC HEADER â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
-      <div className="relative max-w-7xl mx-auto px-4 lg:px-8 pt-16 lg:pt-24 pb-10">
+      <div className="relative max-w-7xl mx-auto px-4 lg:px-8 pt-12 lg:pt-16 pb-6">
         <motion.div
           custom={0}
           variants={fadeUp}
@@ -120,7 +133,8 @@ export function ManufacturingSection() {
               Production{" "}
               <span
                 style={{
-                  background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
+                  background:
+                    "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -159,7 +173,7 @@ export function ManufacturingSection() {
       </div>
 
       {/* â"€â"€ ALTERNATING OFFERING ROWS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
-      <div className="relative max-w-7xl mx-auto px-4 lg:px-8 pb-16 lg:pb-24">
+      <div className="relative max-w-7xl mx-auto px-4 lg:px-8 pb-12 lg:pb-16">
         {offerings.map((item, i) => {
           const imgLeft = i % 2 === 0;
           return (
@@ -197,12 +211,17 @@ export function ManufacturingSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2F43B7]/0 to-transparent group-hover:from-[#2F43B7]/18 transition-all duration-500" />
 
                 {/* Edge accent line */}
-                <div className={`absolute top-0 bottom-0 ${imgLeft ? "right-0" : "left-0"} w-[2px] h-0 group-hover:h-full bg-gradient-to-b from-transparent via-[#4F6BFF]/70 to-transparent transition-all duration-600`} />
+                <div
+                  className={`absolute top-0 bottom-0 ${imgLeft ? "right-0" : "left-0"} w-[2px] h-0 group-hover:h-full bg-gradient-to-b from-transparent via-[#4F6BFF]/70 to-transparent transition-all duration-600`}
+                />
 
                 {/* Floating label */}
                 <div
                   className={`absolute bottom-4 ${imgLeft ? "right-4" : "left-4"} rounded-sm px-3 py-1.5 border border-[#2F43B7]/25 group-hover:border-[#4F6BFF]/50 transition-all duration-300`}
-                  style={{ background: "rgba(15,23,42,0.75)", backdropFilter: "blur(10px)" }}
+                  style={{
+                    background: "rgba(15,23,42,0.75)",
+                    backdropFilter: "blur(10px)",
+                  }}
                 >
                   <p className="text-[#6B8BFF] text-[9px] font-mono tracking-widest uppercase">
                     {item.id} / 07
@@ -210,8 +229,12 @@ export function ManufacturingSection() {
                 </div>
 
                 {/* Corner bracket */}
-                <div className={`absolute top-4 ${imgLeft ? "left-4" : "right-4"} w-5 h-px bg-[#4F6BFF]/50`} />
-                <div className={`absolute top-4 ${imgLeft ? "left-4" : "right-4"} w-px h-5 bg-[#4F6BFF]/50`} />
+                <div
+                  className={`absolute top-4 ${imgLeft ? "left-4" : "right-4"} w-5 h-px bg-[#4F6BFF]/50`}
+                />
+                <div
+                  className={`absolute top-4 ${imgLeft ? "left-4" : "right-4"} w-px h-5 bg-[#4F6BFF]/50`}
+                />
               </motion.div>
 
               {/* â"€â"€ Content panel â"€â"€ */}

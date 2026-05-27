@@ -1,214 +1,453 @@
 "use client";
 
 import Image from "next/image";
-import { motion, type Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
-const containerVariants: Variants = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.18,
-    },
+/* ── tiny helpers ─────────────────────────────────────────── */
+const enter = (delay = 0, y = 28) => ({
+  initial: { opacity: 0, y },
+  animate: { opacity: 1, y: 0 },
+  transition: {
+    duration: 0.88,
+    delay,
+    ease: [0.21, 0.47, 0.32, 0.98] as const,
   },
-};
+});
 
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 32 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] },
+const fadeIn = (delay = 0) => ({
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 0.85, delay, ease: "easeOut" as const },
+});
+
+const floatLoop = (amp: number, dur: number, delay = 0) => ({
+  animate: { y: [0, amp, 0] },
+  transition: {
+    duration: dur,
+    repeat: Infinity,
+    ease: "easeInOut" as const,
+    delay,
   },
-};
+});
 
-const stats = [
-  { label: "Origins", value: "6+" },
-  { label: "MT Capacity", value: "500+" },
-  { label: "Markets", value: "30+" },
-  { label: "Certified", value: "ISO" },
-];
-
+/* ═══════════════════════════════════════════════════════════ */
 export function AboutHero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Top accent line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#2F43B7]/50 to-transparent z-20" />
-
-      {/* Background image */}
-      <Image
-        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&q=85&auto=format&fit=crop"
-        alt="JPLC specialty coffee infrastructure"
-        fill
-        priority
-        quality={85}
-        className="object-cover object-center"
-      />
-
-      {/* Primary gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/98 via-[#0F172A]/90 to-[#0F172A]/75" />
-
-      {/* Side gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/80 to-transparent" />
-
-      {/* Blueprint grid overlay with radial mask */}
+    <section className="relative min-h-screen flex flex-col overflow-hidden bg-white">
+      {/* ── Background atmosphere ──────────────────────────── */}
+      {/* Radial glow top-right */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute -top-32 -right-24 w-[600px] h-[600px] pointer-events-none"
         style={{
-          backgroundImage:
-            "linear-gradient(rgba(47,67,183,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(47,67,183,0.06) 1px, transparent 1px)",
-          backgroundSize: "72px 72px",
-          WebkitMaskImage:
-            "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
-          maskImage:
-            "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
+          background:
+            "radial-gradient(ellipse at center, rgba(79,107,255,0.10) 0%, transparent 68%)",
+          filter: "blur(60px)",
         }}
       />
+      {/* Radial glow bottom-left */}
+      <div
+        className="absolute -bottom-20 -left-16 w-[480px] h-[480px] pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, rgba(47,67,183,0.07) 0%, transparent 70%)",
+          filter: "blur(70px)",
+        }}
+      />
+      {/* Mid-page glow */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, rgba(107,139,255,0.05) 0%, transparent 70%)",
+          filter: "blur(80px)",
+        }}
+      />
+      {/* Top/bottom accent lines */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#4F6BFF]/28 to-transparent z-20" />
 
-      {/* Blue atmospheric glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-[#2F43B7] opacity-[0.15] blur-[120px] pointer-events-none" />
-
-      {/* Top-left corner bracket */}
-      <div className="absolute top-8 left-8 z-20 pointer-events-none">
-        <div className="relative w-8 h-8">
-          <div className="absolute top-0 left-0 w-8 h-px bg-[#2F43B7]/50" />
-          <div className="absolute top-0 left-0 w-px h-8 bg-[#2F43B7]/50" />
-        </div>
+      {/* ── Corner brackets ────────────────────────────────── */}
+      <div className="absolute top-[88px] left-5 lg:left-9 z-20 pointer-events-none">
+        <div className="w-6 h-px bg-[#4F6BFF]/40" />
+        <div className="w-px h-6 bg-[#4F6BFF]/40 mt-0" />
+      </div>
+      <div className="absolute top-[88px] right-5 lg:right-9 z-20 pointer-events-none flex flex-col items-end">
+        <div className="w-6 h-px bg-[#4F6BFF]/40" />
+        <div className="w-px h-6 bg-[#4F6BFF]/40" />
       </div>
 
-      {/* Bottom-right corner bracket */}
-      <div className="absolute bottom-8 right-8 z-20 pointer-events-none">
-        <div className="relative w-8 h-8">
-          <div className="absolute bottom-0 right-0 w-8 h-px bg-[#2F43B7]/50" />
-          <div className="absolute bottom-0 right-0 w-px h-8 bg-[#2F43B7]/50" />
-        </div>
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 lg:px-8 py-32 lg:py-40">
+      {/* ══════════════════════════════════════════════════════
+          EDITORIAL CONTENT
+      ══════════════════════════════════════════════════════ */}
+      <div className="relative z-10 flex-1 w-full max-w-7xl mx-auto px-6 lg:px-10 pt-32 lg:pt-40 pb-6">
+        {/* ── Eyebrow label ── */}
         <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-          className="max-w-3xl"
+          {...fadeIn(0)}
+          className="flex items-center gap-3 mb-12 lg:mb-16"
         >
-          {/* Badge */}
-          <motion.div variants={fadeUp} className="mb-8">
-            <span className="inline-flex items-center gap-2.5 px-4 py-2 bg-[#2F43B7]/10 border border-[#2F43B7]/25 rounded-full">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2F43B7] opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#2F43B7]" />
-              </span>
-              <span className="text-[#6B8BFF] text-xs font-medium tracking-[0.45em] uppercase">
-                Specialty Coffee Infrastructure
-              </span>
-            </span>
-          </motion.div>
+          <div className="relative w-2 h-2 flex-shrink-0">
+            <div className="absolute inset-0 rounded-full bg-[#4F6BFF] opacity-40 animate-ping" />
+            <div className="w-2 h-2 rounded-full bg-[#4F6BFF]" />
+          </div>
+          <div className="w-8 h-px bg-[#4F6BFF]/55" />
+          <span className="text-[#4F6BFF] text-[10.5px] font-bold tracking-[0.46em] uppercase">
+            About JPLC Holdings
+          </span>
+        </motion.div>
 
-          {/* Main heading */}
+        {/* ── Main editorial composition ── */}
+        <div className="relative">
+          {/* Oversized headline — left-anchored, leaves right 38% for images on desktop */}
           <motion.h1
-            variants={fadeUp}
-            className="font-sans font-extrabold text-5xl lg:text-7xl text-[#F1F5F9] leading-[0.95] tracking-tight mb-8"
+            {...enter(0.06, 40)}
+            className="font-extrabold text-[#0F172A] leading-[0.91] tracking-[-0.04em] lg:max-w-[60%]"
+            style={{ fontSize: "clamp(46px, 6.2vw, 88px)" }}
           >
-            A Modern Specialty Coffee
-            <br />
+            <span className="block">A Global</span>
+            <span className="block" style={{ fontWeight: 900 }}>
+              Coffee
+            </span>
             <span
-              style={{
-                background: "linear-gradient(135deg, #6B8BFF 0%, #93C5FD 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-                filter: "drop-shadow(0 0 24px rgba(107,139,255,0.35))",
-              }}
+              className="block"
+              style={{ fontWeight: 300, letterSpacing: "-0.025em" }}
             >
-              Infrastructure Company
+              Infrastructure
+            </span>
+            <span className="block">Company</span>
+            <span className="block">
+              Built for{" "}
+              <span
+                style={{
+                  background:
+                    "linear-gradient(90deg, #2F43B7 0%, #4F6BFF 52%, #6B8BFF 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
+                Scale.
+              </span>
             </span>
           </motion.h1>
 
-          {/* Subheading */}
-          <motion.p
-            variants={fadeUp}
-            className="text-[#94A3B8] text-lg leading-relaxed max-w-2xl mb-12"
+          {/* ────────────────────────────────────────────────────
+              DESKTOP IMAGE CLUSTER
+              Absolutely positioned in the right 40% of the
+              editorial composition, overlapping the headline's
+              white-space to create an architectural feel.
+          ──────────────────────────────────────────────────── */}
+          <div
+            className="hidden lg:block"
+            style={{
+              position: "absolute",
+              top: 0,
+              right: 0,
+              width: "48%",
+              height: "640px",
+            }}
           >
-            JPLC operates across sourcing, roasting, engineering, research,
-            manufacturing, hospitality infrastructure, and coffee innovation for
-            modern global markets.
-          </motion.p>
+            {/* Ambient glow behind cluster */}
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                background:
+                  "radial-gradient(ellipse 85% 75% at 60% 40%, rgba(79,107,255,0.11) 0%, transparent 70%)",
+                filter: "blur(38px)",
+                pointerEvents: "none",
+              }}
+            />
 
-          {/* CTA buttons */}
+            {/* Decorative ring */}
+            <div
+              style={{
+                position: "absolute",
+                top: 60,
+                right: 60,
+                width: 220,
+                height: 220,
+                borderRadius: "50%",
+                border: "1px solid rgba(79,107,255,0.08)",
+                pointerEvents: "none",
+              }}
+            />
+
+            {/* ── IMAGE 1 — tall, upper-right ── */}
+            <motion.div
+              {...fadeIn(0.28)}
+              style={{
+                position: "absolute",
+                top: 0,
+                right: 0,
+                zIndex: 20,
+                borderRadius: "48px",
+              }}
+            >
+              <motion.div {...floatLoop(-13, 6.2, 0.6)}>
+                <div
+                  style={{
+                    position: "relative",
+                    width: 460,
+                    height: 600,
+                    borderRadius: "48px",
+                    overflow: "hidden",
+                    border: "2px solid rgba(79,107,255,0.55)",
+                    boxShadow:
+                      "0 32px 72px rgba(47,67,183,0.22), 0 0 0 1px rgba(255,255,255,0.55), 0 0 40px rgba(79,107,255,0.16)",
+                  }}
+                >
+                  <Image
+                    src="/engineering_image.jpg"
+                    alt="JPLC Engineering Lab"
+                    fill
+                    priority
+                    quality={90}
+                    className="object-cover"
+                    style={{ filter: "saturate(1.06) brightness(1.02)" }}
+                  />
+                  {/* Caption overlay */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      bottom: 0,
+                      left: 0,
+                      right: 0,
+                      padding: "10px 13px",
+                      background:
+                        "linear-gradient(to top, rgba(15,23,42,0.72), transparent)",
+                    }}
+                  >
+                    <p
+                      style={{
+                        color: "white",
+                        fontSize: "9px",
+                        fontWeight: 700,
+                        letterSpacing: "0.32em",
+                        textTransform: "uppercase",
+                      }}
+                    >
+                      Engineering Lab
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+          </div>
+
+          {/* ── Description + CTAs ── */}
           <motion.div
-            variants={fadeUp}
-            className="flex flex-col sm:flex-row gap-4"
+            {...enter(0.46, 20)}
+            className="mt-9 lg:mt-11 max-w-[420px]"
           >
-            <a
-              href="#ecosystem"
-              className="group relative inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#2F43B7] text-white text-sm font-medium tracking-wide rounded-sm hover:bg-[#4056D6] transition-colors overflow-hidden"
-            >
-              {/* Shimmer effect */}
-              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-              <span className="relative">Explore Our Ecosystem</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-                className="relative"
-              >
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg>
-            </a>
-            <a
-              href="#partnership"
-              className="inline-flex items-center justify-center px-8 py-4 border border-[#F1F5F9]/30 text-[#F1F5F9] text-sm font-medium tracking-wide rounded-sm hover:border-[#2F43B7] hover:text-[#6B8BFF] transition-colors backdrop-blur-sm"
-            >
-              Partner With Us
-            </a>
-          </motion.div>
-        </motion.div>
-      </div>
+            <p className="text-[#475569] text-[16px] leading-[1.82] mb-7 font-light">
+              JPLC operates across sourcing, roasting, engineering, research,
+              manufacturing, hospitality infrastructure, and technical coffee
+              innovation for modern global markets.
+            </p>
 
-      {/* Bottom stats bar */}
-      <div className="absolute bottom-8 left-0 right-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="flex items-center gap-3">
-            {stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="flex-1 bg-[#0F172A]/60 backdrop-blur-sm border border-[#2F43B7]/20 rounded-sm px-6 py-3"
+            {/* Thin divider */}
+            <div className="w-14 h-px bg-[#4F6BFF]/28 mb-7" />
+
+            {/* CTA row */}
+            <div className="flex items-center gap-5">
+              <a
+                href="#story"
+                className="group inline-flex items-center gap-2 text-[#2F43B7] text-sm font-semibold tracking-wide hover:text-[#4F6BFF] transition-colors duration-200"
               >
-                <p className="text-[#64748B] text-[10px] font-medium tracking-[0.2em] uppercase mb-1">
-                  {stat.label}
+                Our Story
+                <svg
+                  className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200"
+                  fill="none"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 8h10M9 4l4 4-4 4"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </a>
+              <div className="w-px h-4 bg-[#E2E8F0]" />
+              <a
+                href="#partnership"
+                className="text-[#64748B] text-sm font-medium hover:text-[#2F43B7] transition-colors duration-200 tracking-wide"
+              >
+                Partner With Us
+              </a>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* ── MOBILE IMAGE STRIP — lg:hidden ── */}
+        <motion.div {...enter(0.5, 20)} className="block lg:hidden mt-10">
+          {/* Main image */}
+          <div
+            className="relative w-full rounded-2xl overflow-hidden mb-3"
+            style={{
+              height: 248,
+              border: "2px solid rgba(79,107,255,0.52)",
+              boxShadow:
+                "0 20px 52px rgba(47,67,183,0.18), 0 0 28px rgba(79,107,255,0.12)",
+            }}
+          >
+            <Image
+              src="/engineering_image.jpg"
+              alt="JPLC Engineering"
+              fill
+              priority
+              quality={85}
+              className="object-cover"
+            />
+            <div
+              style={{
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                right: 0,
+                padding: "10px 14px",
+                background:
+                  "linear-gradient(to top, rgba(15,23,42,0.70), transparent)",
+              }}
+            >
+              <p
+                style={{
+                  color: "white",
+                  fontSize: "9.5px",
+                  fontWeight: 700,
+                  letterSpacing: "0.32em",
+                  textTransform: "uppercase",
+                }}
+              >
+                Engineering Division
+              </p>
+            </div>
+            {/* ISO badge on image */}
+            <div
+              className="absolute top-2.5 right-2.5 flex items-center gap-2"
+              style={{
+                background: "rgba(255,255,255,0.92)",
+                backdropFilter: "blur(14px)",
+                border: "1px solid rgba(79,107,255,0.22)",
+                borderRadius: 10,
+                padding: "6px 10px",
+              }}
+            >
+              <div
+                style={{
+                  width: 18,
+                  height: 18,
+                  borderRadius: "50%",
+                  background: "linear-gradient(135deg, #2F43B7, #4F6BFF)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
+                }}
+              >
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none">
+                  <path
+                    d="M1.5 4.5l2 2 4-4"
+                    stroke="white"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p
+                  style={{
+                    color: "#0F172A",
+                    fontSize: 9,
+                    fontWeight: 700,
+                    lineHeight: 1,
+                  }}
+                >
+                  ISO Certified
                 </p>
-                <p className="font-sans font-bold text-2xl text-[#6B8BFF] leading-none">
-                  {stat.value}
+                <p
+                  style={{
+                    color: "#64748B",
+                    fontSize: 7.5,
+                    letterSpacing: "0.1em",
+                    marginTop: 2,
+                  }}
+                >
+                  Quality Assured
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Two smaller images */}
+          <div className="grid grid-cols-2 gap-3">
+            {[
+              { src: "/coffee_machine_engg.jpg", label: "Precision Eng." },
+              { src: "/manufacturing.jpg", label: "Manufacturing" },
+            ].map(({ src, label }) => (
+              <div
+                key={src}
+                className="relative rounded-xl overflow-hidden"
+                style={{
+                  height: 132,
+                  border: "1.5px solid rgba(79,107,255,0.30)",
+                  boxShadow: "0 10px 28px rgba(47,67,183,0.13)",
+                }}
+              >
+                <Image
+                  src={src}
+                  alt={label}
+                  fill
+                  quality={80}
+                  className="object-cover"
+                />
+                <div className="absolute bottom-2 left-2">
+                  <span
+                    style={{
+                      background: "rgba(255,255,255,0.90)",
+                      backdropFilter: "blur(8px)",
+                      border: "1px solid rgba(79,107,255,0.16)",
+                      borderRadius: 7,
+                      padding: "3px 7px",
+                      fontSize: "7.5px",
+                      fontWeight: 700,
+                      letterSpacing: "0.22em",
+                      textTransform: "uppercase" as const,
+                      color: "#2F43B7",
+                      display: "inline-block",
+                    }}
+                  >
+                    {label}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* ── Scroll indicator ──────────────────────────────── */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.4, duration: 0.8 }}
-        className="absolute bottom-24 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 z-20"
+        transition={{ delay: 1.5, duration: 0.8 }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2 z-20"
       >
-        <span className="text-[#F1F5F9]/30 text-[9px] tracking-[0.3em] uppercase">
+        <span className="text-[#94A3B8] text-[8.5px] tracking-[0.38em] uppercase font-semibold">
           Scroll
         </span>
-        <motion.div
-          animate={{ y: [0, 7, 0] }}
-          transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
-          className="w-1.5 h-1.5 rounded-full bg-[#2F43B7]/60"
-        />
+        <div className="relative w-px h-10 overflow-hidden">
+          <motion.div
+            animate={{ y: ["-100%", "100%"] }}
+            transition={{ repeat: Infinity, duration: 1.9, ease: "easeInOut" }}
+            className="absolute inset-x-0 top-0 h-full"
+            style={{
+              background:
+                "linear-gradient(to bottom, transparent, #4F6BFF, transparent)",
+            }}
+          />
+        </div>
       </motion.div>
     </section>
   );

@@ -89,7 +89,10 @@ export function ContactHero() {
           >
             <div
               className="flex items-center gap-2.5 px-4 py-2 rounded-sm border border-[#2F43B7]/35"
-              style={{ background: "rgba(15,23,42,0.72)", backdropFilter: "blur(10px)" }}
+              style={{
+                background: "rgba(15,23,42,0.72)",
+                backdropFilter: "blur(10px)",
+              }}
             >
               <div className="w-1 h-1 rounded-full bg-[#4F6BFF] animate-pulse" />
               <span className="text-white/85 text-[10px] font-mono tracking-[0.3em] uppercase whitespace-nowrap">
@@ -109,7 +112,10 @@ export function ContactHero() {
           className="max-w-2xl"
         >
           {/* Eyebrow */}
-          <motion.div variants={fadeUp} className="flex items-center gap-3 mb-6">
+          <motion.div
+            variants={fadeUp}
+            className="flex items-center gap-3 mb-6"
+          >
             <div className="w-8 h-px bg-[#2F43B7]" />
             <span className="text-white/80 text-xs font-mono tracking-[0.35em] uppercase">
               Enterprise Enquiries &mdash; DMCC, Dubai
@@ -120,7 +126,10 @@ export function ContactHero() {
           <motion.div variants={fadeUp} className="mb-8">
             <span
               className="inline-flex items-center gap-2.5 px-4 py-2 rounded-sm border border-[#2F43B7]/30"
-              style={{ background: "rgba(15,23,42,0.60)", backdropFilter: "blur(8px)" }}
+              style={{
+                background: "rgba(15,23,42,0.60)",
+                backdropFilter: "blur(8px)",
+              }}
             >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4F6BFF] opacity-60" />
@@ -154,7 +163,10 @@ export function ContactHero() {
           </motion.h1>
 
           {/* Triple divider */}
-          <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8">
+          <motion.div
+            variants={fadeUp}
+            className="flex items-center gap-3 mb-8"
+          >
             <div className="w-10 h-px bg-[#6B8BFF]/40" />
             <div className="w-px h-3 bg-[#6B8BFF]/30" />
             <div className="w-4 h-px bg-[#6B8BFF]/15" />
@@ -165,20 +177,34 @@ export function ContactHero() {
             variants={fadeUp}
             className="text-white/75 text-lg leading-relaxed max-w-xl mb-10"
           >
-            From green coffee sourcing and machine engineering to barista training
-            and hospitality supply &mdash; the JPLC team is ready to support your
-            business at any scale, across any market.
+            From green coffee sourcing and machine engineering to barista
+            training and hospitality supply &mdash; the JPLC team is ready to
+            support your business at any scale, across any market.
           </motion.p>
 
           {/* CTA buttons */}
-          <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 mb-8">
+          <motion.div
+            variants={fadeUp}
+            className="flex flex-col sm:flex-row gap-4 mb-8"
+          >
             <a
               href="#contact-form"
               className="group relative inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#2F43B7] text-white text-xs font-medium tracking-widest uppercase rounded-sm hover:bg-[#4056D6] transition-colors overflow-hidden shadow-[0_8px_32px_rgba(47,67,183,0.35)]"
             >
               <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
               <span className="relative">Start a Partnership</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="relative">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+                className="relative"
+              >
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
             </a>
@@ -192,11 +218,20 @@ export function ContactHero() {
 
           {/* Inquiry type chips */}
           <motion.div variants={fadeUp} className="flex flex-wrap gap-2">
-            {["Partnership", "Training & Education", "Engineering", "Hospitality Supply", "Sourcing"].map((tag) => (
+            {[
+              "Partnership",
+              "Training & Education",
+              "Engineering",
+              "Hospitality Supply",
+              "Sourcing",
+            ].map((tag) => (
               <span
                 key={tag}
                 className="text-white/65 text-[10px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-sm border border-white/20 hover:border-white/45 hover:text-white transition-colors duration-200 cursor-default"
-                style={{ background: "rgba(15,23,42,0.40)", backdropFilter: "blur(6px)" }}
+                style={{
+                  background: "rgba(15,23,42,0.40)",
+                  backdropFilter: "blur(6px)",
+                }}
               >
                 {tag}
               </span>
@@ -212,7 +247,9 @@ export function ContactHero() {
         transition={{ delay: 1.6, duration: 0.8 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 z-20"
       >
-        <span className="text-white/35 text-[9px] tracking-[0.3em] uppercase">Scroll</span>
+        <span className="text-white/35 text-[9px] tracking-[0.3em] uppercase">
+          Scroll
+        </span>
         <motion.div
           animate={{ y: [0, 7, 0] }}
           transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}

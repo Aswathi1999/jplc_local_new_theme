@@ -17,13 +17,16 @@ const container: Variants = {
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 32 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.85, ease: "easeOut" } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.85, ease: "easeOut" },
+  },
 };
 
 export function TrainingHero() {
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
-
       {/* Background image */}
       <Image
         src="/coffee_training.jpg"
@@ -66,7 +69,10 @@ export function TrainingHero() {
           className="max-w-3xl"
         >
           {/* Eyebrow badge */}
-          <motion.div variants={fadeUp} className="flex items-center gap-3 mb-8">
+          <motion.div
+            variants={fadeUp}
+            className="flex items-center gap-3 mb-8"
+          >
             <div className="w-8 h-px bg-[#2F43B7]" />
             <span className="inline-flex items-center gap-2.5 text-[#6B8BFF] text-xs font-mono tracking-[0.3em] uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#2F43B7] animate-pulse" />
@@ -79,7 +85,8 @@ export function TrainingHero() {
             variants={fadeUp}
             className="font-sans font-bold text-6xl lg:text-7xl xl:text-8xl text-[#F1F5F9] leading-[0.92] mb-8"
           >
-            The JPLC<br />
+            The JPLC
+            <br />
             <span className="text-[#6B8BFF]">Coffee</span> Academy
           </motion.h1>
 
@@ -101,7 +108,13 @@ export function TrainingHero() {
             >
               <span>Explore Programs</span>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <path
+                  d="M2 7h10M8 3l4 4-4 4"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </a>
             <a
@@ -131,7 +144,6 @@ export function TrainingHero() {
           </div>
         </div>
       </div>
-
     </section>
   );
 }

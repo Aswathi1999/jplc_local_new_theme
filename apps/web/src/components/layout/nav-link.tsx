@@ -9,7 +9,12 @@ interface NavLinkProps {
   onClick?: () => void;
 }
 
-export function NavLink({ href, label, lightBg = false, onClick }: NavLinkProps) {
+export function NavLink({
+  href,
+  label,
+  lightBg = false,
+  onClick,
+}: NavLinkProps) {
   const pathname = usePathname();
   const isActive = pathname === href;
 
@@ -23,8 +28,8 @@ export function NavLink({ href, label, lightBg = false, onClick }: NavLinkProps)
             ? "text-[#2F43B7]"
             : "text-white"
           : lightBg
-          ? "text-[#374151] hover:text-[#2F43B7]"
-          : "text-white/70 hover:text-white"
+            ? "text-[#374151] hover:text-[#2F43B7]"
+            : "text-white/70 hover:text-white"
       }`}
     >
       {label}

@@ -81,7 +81,7 @@ export function HospitalitySection() {
   return (
     <section
       id="hospitality"
-      className="bg-[#F8FAFC] relative overflow-hidden py-16 lg:py-24"
+      className="bg-[#F8FAFC] relative overflow-hidden py-12 lg:py-16"
     >
       {/* Subtle blue ambient glow */}
       <div className="absolute top-16 left-0 w-[480px] h-[480px] bg-[#2F43B7]/5 rounded-full blur-3xl pointer-events-none" />
@@ -107,7 +107,8 @@ export function HospitalitySection() {
               End-to-end beverage{" "}
               <span
                 style={{
-                  background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
+                  background:
+                    "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -291,7 +292,12 @@ export function HospitalitySection() {
 
                     {/* Arrow icon */}
                     <div className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 translate-x-3 group-hover:translate-x-0 transition-all duration-300">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                      >
                         <path
                           d="M3 8h10M9 4l4 4-4 4"
                           stroke="#2F43B7"

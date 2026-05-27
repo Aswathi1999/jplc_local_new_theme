@@ -51,8 +51,10 @@ export function PartnershipSection() {
           viewport={{ once: true }}
           className="relative rounded-sm overflow-hidden text-center"
           style={{
-            background: "linear-gradient(135deg, #ffffff 0%, #EEF2FF 50%, #E0E7FF 100%)",
-            boxShadow: "0 24px 64px rgba(47,67,183,0.14), 0 0 0 1px rgba(47,67,183,0.12)",
+            background:
+              "linear-gradient(135deg, #ffffff 0%, #EEF2FF 50%, #E0E7FF 100%)",
+            boxShadow:
+              "0 24px 64px rgba(47,67,183,0.14), 0 0 0 1px rgba(47,67,183,0.12)",
           }}
         >
           {/* Blueprint grid */}
@@ -97,7 +99,8 @@ export function PartnershipSection() {
               Build the future of coffee{" "}
               <span
                 style={{
-                  background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
+                  background:
+                    "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -110,8 +113,8 @@ export function PartnershipSection() {
 
             <p className="text-[#374151] text-lg leading-relaxed max-w-2xl mx-auto mb-10">
               Whether you are scaling a coffee brand, deploying hospitality
-              infrastructure, or seeking a manufacturing partner — JPLC is built to
-              be the invisible engine behind your operation.
+              infrastructure, or seeking a manufacturing partner — JPLC is built
+              to be the invisible engine behind your operation.
             </p>
 
             {/* Partner type chips */}
@@ -141,7 +144,13 @@ export function PartnershipSection() {
               >
                 Contact Us
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                  <path
+                    d="M2 7h10M8 3l4 4-4 4"
+                    stroke="currentColor"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </a>
               <a

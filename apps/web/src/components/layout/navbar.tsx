@@ -37,7 +37,7 @@ export function Navbar() {
             }`}
           >
             {/* Logo */}
-            <NavbarLogo lightBg={pastHero} />
+            <NavbarLogo lightBg={true} />
 
             {/* Desktop */}
             <div className="hidden lg:flex items-center gap-6 ml-auto">
@@ -50,12 +50,12 @@ export function Navbar() {
                     key={item.href}
                     href={item.href}
                     label={item.label}
-                    lightBg={pastHero}
+                    lightBg={true}
                   />
                 ))}
               </nav>
 
-              <NavLink href="/contact" label="Contact" lightBg={pastHero} />
+              <NavLink href="/contact" label="Contact" lightBg={true} />
               <a
                 href="#partnership"
                 className="inline-flex items-center px-5 py-2.5 bg-[#2F43B7] text-white text-[13px] font-semibold tracking-[0.08em] uppercase rounded-sm hover:bg-[#4056D6] transition-colors shadow-md shadow-[#2F43B7]/25"
@@ -70,15 +70,9 @@ export function Navbar() {
               aria-label="Open navigation menu"
               className="lg:hidden flex flex-col justify-center gap-[5px] w-10 h-10 -mr-2"
             >
-              <span
-                className={`w-6 h-px transition-colors duration-300 ${pastHero ? "bg-[#0F172A]" : "bg-white/80"}`}
-              />
-              <span
-                className={`w-4 h-px transition-colors duration-300 ${pastHero ? "bg-[#0F172A]" : "bg-white/80"}`}
-              />
-              <span
-                className={`w-6 h-px transition-colors duration-300 ${pastHero ? "bg-[#0F172A]" : "bg-white/80"}`}
-              />
+              <span className="w-6 h-px bg-[#0F172A]" />
+              <span className="w-4 h-px bg-[#0F172A]" />
+              <span className="w-6 h-px bg-[#0F172A]" />
             </button>
           </div>
         </div>

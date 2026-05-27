@@ -9,7 +9,11 @@ const stagger: Variants = {
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.75, ease: "easeOut" } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.75, ease: "easeOut" },
+  },
 };
 
 const stats = [
@@ -36,7 +40,6 @@ export function PartnershipCta() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-[#2F43B7] opacity-[0.06] blur-[120px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8">
-
         {/* Main card */}
         <motion.div
           variants={stagger}
@@ -44,7 +47,10 @@ export function PartnershipCta() {
           whileInView="visible"
           viewport={{ once: true }}
           className="relative overflow-hidden rounded-sm border border-[#2F43B7]/15 shadow-[0_8px_40px_rgba(47,67,183,0.12)]"
-          style={{ background: "linear-gradient(135deg, #ffffff 0%, #EEF2FF 50%, #E0E7FF 100%)" }}
+          style={{
+            background:
+              "linear-gradient(135deg, #ffffff 0%, #EEF2FF 50%, #E0E7FF 100%)",
+          }}
         >
           {/* Top accent bar */}
           <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#2F43B7] via-[#4F6BFF] to-transparent" />
@@ -70,9 +76,11 @@ export function PartnershipCta() {
           </span>
 
           <div className="relative z-10 px-8 lg:px-16 py-14 lg:py-16">
-
             {/* Eyebrow */}
-            <motion.div variants={fadeUp} className="flex items-center justify-center gap-4 mb-8">
+            <motion.div
+              variants={fadeUp}
+              className="flex items-center justify-center gap-4 mb-8"
+            >
               <div className="w-8 h-px bg-[#2F43B7]" />
               <p className="text-[#2F43B7] text-[11px] font-semibold tracking-[0.45em] uppercase">
                 Build With JPLC
@@ -88,7 +96,8 @@ export function PartnershipCta() {
               Ready to build{" "}
               <span
                 style={{
-                  background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
+                  background:
+                    "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -103,8 +112,8 @@ export function PartnershipCta() {
               variants={fadeUp}
               className="text-center text-[#374151] text-base lg:text-[17px] leading-relaxed max-w-xl mx-auto mb-10"
             >
-              JPLC partners with hospitality groups, coffee brands, distributors,
-              and enterprise operators across 30+ global markets.
+              JPLC partners with hospitality groups, coffee brands,
+              distributors, and enterprise operators across 30+ global markets.
             </motion.p>
 
             {/* CTA buttons */}
@@ -117,8 +126,21 @@ export function PartnershipCta() {
                 className="group relative inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#2F43B7] text-white text-xs font-semibold tracking-widest uppercase rounded-sm hover:bg-[#2941A8] transition-colors overflow-hidden shadow-[0_8px_32px_rgba(47,67,183,0.25)]"
               >
                 <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
-                <span className="relative">Explore Partnership Opportunities</span>
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="relative">
+                <span className="relative">
+                  Explore Partnership Opportunities
+                </span>
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                  className="relative"
+                >
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
               </a>
@@ -140,15 +162,17 @@ export function PartnershipCta() {
                   key={stat.label}
                   className="group bg-[#F8FAFC] hover:bg-white transition-colors duration-300 px-6 py-5 text-center"
                 >
-                  <p className="font-bold text-2xl text-[#2F43B7] mb-1 tracking-tight">{stat.value}</p>
-                  <p className="text-[#64748B] text-[10px] tracking-widest uppercase">{stat.label}</p>
+                  <p className="font-bold text-2xl text-[#2F43B7] mb-1 tracking-tight">
+                    {stat.value}
+                  </p>
+                  <p className="text-[#64748B] text-[10px] tracking-widest uppercase">
+                    {stat.label}
+                  </p>
                 </div>
               ))}
             </motion.div>
-
           </div>
         </motion.div>
-
       </div>
     </section>
   );

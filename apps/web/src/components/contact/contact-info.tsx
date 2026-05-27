@@ -13,21 +13,48 @@ const stagger: Variants = {
 };
 
 const LocationIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
     <circle cx="12" cy="9" r="2.5" />
   </svg>
 );
 
 const EmailIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <rect x="2" y="4" width="20" height="16" rx="2" />
     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
   </svg>
 );
 
 const PhoneIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
   </svg>
 );
@@ -62,7 +89,13 @@ const miniStats = [
   { value: "B2B", label: "Enterprise" },
 ];
 
-const serviceTags = ["Partnership", "Training", "Hospitality Supply", "Engineering", "Sourcing"];
+const serviceTags = [
+  "Partnership",
+  "Training",
+  "Hospitality Supply",
+  "Engineering",
+  "Sourcing",
+];
 
 export function ContactInfo() {
   return (
@@ -94,12 +127,20 @@ export function ContactInfo() {
 
             <div className="min-w-0">
               <div className="flex items-center gap-2 mb-1.5">
-                <span className="text-[#2F43B7]/40 text-[9px] font-mono tracking-widest">{card.id}</span>
-                <span className="text-[#2F43B7] text-[10px] font-mono tracking-[0.25em] uppercase">{card.label}</span>
+                <span className="text-[#2F43B7]/40 text-[9px] font-mono tracking-widest">
+                  {card.id}
+                </span>
+                <span className="text-[#2F43B7] text-[10px] font-mono tracking-[0.25em] uppercase">
+                  {card.label}
+                </span>
               </div>
-              <p className="text-[#0F172A] text-sm font-semibold mb-1.5">{card.title}</p>
+              <p className="text-[#0F172A] text-sm font-semibold mb-1.5">
+                {card.title}
+              </p>
               {card.lines.map((line, i) => (
-                <p key={i} className="text-[#64748B] text-xs leading-relaxed">{line}</p>
+                <p key={i} className="text-[#64748B] text-xs leading-relaxed">
+                  {line}
+                </p>
               ))}
             </div>
           </div>
@@ -111,7 +152,9 @@ export function ContactInfo() {
         variants={fadeUp}
         className="rounded-sm bg-white border border-[#E5E7EB] p-6"
       >
-        <p className="text-[#2F43B7] text-[10px] font-mono tracking-[0.3em] uppercase mb-4">We Handle</p>
+        <p className="text-[#2F43B7] text-[10px] font-mono tracking-[0.3em] uppercase mb-4">
+          We Handle
+        </p>
         <div className="flex flex-wrap gap-2">
           {serviceTags.map((tag) => (
             <span
@@ -132,8 +175,12 @@ export function ContactInfo() {
             className="group relative overflow-hidden rounded-sm bg-white border border-[#E5E7EB] p-4 text-center hover:border-[#2F43B7]/35 hover:-translate-y-0.5 transition-all duration-300 shadow-sm"
           >
             <div className="absolute inset-0 bg-gradient-to-b from-[#2F43B7]/[0.04] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <p className="font-bold text-xl text-[#2F43B7] mb-0.5 relative z-10">{stat.value}</p>
-            <p className="text-[#64748B] text-[10px] tracking-widest uppercase relative z-10">{stat.label}</p>
+            <p className="font-bold text-xl text-[#2F43B7] mb-0.5 relative z-10">
+              {stat.value}
+            </p>
+            <p className="text-[#64748B] text-[10px] tracking-widest uppercase relative z-10">
+              {stat.label}
+            </p>
           </div>
         ))}
       </motion.div>

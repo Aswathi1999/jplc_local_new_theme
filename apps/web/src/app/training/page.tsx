@@ -1,4 +1,3 @@
-import { TrainingHero } from "@/components/sections/training-hero";
 import { TrainingSection } from "@/components/sections/training-section";
 
 export const metadata = {
@@ -10,7 +9,7 @@ export const metadata = {
 export default function TrainingPage() {
   return (
     <main>
-      <TrainingHero />
+      {/* <TrainingHero /> */}
       <TrainingSection />
     </main>
   );

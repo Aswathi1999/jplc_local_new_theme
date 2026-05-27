@@ -174,7 +174,8 @@ export function OperationsGrid() {
 
           {/* Body */}
           <p className="text-[#374151] text-base leading-relaxed max-w-2xl mb-8">
-            JPLC operates across the complete specialty coffee value chain from origin procurement to enterprise deployment.
+            JPLC operates across the complete specialty coffee value chain from
+            origin procurement to enterprise deployment.
           </p>
 
           {/* Animated gradient divider */}

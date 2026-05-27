@@ -1,4 +1,3 @@
-import { ContactHero } from "@/components/contact/contact-hero";
 import { ContactInfo } from "@/components/contact/contact-info";
 import { ContactForm } from "@/components/contact/contact-form";
 import { PartnershipCta } from "@/components/contact/partnership-cta";
@@ -12,12 +11,12 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <main>
-      <ContactHero />
+      {/* <ContactHero /> */}
 
       {/* Contact split layout — dark theme */}
       <section
         id="contact-form"
-        className="relative py-16 lg:py-24 overflow-hidden bg-[#F8FAFC]"
+        className="relative py-20 lg:py-24 overflow-hidden bg-[#F8FAFC] mt-8"
       >
         {/* Blueprint grid */}
         <div

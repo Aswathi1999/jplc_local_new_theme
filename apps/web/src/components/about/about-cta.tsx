@@ -56,7 +56,6 @@ export function AboutCta() {
       <div className="absolute -bottom-16 -left-16 w-[360px] h-[300px] rounded-full bg-[#4056D6] opacity-[0.05] blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 py-16 lg:py-24">
-
         {/* Eyebrow — centered above card */}
         <motion.div
           variants={fadeUp}
@@ -87,10 +86,8 @@ export function AboutCta() {
           <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#2F43B7] via-[#4F6BFF] to-transparent" />
 
           <div className="grid lg:grid-cols-[1fr_420px]">
-
             {/* LEFT — CTA content */}
             <div className="relative px-8 py-12 lg:px-14 lg:py-16">
-
               {/* Decorative ghost letter */}
               <span
                 className="absolute -bottom-6 -left-2 font-sans font-black text-[160px] leading-none text-[#2F43B7]/[0.04] select-none pointer-events-none"
@@ -104,7 +101,8 @@ export function AboutCta() {
                   Partner With{" "}
                   <span
                     style={{
-                      background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
+                      background:
+                        "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
@@ -124,8 +122,8 @@ export function AboutCta() {
 
                 <p className="text-[#374151] text-base lg:text-[17px] leading-relaxed mb-10">
                   Join the companies and brands building their coffee
-                  infrastructure with JPLC — from single-outlet deployments
-                  to enterprise-scale programmes.
+                  infrastructure with JPLC — from single-outlet deployments to
+                  enterprise-scale programmes.
                 </p>
 
                 {/* CTA buttons */}
@@ -198,11 +196,7 @@ export function AboutCta() {
                 </p>
 
                 {benefits.map((b) => (
-                  <motion.div
-                    key={b.id}
-                    variants={fadeUp}
-                    className="group"
-                  >
+                  <motion.div key={b.id} variants={fadeUp} className="group">
                     <div className="flex items-start gap-4">
                       {/* Accent line */}
                       <div className="flex-shrink-0 mt-1.5">
@@ -229,12 +223,8 @@ export function AboutCta() {
                 ))}
               </motion.div>
             </div>
-
           </div>
-
-
         </motion.div>
-
       </div>
     </section>
   );

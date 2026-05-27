@@ -95,7 +95,9 @@ function StoryBlockItem({ block }: { block: StoryBlock }) {
       {/* Dark gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/70 via-[#0F172A]/20 to-transparent transition-all duration-500 group-hover:from-[#2F43B7]/15" />
       {/* Directional side overlay */}
-      <div className={`absolute inset-0 ${block.imageLeft ? "bg-gradient-to-r from-transparent to-[#0F172A]/30" : "bg-gradient-to-l from-transparent to-[#0F172A]/30"}`} />
+      <div
+        className={`absolute inset-0 ${block.imageLeft ? "bg-gradient-to-r from-transparent to-[#0F172A]/30" : "bg-gradient-to-l from-transparent to-[#0F172A]/30"}`}
+      />
       {/* Edge accent line on inner edge */}
       <div
         className={`absolute top-0 bottom-0 ${block.imageLeft ? "right-0" : "left-0"} w-[2px] overflow-hidden`}

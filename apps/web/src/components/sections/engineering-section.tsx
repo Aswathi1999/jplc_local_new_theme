@@ -47,7 +47,6 @@ const capabilities = [
   },
 ];
 
-
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 32 },
   visible: (delay: number = 0) => ({
@@ -64,13 +63,16 @@ const stagger: Variants = {
 
 const cardVariant: Variants = {
   hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.65, ease: "easeOut" } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.65, ease: "easeOut" },
+  },
 };
 
 export function EngineeringSection() {
   return (
     <section id="engineering" className="relative bg-[#F8FAFC] overflow-hidden">
-
       {/* â"€â"€ BACKGROUND TEXTURE â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.025]"
@@ -85,7 +87,6 @@ export function EngineeringSection() {
 
       {/* â"€â"€ HEADER â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
       <div className="relative max-w-7xl mx-auto px-4 lg:px-8 pt-16 lg:pt-20 pb-10">
-
         <motion.div
           custom={0}
           variants={fadeUp}
@@ -126,8 +127,8 @@ export function EngineeringSection() {
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
             <p className="text-[#374151] text-base lg:text-[17px] leading-relaxed max-w-xl">
               JPLC Engineering bridges industrial manufacturing methodology with
-              specialty coffee precision — designing, testing, and deploying systems
-              that operate reliably at enterprise scale.
+              specialty coffee precision — designing, testing, and deploying
+              systems that operate reliably at enterprise scale.
             </p>
             <div className="flex-shrink-0 flex items-center gap-3 px-4 py-2.5 rounded-sm border border-[#2F43B7]/25 bg-[#2F43B7]/5">
               <div className="w-1.5 h-1.5 rounded-full bg-[#2F43B7] animate-pulse" />
@@ -138,7 +139,6 @@ export function EngineeringSection() {
           </div>
         </motion.div>
       </div>
-
 
       {/* â"€â"€ CAPABILITY CARDS â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
       <div className="relative max-w-7xl mx-auto px-4 lg:px-8 pt-10 pb-16 lg:pb-20">
@@ -153,7 +153,10 @@ export function EngineeringSection() {
             <motion.div
               key={cap.id}
               variants={cardVariant}
-              whileHover={{ y: -8, transition: { duration: 0.3, ease: "easeOut" } }}
+              whileHover={{
+                y: -8,
+                transition: { duration: 0.3, ease: "easeOut" },
+              }}
               className="group relative rounded-sm p-6 overflow-hidden border cursor-default"
               style={{
                 background: "#2941A8",
@@ -163,7 +166,8 @@ export function EngineeringSection() {
               onMouseEnter={(e) => {
                 const el = e.currentTarget as HTMLElement;
                 el.style.borderColor = "rgba(255,255,255,0.35)";
-                el.style.boxShadow = "0 20px 60px rgba(41,65,168,0.50), 0 0 0 1px rgba(255,255,255,0.15)";
+                el.style.boxShadow =
+                  "0 20px 60px rgba(41,65,168,0.50), 0 0 0 1px rgba(255,255,255,0.15)";
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget as HTMLElement;
@@ -205,7 +209,8 @@ export function EngineeringSection() {
               </div>
 
               {/* Divider */}
-              <div className="h-px mb-4 transition-colors duration-300 relative z-10"
+              <div
+                className="h-px mb-4 transition-colors duration-300 relative z-10"
                 style={{ background: "rgba(255,255,255,0.05)" }}
               >
                 <div className="h-px w-0 group-hover:w-full bg-gradient-to-r from-[#2F43B7]/50 to-transparent transition-all duration-500" />

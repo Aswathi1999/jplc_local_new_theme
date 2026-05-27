@@ -105,7 +105,11 @@ export function MissionVision() {
               visible: {
                 opacity: 1,
                 y: 0,
-                transition: { duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] },
+                transition: {
+                  duration: 0.8,
+                  delay: 0.15,
+                  ease: [0.22, 1, 0.36, 1],
+                },
               },
             }}
             className="group relative p-10 lg:p-16 overflow-hidden rounded-sm bg-white border border-[#E5E7EB] hover:border-[#2F43B7]/40 hover:shadow-[0_8px_32px_rgba(47,67,183,0.10)] transition-all duration-300"
