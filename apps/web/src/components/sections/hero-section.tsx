@@ -81,8 +81,8 @@ export function HeroSection() {
             {/* Eyebrow */}
             <motion.div {...fadeUp(0)} className="flex items-center gap-3 mb-9">
               <div className="w-8 h-px bg-[#4F6BFF]/70" />
-              <span className="text-[#4F6BFF] text-[10.5px] font-bold tracking-[0.42em] uppercase">
-                JPLC Holdings — Global Coffee Infrastructure
+              <span className="text-[#4F6BFF] text-[14px] font-bold tracking-[0.42em] uppercase">
+                Global Coffee Infrastructure
               </span>
             </motion.div>
 

@@ -89,7 +89,7 @@ export function AboutHero() {
             <div className="w-2 h-2 rounded-full bg-[#4F6BFF]" />
           </div>
           <div className="w-8 h-px bg-[#4F6BFF]/55" />
-          <span className="text-[#4F6BFF] text-[10.5px] font-bold tracking-[0.46em] uppercase">
+          <span className="text-[#4F6BFF] text-[14px] font-bold tracking-[0.46em] uppercase">
             About JPLC Holdings
           </span>
         </motion.div>
