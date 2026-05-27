@@ -44,20 +44,6 @@ export function ContactHero() {
       {/* Side gradient */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/85 via-[#0F172A]/40 to-transparent" />
 
-      {/* Blueprint grid with radial mask */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-[0.045]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(47,67,183,1) 1px, transparent 1px), linear-gradient(90deg, rgba(47,67,183,1) 1px, transparent 1px)",
-          backgroundSize: "64px 64px",
-          maskImage:
-            "radial-gradient(ellipse 85% 85% at 30% 50%, black 40%, transparent 100%)",
-          WebkitMaskImage:
-            "radial-gradient(ellipse 85% 85% at 30% 50%, black 40%, transparent 100%)",
-        }}
-      />
-
       {/* Blue ambient glow — left */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[640px] h-[420px] rounded-full bg-[#2F43B7] opacity-[0.12] blur-[120px] pointer-events-none" />
 

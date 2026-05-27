@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useScroll } from "@/hooks/use-scroll";
 import { NavbarLogo } from "./navbar-logo";
 import { NavLink } from "./nav-link";
@@ -9,27 +9,11 @@ import { navItems } from "@/constants/navigation";
 
 export function Navbar() {
   const scrolled = useScroll(60);
-  const [pastHero, setPastHero] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => {
-      setPastHero(window.scrollY > window.innerHeight * 0.85);
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    onScroll();
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-30 border-b transition-all duration-500 ${
-          pastHero
-            ? "bg-white border-[#E5E7EB] shadow-sm"
-            : "bg-transparent border-transparent"
-        }`}
-      >
+      <header className="fixed top-0 left-0 right-0 z-30 border-b border-[#E5E7EB] bg-white shadow-sm transition-all duration-500">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div
             className={`flex items-center justify-between transition-all duration-300 ${

@@ -127,10 +127,10 @@ export function ContactInfo() {
 
             <div className="min-w-0">
               <div className="flex items-center gap-2 mb-1.5">
-                <span className="text-[#2F43B7]/40 text-[9px] font-mono tracking-widest">
+                <span className="text-[#2F43B7]/40 text-xs font-semibold tracking-widest">
                   {card.id}
                 </span>
-                <span className="text-[#2F43B7] text-[10px] font-mono tracking-[0.25em] uppercase">
+                <span className="text-[#2F43B7] text-sm font-semibold tracking-[0.22em] uppercase">
                   {card.label}
                 </span>
               </div>
@@ -152,14 +152,14 @@ export function ContactInfo() {
         variants={fadeUp}
         className="rounded-sm bg-white border border-[#E5E7EB] p-6"
       >
-        <p className="text-[#2F43B7] text-[10px] font-mono tracking-[0.3em] uppercase mb-4">
+        <p className="text-[#2F43B7] text-sm font-semibold tracking-[0.28em] uppercase mb-4">
           We Handle
         </p>
         <div className="flex flex-wrap gap-2">
           {serviceTags.map((tag) => (
             <span
               key={tag}
-              className="border border-[#2F43B7]/20 text-[#2F43B7] text-[10px] font-mono tracking-widest uppercase px-3 py-1.5 rounded-sm hover:border-[#2F43B7]/50 hover:bg-[#2F43B7]/5 transition-colors duration-200 cursor-default"
+              className="border border-[#2F43B7]/20 text-[#2F43B7] text-sm font-semibold tracking-[0.15em] uppercase px-3 py-1.5 rounded-sm hover:border-[#2F43B7]/50 hover:bg-[#2F43B7]/5 transition-colors duration-200 cursor-default"
             >
               {tag}
             </span>
@@ -178,7 +178,7 @@ export function ContactInfo() {
             <p className="font-bold text-xl text-[#2F43B7] mb-0.5 relative z-10">
               {stat.value}
             </p>
-            <p className="text-[#64748B] text-[10px] tracking-widest uppercase relative z-10">
+            <p className="text-[#64748B] text-sm font-semibold tracking-[0.18em] uppercase relative z-10">
               {stat.label}
             </p>
           </div>

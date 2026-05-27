@@ -26,16 +26,6 @@ const stats = [
 export function PartnershipCta() {
   return (
     <section className="relative bg-[#F8FAFC] overflow-hidden py-16 lg:py-20">
-      {/* Blueprint grid */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-[0.022]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(47,67,183,1) 1px, transparent 1px), linear-gradient(90deg, rgba(47,67,183,1) 1px, transparent 1px)",
-          backgroundSize: "80px 80px",
-        }}
-      />
-
       {/* Ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] rounded-full bg-[#2F43B7] opacity-[0.06] blur-[120px] pointer-events-none" />
 

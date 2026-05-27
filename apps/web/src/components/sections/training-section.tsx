@@ -58,18 +58,12 @@ export function TrainingSection() {
   return (
     <section
       id="training"
-      className="bg-[#F8FAFC] py-20 lg:py-28 relative overflow-hidden mt-8"
+      className="py-20 lg:py-28 relative overflow-hidden mt-8"
+      style={{
+        background:
+          "linear-gradient(180deg, #F4F8FF 0%, #ffffff 45%, #F0F5FF 100%)",
+      }}
     >
-      {/* Blueprint grid texture */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-[0.022]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(47,67,183,1) 1px, transparent 1px), linear-gradient(90deg, rgba(47,67,183,1) 1px, transparent 1px)",
-          backgroundSize: "80px 80px",
-        }}
-      />
-
       {/* Ambient glow — top right */}
       <div className="absolute -top-24 -right-24 w-[480px] h-[400px] rounded-full bg-[#2F43B7] opacity-[0.05] blur-[120px] pointer-events-none" />
 
@@ -86,7 +80,7 @@ export function TrainingSection() {
           className="flex items-center gap-4 mb-10"
         >
           <div className="w-8 h-px bg-[#2F43B7]" />
-          <p className="text-[#2F43B7] text-[11px] font-semibold tracking-[0.45em] uppercase">
+          <p className="text-[#2F43B7] text-[14px] font-semibold tracking-[0.45em] uppercase">
             Coffee Training & Education
           </p>
         </motion.div>
@@ -148,10 +142,10 @@ export function TrainingSection() {
               viewport={{ once: true }}
               className="flex items-center justify-between pb-4"
             >
-              <span className="text-[#64748B] text-[10px] font-mono tracking-[0.25em] uppercase">
+              <span className="text-[#64748B] text-[14px] font-mono tracking-[0.22em] uppercase">
                 Programme
               </span>
-              <span className="text-[#64748B] text-[10px] font-mono tracking-[0.25em] uppercase">
+              <span className="text-[#64748B] text-[14px] font-mono tracking-[0.22em] uppercase">
                 Status
               </span>
             </motion.div>
@@ -179,7 +173,7 @@ export function TrainingSection() {
                   className="group flex items-center justify-between gap-6 py-5 border-b border-[#2F43B7]/10 hover:border-[#2F43B7]/30 transition-colors duration-300"
                 >
                   <div className="flex items-center gap-4 min-w-0">
-                    <span className="flex-shrink-0 text-[#2F43B7]/40 font-mono text-[10px] tracking-widest group-hover:text-[#2F43B7]/70 transition-colors duration-300">
+                    <span className="flex-shrink-0 text-[#2F43B7]/40 font-mono text-[14px] tracking-widest group-hover:text-[#2F43B7]/70 transition-colors duration-300">
                       {prog.id}
                     </span>
                     <div className="min-w-0">
@@ -192,7 +186,7 @@ export function TrainingSection() {
                     </div>
                   </div>
 
-                  <span className="flex-shrink-0 text-white text-[10px] font-mono tracking-widest uppercase bg-[#2F43B7] px-3 py-1.5 rounded-sm group-hover:bg-[#2941A8] transition-all duration-300">
+                  <span className="flex-shrink-0 text-white text-[14px] font-mono tracking-[0.15em] uppercase bg-[#2F43B7] px-4 py-2 rounded-sm group-hover:bg-[#2941A8] transition-all duration-300">
                     {prog.status}
                   </span>
                 </motion.div>

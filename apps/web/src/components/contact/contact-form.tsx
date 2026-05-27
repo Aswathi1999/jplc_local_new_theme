@@ -28,7 +28,7 @@ const selectClass =
   "w-full bg-white border border-[#E5E7EB] rounded-sm px-4 py-3.5 text-sm text-[#0F172A] focus:outline-none focus:border-[#2F43B7] focus:ring-1 focus:ring-[#2F43B7]/25 transition-all duration-200 cursor-pointer";
 
 const labelClass =
-  "text-[#2F43B7] text-[10px] font-mono tracking-[0.3em] uppercase mb-2 block";
+  "text-[#2F43B7] text-[12px] font-semibold tracking-[0.3em] uppercase mb-2 block";
 
 export function ContactForm() {
   const [form, setForm] = useState<FormState>({
@@ -134,10 +134,10 @@ export function ContactForm() {
       <div className="relative z-10 p-8 lg:p-10">
         {/* Form header */}
         <div className="mb-8 pb-6 border-b border-[#E5E7EB]">
-          <p className="text-[#2F43B7] text-[10px] font-mono tracking-[0.35em] uppercase mb-2">
+          <p className="text-[#2F43B7] text-sm font-semibold tracking-[0.28em] uppercase mb-2">
             Enterprise Inquiry
           </p>
-          <h3 className="text-[#0F172A] font-bold text-xl tracking-tight">
+          <h3 className="text-[#0F172A] font-bold text-2xl tracking-tight">
             Send Us a Message
           </h3>
         </div>
