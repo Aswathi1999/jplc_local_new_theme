@@ -101,10 +101,10 @@ function OperationCard({ op }: { op: (typeof operations)[number] }) {
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-white/60 via-white/30 to-transparent opacity-40 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
       {/* Shimmer sweep */}
-      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none" />
 
       {/* Bottom animated bar */}
-      <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-white/80 to-white/20 group-hover:w-full transition-all duration-500 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-white/80 to-white/20 group-hover:w-full transition-[width] duration-300 ease-out pointer-events-none" />
 
       {/* Corner accent - bottom right horizontal */}
       <div className="absolute bottom-3 right-3 w-5 h-px bg-white/20 group-hover:bg-white/60 transition-colors duration-300 pointer-events-none" />
@@ -116,7 +116,7 @@ function OperationCard({ op }: { op: (typeof operations)[number] }) {
         <span className="text-white/50 group-hover:text-white/90 font-mono text-[10px] tracking-widest transition-colors duration-300">
           {op.id}
         </span>
-        <span className="text-white/90 bg-white/[0.12] border border-white/20 text-[9px] font-mono tracking-[0.25em] uppercase px-2.5 py-1 rounded-sm group-hover:border-white/40 group-hover:bg-white/20 transition-all duration-300">
+        <span className="text-white/90 bg-white/[0.12] border border-white/20 text-[9px] font-mono tracking-[0.25em] uppercase px-2.5 py-1 rounded-sm group-hover:border-white/40 group-hover:bg-white/20 transition duration-200">
           {op.tag}
         </span>
       </div>

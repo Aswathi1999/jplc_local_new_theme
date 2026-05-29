@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 
 const fadeUp: Variants = {
@@ -10,31 +11,6 @@ const fadeUp: Variants = {
     transition: { duration: 0.75, ease: "easeOut" },
   },
 };
-
-const stagger: Variants = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.1 },
-  },
-};
-
-const benefits = [
-  {
-    id: "01",
-    title: "Enterprise Infrastructure",
-    body: "End-to-end coffee infrastructure — sourcing, roasting, engineering, and retail — built to scale with your business.",
-  },
-  {
-    id: "02",
-    title: "DMCC Certified Facility",
-    body: "Operating from a fully certified Dubai facility with global supply chain integration across 30+ markets.",
-  },
-  {
-    id: "03",
-    title: "Dedicated Partnership Support",
-    body: "A dedicated team handles your onboarding, technical setup, and long-term programme management.",
-  },
-];
 
 export function AboutCta() {
   return (
@@ -55,7 +31,7 @@ export function AboutCta() {
       {/* Ambient glow — bottom left */}
       <div className="absolute -bottom-16 -left-16 w-[360px] h-[300px] rounded-full bg-[#4056D6] opacity-[0.05] blur-[100px] pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 py-16 lg:py-24">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 py-8 lg:py-12">
         {/* Eyebrow — centered above card */}
         <motion.div
           variants={fadeUp}
@@ -65,7 +41,7 @@ export function AboutCta() {
           className="flex items-center justify-center gap-4 mb-10"
         >
           <div className="w-8 h-px bg-[#2F43B7]" />
-          <p className="text-[#2F43B7] text-[11px] font-semibold tracking-[0.45em] uppercase">
+          <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
             Ready to Scale?
           </p>
           <div className="w-8 h-px bg-[#2F43B7]" />
@@ -157,71 +133,23 @@ export function AboutCta() {
               </div>
             </div>
 
-            {/* RIGHT — Benefits panel */}
-            <div
-              className="relative overflow-hidden flex flex-col justify-center px-8 py-12 lg:px-10 lg:py-14"
-              style={{ background: "#2941A8" }}
-            >
-              {/* Blueprint grid on dark panel */}
-              <div
-                className="absolute inset-0 pointer-events-none opacity-[0.07]"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)",
-                  backgroundSize: "48px 48px",
-                }}
+            {/* RIGHT — Partnership image */}
+            <div className="relative hidden lg:block overflow-hidden">
+              <Image
+                src="/partnership.jpg"
+                alt="Partner with JPLC"
+                fill
+                quality={88}
+                className="object-cover object-center"
               />
-
-              {/* Corner bracket — top right */}
-              <div className="absolute top-6 right-6 z-10 pointer-events-none">
-                <div className="w-5 h-px bg-white/30" />
-                <div className="w-px h-5 bg-white/30 ml-auto" />
+              {/* Gradient blend with card */}
+              <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/50 via-transparent to-transparent" />
+              {/* Corner mark */}
+              <div className="absolute top-6 right-6 pointer-events-none">
+                <div className="w-5 h-px bg-white/40" />
+                <div className="w-px h-5 bg-white/40 ml-auto" />
               </div>
-
-              {/* Corner bracket — bottom left */}
-              <div className="absolute bottom-6 left-6 z-10 pointer-events-none flex flex-col items-start justify-end">
-                <div className="w-px h-5 bg-white/30" />
-                <div className="w-5 h-px bg-white/30" />
-              </div>
-
-              <motion.div
-                variants={stagger}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className="relative z-10 space-y-6"
-              >
-                <p className="text-white/50 text-[10px] font-mono tracking-[0.35em] uppercase mb-8">
-                  Why Partner With Us
-                </p>
-
-                {benefits.map((b) => (
-                  <motion.div key={b.id} variants={fadeUp} className="group">
-                    <div className="flex items-start gap-4">
-                      {/* Accent line */}
-                      <div className="flex-shrink-0 mt-1.5">
-                        <div className="w-4 h-px bg-white/40 group-hover:bg-white/80 transition-colors duration-300" />
-                      </div>
-                      <div>
-                        <div className="flex items-center gap-2 mb-1.5">
-                          <span className="text-white/30 text-[9px] font-mono tracking-widest">
-                            {b.id}
-                          </span>
-                          <h3 className="text-white text-sm font-semibold tracking-tight">
-                            {b.title}
-                          </h3>
-                        </div>
-                        <p className="text-white/55 text-xs leading-relaxed group-hover:text-white/75 transition-colors duration-300">
-                          {b.body}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Separator */}
-                    <div className="mt-5 h-px bg-white/8" />
-                  </motion.div>
-                ))}
-              </motion.div>
             </div>
           </div>
         </motion.div>

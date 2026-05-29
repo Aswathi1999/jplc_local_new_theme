@@ -309,7 +309,7 @@ export function ResearchSection() {
             {/* Eyebrow */}
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-px bg-[#4F6BFF]/65" />
-              <p className="text-[#4F6BFF] text-[10.5px] font-bold tracking-[0.44em] uppercase">
+              <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
                 Research &amp; Development
               </p>
             </div>

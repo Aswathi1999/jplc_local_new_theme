@@ -13,10 +13,10 @@ export function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-30 border-b border-[#E5E7EB] bg-white shadow-sm transition-all duration-500">
+      <header className="fixed top-0 left-0 right-0 z-30 border-b border-[#E5E7EB] bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div
-            className={`flex items-center justify-between transition-all duration-300 ${
+            className={`flex items-center justify-between transition-[height] duration-300 ease-out ${
               scrolled ? "h-16" : "h-20"
             }`}
           >

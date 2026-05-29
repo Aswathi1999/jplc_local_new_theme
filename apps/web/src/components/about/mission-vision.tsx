@@ -48,7 +48,7 @@ export function MissionVision() {
           className="flex items-center justify-center gap-4 mb-12"
         >
           <div className="w-8 h-px bg-[#2F43B7]" />
-          <p className="text-[#2F43B7] text-[11px] font-semibold tracking-[0.45em] uppercase">
+          <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
             Mission &amp; Vision
           </p>
           <div className="w-8 h-px bg-[#2F43B7]" />
@@ -62,10 +62,10 @@ export function MissionVision() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="group relative p-10 lg:p-16 overflow-hidden rounded-sm bg-white border border-[#E5E7EB] hover:border-[#2F43B7]/40 hover:shadow-[0_8px_32px_rgba(47,67,183,0.10)] transition-all duration-300"
+            className="group relative p-10 lg:p-16 overflow-hidden rounded-sm bg-white border border-[#E5E7EB] hover:border-[#2F43B7]/40 hover:shadow-[0_8px_32px_rgba(47,67,183,0.10)] transition duration-200"
           >
             {/* Shimmer sweep */}
-            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-[#2F43B7]/5 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-gradient-to-r from-transparent via-[#2F43B7]/5 to-transparent pointer-events-none" />
 
             {/* Decorative concentric circles — top right */}
             <div className="absolute top-6 right-6 w-32 h-32 rounded-full border border-[#2F43B7]/10 pointer-events-none" />
@@ -112,10 +112,10 @@ export function MissionVision() {
                 },
               },
             }}
-            className="group relative p-10 lg:p-16 overflow-hidden rounded-sm bg-white border border-[#E5E7EB] hover:border-[#2F43B7]/40 hover:shadow-[0_8px_32px_rgba(47,67,183,0.10)] transition-all duration-300"
+            className="group relative p-10 lg:p-16 overflow-hidden rounded-sm bg-white border border-[#E5E7EB] hover:border-[#2F43B7]/40 hover:shadow-[0_8px_32px_rgba(47,67,183,0.10)] transition duration-200"
           >
             {/* Shimmer sweep */}
-            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-[#2F43B7]/5 to-transparent pointer-events-none" />
+            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-gradient-to-r from-transparent via-[#2F43B7]/5 to-transparent pointer-events-none" />
 
             {/* Decorative concentric circles — top right */}
             <div className="absolute top-6 right-6 w-32 h-32 rounded-full border border-[#2F43B7]/10 pointer-events-none" />
@@ -152,7 +152,7 @@ export function MissionVision() {
           {stats.map((s) => (
             <div
               key={s.l}
-              className="bg-white border border-[#E5E7EB] rounded-sm px-6 py-5 text-center hover:border-[#2F43B7]/35 hover:-translate-y-0.5 transition-all duration-300 shadow-sm"
+              className="bg-white border border-[#E5E7EB] rounded-sm px-6 py-5 text-center hover:border-[#2F43B7]/35 hover:-translate-y-0.5 transition duration-200 shadow-sm"
             >
               <p className="font-bold text-3xl text-[#2F43B7] mb-1 tracking-tight">
                 {s.v}

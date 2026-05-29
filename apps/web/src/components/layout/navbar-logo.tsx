@@ -12,7 +12,7 @@ export function NavbarLogo({ lightBg = false }: NavbarLogoProps) {
         alt="JPLC Holdings"
         width={180}
         height={72}
-        className="h-12 w-auto object-contain transition-all duration-300"
+        className="h-12 w-auto object-contain"
         priority
       />
     </a>

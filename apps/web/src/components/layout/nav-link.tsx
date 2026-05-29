@@ -34,7 +34,7 @@ export function NavLink({
     >
       {label}
       <span
-        className={`absolute -bottom-0.5 left-0 h-px bg-[#2F43B7] transition-all duration-300 ${
+        className={`absolute -bottom-0.5 left-0 h-px bg-[#2F43B7] transition-[width] duration-300 ease-out ${
           isActive ? "w-full" : "w-0 group-hover:w-full"
         }`}
       />

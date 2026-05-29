@@ -98,7 +98,7 @@ export function HospitalitySection() {
         >
           <div className="flex items-center gap-4 mb-4">
             <div className="w-8 h-px bg-[#2F43B7]" />
-            <p className="text-[#2F43B7] text-[11px] font-semibold tracking-[0.45em] uppercase">
+            <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
               Hospitality & Supply Chain
             </p>
           </div>
@@ -137,9 +137,6 @@ export function HospitalitySection() {
             viewport={{ once: true }}
             className="lg:col-span-2 relative"
           >
-            {/* Vertical accent line — blue */}
-            <div className="absolute -left-5 top-0 h-2/3 w-px bg-gradient-to-b from-[#2F43B7] via-[#2F43B7]/30 to-transparent" />
-
             {/* Pulse badge */}
             <div className="inline-flex items-center gap-3 border border-[#2F43B7]/30 rounded-sm px-5 py-3 mb-8 bg-white backdrop-blur-sm shadow-sm">
               <div className="w-2 h-2 rounded-full bg-[#2F43B7] animate-pulse" />

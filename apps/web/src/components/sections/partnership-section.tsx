@@ -89,7 +89,7 @@ export function PartnershipSection() {
             {/* Eyebrow */}
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="w-8 h-px bg-[#2F43B7]" />
-              <p className="text-[#2F43B7] text-[11px] font-semibold tracking-[0.45em] uppercase">
+              <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
                 Enterprise Collaboration
               </p>
               <div className="w-8 h-px bg-[#2F43B7]" />

@@ -94,7 +94,7 @@ export function TeamSection() {
           {/* Eyebrow */}
           <div className="flex items-center gap-4 mb-6">
             <div className="w-8 h-px bg-[#2F43B7]" />
-            <p className="text-[#2F43B7] text-[11px] font-semibold tracking-[0.45em] uppercase">
+            <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
               Leadership
             </p>
           </div>
@@ -130,10 +130,10 @@ export function TeamSection() {
             <motion.div
               key={member.name}
               variants={cardVariant}
-              className="group relative bg-white border border-[#E5E7EB] rounded-sm overflow-hidden hover:border-[#2F43B7]/40 hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(47,67,183,0.12)] transition-all duration-300"
+              className="group relative bg-white border border-[#E5E7EB] rounded-sm overflow-hidden hover:border-[#2F43B7]/40 hover:-translate-y-1 hover:shadow-[0_16px_48px_rgba(47,67,183,0.12)] transition duration-200"
             >
               {/* Bottom hover bar */}
-              <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#2F43B7] group-hover:w-full transition-all duration-500 z-10" />
+              <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#2F43B7] group-hover:w-full transition-[width] duration-300 ease-out z-10" />
 
               {/* Image area */}
               <div className="relative h-72 overflow-hidden">
@@ -142,14 +142,14 @@ export function TeamSection() {
                   alt={member.name}
                   fill
                   quality={80}
-                  className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
                 />
 
                 {/* Base gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/75 via-[#0F172A]/20 to-transparent" />
 
                 {/* Blue glow hover overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2F43B7]/0 to-transparent group-hover:from-[#2F43B7]/20 transition-all duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2F43B7]/0 to-transparent group-hover:from-[#2F43B7]/20 transition-colors duration-300" />
 
                 {/* Role badge */}
                 <div className="absolute bottom-4 left-4 z-10">

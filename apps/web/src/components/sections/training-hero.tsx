@@ -74,7 +74,7 @@ export function TrainingHero() {
             className="flex items-center gap-3 mb-8"
           >
             <div className="w-8 h-px bg-[#2F43B7]" />
-            <span className="inline-flex items-center gap-2.5 text-[#6B8BFF] text-xs font-mono tracking-[0.3em] uppercase">
+            <span className="inline-flex items-center gap-2.5 text-[#6B8BFF] text-xs font-sans tracking-wide uppercase">
               <span className="w-1.5 h-1.5 rounded-full bg-[#2F43B7] animate-pulse" />
               JPLC Coffee Academy
             </span>
@@ -104,7 +104,7 @@ export function TrainingHero() {
           <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
             <a
               href="#training"
-              className="inline-flex items-center gap-2.5 bg-[#2F43B7] text-white text-xs font-medium tracking-widest uppercase px-7 py-4 rounded-sm hover:bg-[#4056D6] transition-colors duration-300"
+              className="inline-flex items-center gap-2.5 bg-[#2F43B7] text-white text-xs font-sans font-medium tracking-wide uppercase px-7 py-4 rounded-sm hover:bg-[#4056D6] transition-colors duration-300"
             >
               <span>Explore Programs</span>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -119,7 +119,7 @@ export function TrainingHero() {
             </a>
             <a
               href="mailto:hello@jplc.com"
-              className="inline-flex items-center gap-2.5 border border-[#F1F5F9]/25 text-[#F1F5F9] text-xs font-medium tracking-widest uppercase px-7 py-4 rounded-sm hover:border-[#2F43B7] hover:text-[#6B8BFF] transition-colors duration-300"
+              className="inline-flex items-center gap-2.5 border border-[#F1F5F9]/25 text-[#F1F5F9] text-xs font-sans font-medium tracking-wide uppercase px-7 py-4 rounded-sm hover:border-[#2F43B7] hover:text-[#6B8BFF] transition-colors duration-300"
             >
               Contact Academy
             </a>
@@ -136,7 +136,7 @@ export function TrainingHero() {
                 <p className="font-sans font-bold text-2xl text-[#6B8BFF] mb-1">
                   {stat.value}
                 </p>
-                <p className="text-[#64748B] text-[10px] tracking-widest uppercase font-mono">
+                <p className="text-[#64748B] text-[10px] font-sans tracking-wide uppercase">
                   {stat.label}
                 </p>
               </div>

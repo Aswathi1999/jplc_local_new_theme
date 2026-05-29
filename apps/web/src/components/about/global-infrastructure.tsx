@@ -219,7 +219,7 @@ export function GlobalInfrastructure() {
               <div className="w-2 h-2 rounded-full bg-[#4F6BFF]" />
             </div>
             <div className="w-7 h-px bg-[#4F6BFF]/50" />
-            <p className="text-[#4F6BFF] text-[10.5px] font-bold tracking-[0.46em] uppercase">
+            <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
               Global Infrastructure
             </p>
           </div>
@@ -397,7 +397,7 @@ export function GlobalInfrastructure() {
               ].map((stat) => (
                 <div
                   key={stat.label}
-                  className="rounded-xl px-4 py-5 text-center hover:-translate-y-0.5 transition-all duration-300"
+                  className="rounded-xl px-4 py-5 text-center hover:-translate-y-0.5 transition-transform duration-200"
                   style={{
                     background: "rgba(255,255,255,0.88)",
                     border: "1.5px solid rgba(79,107,255,0.14)",
@@ -445,7 +445,7 @@ export function GlobalInfrastructure() {
               >
                 {/* Animated bottom bar */}
                 <div
-                  className="absolute bottom-0 left-0 h-[2.5px] w-0 group-hover:w-full transition-all duration-500 rounded-b-2xl"
+                  className="absolute bottom-0 left-0 h-[2.5px] w-0 group-hover:w-full transition-[width] duration-300 ease-out rounded-b-2xl"
                   style={{
                     background:
                       "linear-gradient(90deg, #2F43B7, #4F6BFF, #6B8BFF)",
@@ -454,7 +454,7 @@ export function GlobalInfrastructure() {
 
                 {/* Top-right ambient glow on hover */}
                 <div
-                  className="absolute top-0 right-0 w-28 h-28 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  className="absolute top-0 right-0 w-28 h-28 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   style={{
                     background:
                       "radial-gradient(ellipse at top right, rgba(79,107,255,0.12) 0%, transparent 65%)",
@@ -495,7 +495,7 @@ export function GlobalInfrastructure() {
                 </p>
 
                 {/* Arrow reveal */}
-                <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+                <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition duration-200">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                     <path
                       d="M2 7h10M8 3l4 4-4 4"

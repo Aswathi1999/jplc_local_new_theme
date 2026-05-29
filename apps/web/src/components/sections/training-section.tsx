@@ -142,10 +142,10 @@ export function TrainingSection() {
               viewport={{ once: true }}
               className="flex items-center justify-between pb-4"
             >
-              <span className="text-[#64748B] text-[14px] font-mono tracking-[0.22em] uppercase">
+              <span className="text-[#64748B] text-[14px] font-sans font-medium">
                 Programme
               </span>
-              <span className="text-[#64748B] text-[14px] font-mono tracking-[0.22em] uppercase">
+              <span className="text-[#64748B] text-[14px] font-sans font-medium">
                 Status
               </span>
             </motion.div>
@@ -173,20 +173,20 @@ export function TrainingSection() {
                   className="group flex items-center justify-between gap-6 py-5 border-b border-[#2F43B7]/10 hover:border-[#2F43B7]/30 transition-colors duration-300"
                 >
                   <div className="flex items-center gap-4 min-w-0">
-                    <span className="flex-shrink-0 text-[#2F43B7]/40 font-mono text-[14px] tracking-widest group-hover:text-[#2F43B7]/70 transition-colors duration-300">
+                    <span className="flex-shrink-0 text-[#2F43B7]/40 font-sans text-[14px] font-medium group-hover:text-[#2F43B7]/70 transition-colors duration-300">
                       {prog.id}
                     </span>
                     <div className="min-w-0">
                       <h3 className="text-[#0F172A] text-base font-semibold leading-snug mb-0.5 group-hover:text-[#2F43B7] transition-colors duration-300">
                         {prog.title}
                       </h3>
-                      <p className="text-[#64748B] text-sm font-mono">
+                      <p className="text-[#64748B] text-sm font-sans">
                         {prog.level}
                       </p>
                     </div>
                   </div>
 
-                  <span className="flex-shrink-0 text-white text-[14px] font-mono tracking-[0.15em] uppercase bg-[#2F43B7] px-4 py-2 rounded-sm group-hover:bg-[#2941A8] transition-all duration-300">
+                  <span className="flex-shrink-0 text-white text-[13px] font-sans font-medium bg-[#2F43B7] px-4 py-2 rounded-sm group-hover:bg-[#2941A8] transition-all duration-300">
                     {prog.status}
                   </span>
                 </motion.div>

@@ -5,7 +5,6 @@ import { ResearchSection } from "@/components/sections/research-section";
 import { EngineeringSection } from "@/components/sections/engineering-section";
 import { HospitalitySection } from "@/components/sections/hospitality-section";
 import { ManufacturingSection } from "@/components/sections/manufacturing-section";
-import { QualitySection } from "@/components/sections/quality-section";
 import { PartnershipSection } from "@/components/sections/partnership-section";
 
 export default function HomePage() {
@@ -18,7 +17,6 @@ export default function HomePage() {
       <EngineeringSection />
       <HospitalitySection />
       <ManufacturingSection />
-      <QualitySection />
       <PartnershipSection />
     </main>
   );

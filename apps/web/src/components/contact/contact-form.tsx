@@ -22,13 +22,13 @@ interface FormState {
 }
 
 const inputClass =
-  "w-full bg-white border border-[#E5E7EB] rounded-sm px-4 py-3.5 text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#2F43B7] focus:ring-1 focus:ring-[#2F43B7]/25 transition-all duration-200";
+  "w-full font-sans bg-white border border-[#E5E7EB] rounded-sm px-4 py-3.5 text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#2F43B7] focus:ring-1 focus:ring-[#2F43B7]/25 transition-all duration-200";
 
 const selectClass =
-  "w-full bg-white border border-[#E5E7EB] rounded-sm px-4 py-3.5 text-sm text-[#0F172A] focus:outline-none focus:border-[#2F43B7] focus:ring-1 focus:ring-[#2F43B7]/25 transition-all duration-200 cursor-pointer";
+  "w-full font-sans bg-white border border-[#E5E7EB] rounded-sm px-4 py-3.5 text-sm text-[#0F172A] focus:outline-none focus:border-[#2F43B7] focus:ring-1 focus:ring-[#2F43B7]/25 transition-all duration-200 cursor-pointer";
 
 const labelClass =
-  "text-[#2F43B7] text-[12px] font-semibold tracking-[0.3em] uppercase mb-2 block";
+  "block text-[13px] font-sans font-medium text-[#374151] mb-1.5";
 
 export function ContactForm() {
   const [form, setForm] = useState<FormState>({
@@ -105,7 +105,7 @@ export function ContactForm() {
                 message: "",
               });
             }}
-            className="text-[#2F43B7] text-xs font-mono tracking-widest uppercase border border-[#2F43B7]/25 px-6 py-2.5 rounded-sm hover:border-[#2F43B7]/50 hover:bg-[#2F43B7]/5 transition-all duration-200"
+            className="text-[#2F43B7] text-sm font-sans font-medium border border-[#2F43B7]/25 px-6 py-2.5 rounded-sm hover:border-[#2F43B7]/50 hover:bg-[#2F43B7]/5 transition-all duration-200"
           >
             Send another message
           </button>
@@ -134,7 +134,7 @@ export function ContactForm() {
       <div className="relative z-10 p-8 lg:p-10">
         {/* Form header */}
         <div className="mb-8 pb-6 border-b border-[#E5E7EB]">
-          <p className="text-[#2F43B7] text-sm font-semibold tracking-[0.28em] uppercase mb-2">
+          <p className="text-[#2F43B7] text-sm font-sans font-semibold tracking-wide mb-2 uppercase">
             Enterprise Inquiry
           </p>
           <h3 className="text-[#0F172A] font-bold text-2xl tracking-tight">

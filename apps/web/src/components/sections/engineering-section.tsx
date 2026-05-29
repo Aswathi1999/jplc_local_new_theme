@@ -97,7 +97,7 @@ export function EngineeringSection() {
           {/* Eyebrow */}
           <div className="flex items-center gap-4 mb-5">
             <div className="w-8 h-px bg-[#2F43B7]" />
-            <p className="text-[#2F43B7] text-[11px] font-semibold tracking-[0.45em] uppercase">
+            <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
               Coffee Machine Engineering & Technical Services
             </p>
           </div>
@@ -176,7 +176,7 @@ export function EngineeringSection() {
               }}
             >
               {/* Shimmer sweep on hover */}
-              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none z-20" />
+              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 ease-out bg-gradient-to-r from-transparent via-white/10 to-transparent pointer-events-none z-20" />
 
               {/* Top gradient accent */}
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-white/60 via-white/30 to-transparent opacity-40 group-hover:opacity-100 transition-opacity duration-300" />
@@ -185,7 +185,7 @@ export function EngineeringSection() {
               <div className="absolute top-0 right-0 w-32 h-32 rounded-bl-full bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none" />
 
               {/* Bottom animated bar */}
-              <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-white/80 to-white/20 group-hover:w-full transition-all duration-500" />
+              <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-white/80 to-white/20 group-hover:w-full transition-[width] duration-300 ease-out" />
 
               {/* Corner accent — bottom right */}
               <div className="absolute bottom-3 right-3 w-5 h-px bg-white/20 group-hover:bg-white/60 transition-colors duration-300" />
@@ -197,7 +197,7 @@ export function EngineeringSection() {
                   {cap.id}
                 </span>
                 <span
-                  className="text-[9px] font-mono tracking-[0.25em] uppercase px-2.5 py-1 rounded-sm border transition-all duration-300 group-hover:border-white/40 group-hover:bg-white/20"
+                  className="text-[9px] font-mono tracking-[0.25em] uppercase px-2.5 py-1 rounded-sm border transition duration-200 group-hover:border-white/40 group-hover:bg-white/20"
                   style={{
                     color: "rgba(255,255,255,0.90)",
                     background: "rgba(255,255,255,0.12)",
@@ -213,7 +213,7 @@ export function EngineeringSection() {
                 className="h-px mb-4 transition-colors duration-300 relative z-10"
                 style={{ background: "rgba(255,255,255,0.05)" }}
               >
-                <div className="h-px w-0 group-hover:w-full bg-gradient-to-r from-[#2F43B7]/50 to-transparent transition-all duration-500" />
+                <div className="h-px w-0 group-hover:w-full bg-gradient-to-r from-[#2F43B7]/50 to-transparent transition-[width] duration-300 ease-out" />
               </div>
 
               <h3 className="text-white text-sm font-bold mb-3 leading-snug tracking-tight group-hover:text-white transition-colors duration-300 relative z-10">

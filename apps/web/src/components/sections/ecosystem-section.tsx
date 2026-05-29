@@ -261,7 +261,7 @@ export function EcosystemSection() {
             {/* Eyebrow */}
             <div className="flex items-center gap-4 mb-5">
               <div className="w-8 h-px bg-[#2F43B7]" />
-              <p className="text-[#2F43B7] text-[11px] font-semibold tracking-[0.45em] uppercase">
+              <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
                 The Ecosystem
               </p>
             </div>

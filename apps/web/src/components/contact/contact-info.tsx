@@ -83,20 +83,6 @@ const infoCards = [
   },
 ];
 
-const miniStats = [
-  { value: "24h", label: "Response" },
-  { value: "30+", label: "Markets" },
-  { value: "B2B", label: "Enterprise" },
-];
-
-const serviceTags = [
-  "Partnership",
-  "Training",
-  "Hospitality Supply",
-  "Engineering",
-  "Sourcing",
-];
-
 export function ContactInfo() {
   return (
     <motion.div
@@ -127,10 +113,10 @@ export function ContactInfo() {
 
             <div className="min-w-0">
               <div className="flex items-center gap-2 mb-1.5">
-                <span className="text-[#2F43B7]/40 text-xs font-semibold tracking-widest">
+                <span className="text-[#2F43B7]/40 text-xs font-sans font-medium">
                   {card.id}
                 </span>
-                <span className="text-[#2F43B7] text-sm font-semibold tracking-[0.22em] uppercase">
+                <span className="text-[#2F43B7] text-sm font-sans font-semibold uppercase">
                   {card.label}
                 </span>
               </div>
@@ -146,44 +132,6 @@ export function ContactInfo() {
           </div>
         </motion.div>
       ))}
-
-      {/* Services handled */}
-      <motion.div
-        variants={fadeUp}
-        className="rounded-sm bg-white border border-[#E5E7EB] p-6"
-      >
-        <p className="text-[#2F43B7] text-sm font-semibold tracking-[0.28em] uppercase mb-4">
-          We Handle
-        </p>
-        <div className="flex flex-wrap gap-2">
-          {serviceTags.map((tag) => (
-            <span
-              key={tag}
-              className="border border-[#2F43B7]/20 text-[#2F43B7] text-sm font-semibold tracking-[0.15em] uppercase px-3 py-1.5 rounded-sm hover:border-[#2F43B7]/50 hover:bg-[#2F43B7]/5 transition-colors duration-200 cursor-default"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* Mini stats */}
-      <motion.div variants={fadeUp} className="grid grid-cols-3 gap-3">
-        {miniStats.map((stat) => (
-          <div
-            key={stat.label}
-            className="group relative overflow-hidden rounded-sm bg-white border border-[#E5E7EB] p-4 text-center hover:border-[#2F43B7]/35 hover:-translate-y-0.5 transition-all duration-300 shadow-sm"
-          >
-            <div className="absolute inset-0 bg-gradient-to-b from-[#2F43B7]/[0.04] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <p className="font-bold text-xl text-[#2F43B7] mb-0.5 relative z-10">
-              {stat.value}
-            </p>
-            <p className="text-[#64748B] text-sm font-semibold tracking-[0.18em] uppercase relative z-10">
-              {stat.label}
-            </p>
-          </div>
-        ))}
-      </motion.div>
     </motion.div>
   );
 }

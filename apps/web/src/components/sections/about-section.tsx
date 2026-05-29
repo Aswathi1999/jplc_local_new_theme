@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 
 const fadeUp: Variants = {
@@ -50,7 +49,7 @@ export function AboutSection() {
           className="flex items-center gap-4 mb-10"
         >
           <div className="w-8 h-px bg-[#2F43B7]" />
-          <p className="text-[#2F43B7] text-[11px] font-semibold tracking-[0.45em] uppercase">
+          <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
             About JPLC
           </p>
         </motion.div>
@@ -67,7 +66,6 @@ export function AboutSection() {
             className="relative"
           >
             {/* Vertical accent line */}
-            <div className="absolute -left-5 top-0 bottom-0 w-px bg-gradient-to-b from-[#2F43B7]/60 via-[#2F43B7]/20 to-transparent pointer-events-none hidden lg:block" />
 
             <h2 className="font-sans font-extrabold text-4xl lg:text-5xl xl:text-[54px] text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-7">
               More than coffee.{" "}
@@ -85,13 +83,6 @@ export function AboutSection() {
                 A precision-built infrastructure.
               </span>
             </h2>
-
-            {/* Technical divider */}
-            <div className="flex items-center gap-3 mb-10">
-              <div className="w-10 h-px bg-[#2F43B7]" />
-              <div className="w-px h-3 bg-[#2F43B7]/50" />
-              <div className="w-4 h-px bg-[#2F43B7]/25" />
-            </div>
 
             {/* â"€â"€ STATS GRID â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
             <div className="grid grid-cols-3 gap-4 mt-2 mb-8">
@@ -209,88 +200,6 @@ export function AboutSection() {
             </div>
           </motion.div>
         </div>
-
-        {/* â"€â"€ CINEMATIC IMAGE â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
-        <motion.div
-          custom={0.2}
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          className="relative mt-20 h-[380px] lg:h-[540px] rounded-sm overflow-hidden group"
-        >
-          {/* Image */}
-          <Image
-            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1920&q=85&auto=format&fit=crop"
-            alt="JPLC industrial coffee roasting operations"
-            fill
-            quality={85}
-            className="object-cover object-center transition-transform duration-[7s] ease-out group-hover:scale-[1.03]"
-          />
-
-          {/* Color grading */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to bottom, rgba(15,23,42,0.30) 0%, rgba(15,23,42,0.10) 40%, rgba(15,23,42,0.55) 100%)",
-            }}
-          />
-          {/* Side vignettes */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to right, rgba(15,23,42,0.40) 0%, transparent 30%, transparent 70%, rgba(15,23,42,0.40) 100%)",
-            }}
-          />
-          {/* Blue atmosphere */}
-          <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-[#0F172A]/80 to-transparent" />
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-32 rounded-full bg-[#2F43B7]/18 blur-[60px] pointer-events-none" />
-
-          {/* Blueprint grid overlay */}
-          <div
-            className="absolute inset-0 pointer-events-none opacity-[0.06]"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(79,107,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(79,107,255,1) 1px, transparent 1px)",
-              backgroundSize: "80px 80px",
-              maskImage:
-                "linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%)",
-              WebkitMaskImage:
-                "linear-gradient(to bottom, transparent 0%, black 30%, black 70%, transparent 100%)",
-            }}
-          />
-
-          {/* Corner brackets */}
-          <div className="absolute top-6 left-6 w-8 h-px bg-[#4F6BFF]/60" />
-          <div className="absolute top-6 left-6 w-px h-8 bg-[#4F6BFF]/60" />
-          <div className="absolute top-6 right-6 w-8 h-px bg-[#4F6BFF]/60" />
-          <div className="absolute top-6 right-6 w-px h-8 bg-[#4F6BFF]/60" />
-
-          {/* â"€â"€ GLASS INFO STRIP â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
-          <div
-            className="absolute bottom-0 left-0 right-0 px-8 py-5 flex items-center justify-between"
-            style={{
-              background:
-                "linear-gradient(to right, rgba(15,23,42,0.70) 0%, rgba(15,23,42,0.50) 100%)",
-              backdropFilter: "blur(12px)",
-            }}
-          >
-            <div className="flex items-center gap-4">
-              <div className="w-5 h-px bg-[#4F6BFF]" />
-              <span className="text-white/85 text-xs tracking-[0.28em] uppercase font-medium">
-                Production Operations — JPLC Roasting Facility
-              </span>
-            </div>
-            <div className="hidden sm:flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#4F6BFF] animate-pulse" />
-              <span className="text-white/40 text-[10px] tracking-[0.3em] uppercase">
-                Live Operations
-              </span>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
