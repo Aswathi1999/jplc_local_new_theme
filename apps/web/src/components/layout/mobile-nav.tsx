@@ -75,57 +75,64 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.08 + i * 0.05, duration: 0.3 }}
                   >
-                    <a
-                      href={item.href}
-                      onClick={onClose}
-                      className={`flex items-center gap-4 py-5 transition-colors group ${
-                        pathname === item.href
-                          ? "text-white"
-                          : "text-white/60 hover:text-white"
-                      }`}
-                    >
-                      <span
-                        className={`font-mono text-xs transition-colors ${
+                    {item.children ? (
+                      <div className="flex items-center gap-4 py-5 text-white/60 group">
+                        <span className="font-mono text-xs text-[#4F6BFF]/50">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <span className="font-medium text-lg leading-none">
+                          {item.label}
+                        </span>
+                      </div>
+                    ) : (
+                      <a
+                        href={item.href}
+                        onClick={onClose}
+                        className={`flex items-center gap-4 py-5 transition-colors group ${
                           pathname === item.href
-                            ? "text-[#4F6BFF]"
-                            : "text-[#4F6BFF]/50 group-hover:text-[#4F6BFF]/80"
+                            ? "text-white"
+                            : "text-white/60 hover:text-white"
                         }`}
                       >
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                      <span className="font-medium text-lg leading-none">
-                        {item.label}
-                      </span>
-                      {pathname === item.href && (
-                        <span className="ml-auto w-5 h-px bg-[#4F6BFF]" />
-                      )}
-                    </a>
+                        <span
+                          className={`font-mono text-xs transition-colors ${
+                            pathname === item.href
+                              ? "text-[#4F6BFF]"
+                              : "text-[#4F6BFF]/50 group-hover:text-[#4F6BFF]/80"
+                          }`}
+                        >
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <span className="font-medium text-lg leading-none">
+                          {item.label}
+                        </span>
+                        {pathname === item.href && (
+                          <span className="ml-auto w-5 h-px bg-[#4F6BFF]" />
+                        )}
+                      </a>
+                    )}
+
+                    {/* Sub-items */}
+                    {item.children && (
+                      <ul className="pb-3 space-y-0 border-l border-[#4F6BFF]/20 ml-[26px]">
+                        {item.children.map((child) => (
+                          <li key={child.href}>
+                            <a
+                              href={child.href}
+                              onClick={onClose}
+                              className="flex items-center gap-3 pl-4 py-2.5 text-white/50 hover:text-white text-sm font-medium transition-colors"
+                            >
+                              <span className="w-1 h-1 rounded-full bg-[#4F6BFF]/50 flex-shrink-0" />
+                              {child.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </motion.li>
                 ))}
               </ul>
             </nav>
-
-            {/* CTA area */}
-            <div className="px-6 py-6 border-t border-white/6 space-y-3">
-              <a
-                href="#partnership"
-                onClick={onClose}
-                className="flex items-center justify-center w-full px-6 py-3.5 bg-[#2F43B7] text-white text-sm font-semibold rounded-sm hover:bg-[#4056D6] transition-colors"
-              >
-                Partner With Us
-              </a>
-              <a
-                href="/contact"
-                onClick={onClose}
-                className={`flex items-center justify-center w-full px-6 py-3.5 border text-sm font-medium rounded-sm transition-colors ${
-                  pathname === "/contact"
-                    ? "border-[#2F43B7] text-white bg-[#2F43B7]/10"
-                    : "border-white/12 text-white/75 hover:border-[#2F43B7] hover:text-white"
-                }`}
-              >
-                Contact
-              </a>
-            </div>
 
             {/* Social + copyright */}
             <div className="px-6 py-4 border-t border-white/5 flex items-center justify-between">

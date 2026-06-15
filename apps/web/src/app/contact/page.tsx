@@ -13,7 +13,7 @@ export default function ContactPage() {
     <main>
       {/* <ContactHero /> */}
 
-      {/* Contact split layout — dark theme */}
+      {/* Contact split layout */}
       <section
         id="contact-form"
         className="relative py-20 lg:py-24 overflow-hidden bg-[#F8FAFC] mt-8"

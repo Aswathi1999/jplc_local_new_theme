@@ -6,9 +6,9 @@ import { motion, type Variants } from "framer-motion";
 const pillars = [
   {
     id: "01",
-    title: "Green Coffee Procurement",
+    title: "Green Coffee Sourcing & Procurement",
     description:
-      "Direct-trade and specialty green coffee sourcing with Q-grading, sensory evaluation, single-origin traceability, and origin management from farm to facility.",
+      "Direct-trade sourcing backed by Q-grading and single-origin traceability. Every lot is sensory-evaluated before it enters production. We work directly with origin farms so there's full visibility into where your specialty coffee beans come from — and why they taste the way they do.",
     image:
       "https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=700&q=85&auto=format&fit=crop",
     icon: (
@@ -29,9 +29,9 @@ const pillars = [
   },
   {
     id: "02",
-    title: "Roasting & Production Engineering",
+    title: "Coffee Roasting & Production Engineering",
     description:
-      "Roast profile engineering, single-origin and blend formulation, production roasting with batch consistency controls, and private label OEM coffee manufacturing.",
+      "Roast profile development, batch consistency controls, and private label coffee manufacturing UAE-wide for brands that demand repeatable output at scale. Whether the requirement is a signature house blend, a single-origin programme, or an OEM private label range — we build it to specification.",
     image:
       "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=700&q=85&auto=format&fit=crop",
     icon: (
@@ -52,9 +52,9 @@ const pillars = [
   },
   {
     id: "03",
-    title: "Research & Development (R&D)",
+    title: "Research & Development",
     description:
-      "Coffee extraction science, brew optimization, roast curve analysis, flavor chemistry, sensory mapping, and new beverage formulation for specialty and commercial markets.",
+      "Extraction science, brew optimisation, flavour profiling, and new beverage formulation — all developed in-house. This is what keeps JPLC's products and systems ahead of market standards.",
     image:
       "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=700&q=85&auto=format&fit=crop",
     icon: (
@@ -75,9 +75,9 @@ const pillars = [
   },
   {
     id: "04",
-    title: "Coffee Machine Engineering & Technical Services",
+    title: "Commercial Coffee Machine Supplier & Technical Services",
     description:
-      "Espresso machine engineering, PID-controlled extraction systems, IoT diagnostics, grinder and burr geometry optimisation, and preventive maintenance infrastructure.",
+      "PID-controlled extraction systems, IoT diagnostics, grinder calibration, and preventive maintenance infrastructure. As a full-service coffee equipment supplier, JPLC doesn't just deliver machines — we engineer, calibrate, and service them. A system that drifts by a few degrees costs quality on every shot pulled.",
     image: "/coffee_machine_engg.jpg",
     icon: (
       <svg
@@ -103,9 +103,9 @@ const pillars = [
   },
   {
     id: "05",
-    title: "Distribution & Logistics",
+    title: "Wholesale Coffee Supplier & Distribution",
     description:
-      "Wholesale coffee distribution, HoReCa supply solutions, inventory forecasting, and supply-chain coordination across regional and international markets.",
+      "Structured wholesale coffee supplier infrastructure across regional and international markets. Temperature-controlled logistics, inventory forecasting, and supply continuity designed specifically for HoReCa operators.",
     image:
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&q=85&auto=format&fit=crop",
     icon: (
@@ -132,9 +132,9 @@ const pillars = [
   },
   {
     id: "06",
-    title: "Retail & Hospitality Operations",
+    title: "Hospitality Coffee Solutions & Retail Operations",
     description:
-      "Hotel, restaurant, and café supply, corporate coffee infrastructure deployment, office beverage programs, and event coffee activations.",
+      "From hotel F&B programmes to corporate campuses and managed café operations — JPLC deploys coffee programmes that run with consistency and without constant intervention. Office beverage systems, event activations, and multi-site account management included.",
     image:
       "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=700&q=85&auto=format&fit=crop",
     icon: (
@@ -155,9 +155,9 @@ const pillars = [
   },
   {
     id: "07",
-    title: "Brand Development & Manufacturing",
+    title: "Private Label Coffee Supplier & Brand Manufacturing",
     description:
-      "Café concept creation, beverage R&D, packaging and retail product development, capsule and RTD beverage solutions, and contract manufacturing partnerships.",
+      "End-to-end private label coffee manufacturing UAE capabilities — capsule development, RTD formulations, retail packaging, and contract manufacturing partnerships. Your brand identity, backed by our production facility.",
     image: "/manufacturing.jpg",
     icon: (
       <svg
@@ -177,9 +177,9 @@ const pillars = [
   },
   {
     id: "08",
-    title: "Coffee Training & Education",
+    title: "Barista Training & Coffee Education",
     description:
-      "Professional barista certification, brew science, sensory evaluation, roasting workshops, and hospitality coffee operations training. Full curriculum coming soon.",
+      "Professional barista training and certification Dubai and beyond — covering brew science, sensory evaluation, roasting workshops, and full hospitality coffee operations training. Strong programmes are built on people who understand the craft.",
     image: "/coffee_training.jpg",
     icon: (
       <svg
@@ -267,7 +267,7 @@ export function EcosystemSection() {
             </div>
 
             <h2 className="font-sans font-extrabold text-4xl lg:text-5xl text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-6">
-              Eight verticals.{" "}
+              Eight Verticals.{" "}
               <span
                 style={{
                   background:
@@ -278,7 +278,7 @@ export function EcosystemSection() {
                   filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
                 }}
               >
-                One integrated operation.
+                One Integrated Coffee Solutions Operation.
               </span>
             </h2>
 
@@ -290,13 +290,12 @@ export function EcosystemSection() {
             </div>
 
             <p className="text-[#374151] text-base lg:text-[17px] leading-relaxed max-w-md">
-              Every vertical within JPLC is engineered to interlock — creating a
-              self-reinforcing coffee infrastructure no single-function company
-              can replicate.
+              Most coffee suppliers do one or two things well. JPLC does eight —
+              and every vertical connects to the next.
             </p>
           </motion.div>
 
-          {/* â"€â"€ FEATURED IMAGE â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
+          {/*FEATURED IMAGE*/}
           <motion.div
             custom={0.1}
             variants={fadeUp}

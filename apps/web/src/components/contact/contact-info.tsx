@@ -1,21 +1,21 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { motion, type Variants } from "framer-motion";
 
 const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 28 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
-};
-
-const stagger: Variants = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } },
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] },
+  },
 };
 
 const LocationIcon = () => (
   <svg
-    width="16"
-    height="16"
+    width="18"
+    height="18"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -30,8 +30,8 @@ const LocationIcon = () => (
 
 const EmailIcon = () => (
   <svg
-    width="16"
-    height="16"
+    width="18"
+    height="18"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -46,8 +46,8 @@ const EmailIcon = () => (
 
 const PhoneIcon = () => (
   <svg
-    width="16"
-    height="16"
+    width="18"
+    height="18"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -59,79 +59,192 @@ const PhoneIcon = () => (
   </svg>
 );
 
-const infoCards = [
+interface EmailEntry {
+  role: string;
+  address: string;
+}
+
+const infoCards: {
+  id: string;
+  label: string;
+  title: string;
+  lines: string[];
+  emails?: EmailEntry[];
+  icon: ReactNode;
+}[] = [
   {
     id: "01",
-    label: "Office Location",
-    title: "DMCC Coffee Centre",
-    lines: ["Dubai Multi Commodities Centre", "Dubai, United Arab Emirates"],
+    label: "Visit Us",
+    title: "Bean Brew Coffee and Entertainment LLC",
+    lines: ["Al Nahda 2, Dubai — UAE"],
     icon: <LocationIcon />,
   },
   {
     id: "02",
-    label: "Email",
-    title: "hello@jplc.com",
-    lines: ["General & partnership enquiries", "Response within 24 hours"],
-    icon: <EmailIcon />,
+    label: "Call Us",
+    title: "+971 4 576 5629",
+    lines: ["+971 50 531 1902"],
+    icon: <PhoneIcon />,
   },
   {
     id: "03",
-    label: "Phone",
-    title: "+971 4 XXX XXXX",
-    lines: ["Mon – Fri, 9am – 6pm GST", "Enterprise support available"],
-    icon: <PhoneIcon />,
+    label: "Email Us",
+    title: "",
+    lines: [],
+    emails: [
+      { role: "General Inquiries", address: "info@beanbrewcoffee.com" },
+      { role: "Partnerships", address: "hello@beanbrewcoffee.com" },
+      { role: "Leo Clements", address: "leo.clements@beanbrewcoffee.com" },
+      { role: "John Prathap", address: "john.prathap@beanbrewcoffee.com" },
+    ],
+    icon: <EmailIcon />,
   },
 ];
 
 export function ContactInfo() {
   return (
-    <motion.div
-      variants={stagger}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      className="flex flex-col gap-4"
-    >
-      {/* Info cards */}
-      {infoCards.map((card) => (
-        <motion.div
-          key={card.id}
-          variants={fadeUp}
-          className="group relative overflow-hidden rounded-sm bg-white border border-[#E5E7EB] p-6 hover:-translate-y-0.5 transition-all duration-300 hover:border-[#2F43B7]/40 hover:shadow-[0_8px_32px_rgba(47,67,183,0.10)]"
-        >
-          {/* Shimmer */}
-          <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-[#2F43B7]/[0.04] to-transparent pointer-events-none" />
+    <div>
+      {/* Intro */}
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="mb-8"
+      >
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-8 h-[1.5px] bg-[#2F43B7]" />
+          <span className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
+            Let&apos;s Talk Coffee
+          </span>
+        </div>
 
-          {/* Top accent */}
-          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-[#2F43B7]/50 via-[#4F6BFF]/25 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <h2 className="font-black text-[#0F172A] text-[28px] lg:text-[34px] leading-[1.1] tracking-[-0.03em] mb-6">
+          Get in Touch With the{" "}
+          <span
+            style={{
+              background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            JPLC Team
+          </span>
+        </h2>
 
-          <div className="flex items-start gap-4 relative z-10">
+        <div className="space-y-4">
+          <p className="text-[#475569] text-[14px] leading-[1.85]">
+            Most coffee businesses eventually hit the same wall — a supplier who
+            can&apos;t scale with them, equipment that nobody services properly,
+            or a programme that works on paper but falls apart in practice.
+          </p>
+          <p className="text-[#475569] text-[14px] leading-[1.85]">
+            JPLC exists to remove that friction. As a fully integrated specialty
+            coffee infrastructure company, we don&apos;t just solve one part of
+            the problem. We cover the whole chain — sourcing, roasting,
+            equipment, manufacturing, training, and distribution — under one
+            roof, with one team accountable for all of it.
+          </p>
+          <p className="text-[#475569] text-[14px] leading-[1.85]">
+            The businesses that work with us aren&apos;t looking for the
+            cheapest option. They&apos;re looking for the right partner — one
+            who understands the product, knows the market, and has the
+            infrastructure to back it up.
+          </p>
+          <p className="text-[#0F172A] font-medium text-[14px] leading-[1.85]">
+            If that sounds like the right fit, we&apos;d like to hear from you.
+          </p>
+        </div>
+      </motion.div>
+
+      {/* Horizontal cards */}
+      <div className="flex flex-col gap-3">
+        {infoCards.map((card, i) => (
+          <motion.div
+            key={card.id}
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.6,
+              delay: i * 0.1,
+              ease: [0.25, 0.46, 0.45, 0.94],
+            }}
+            className="group flex items-start gap-4 bg-white rounded-xl px-5 py-4 transition-all duration-300 hover:-translate-y-0.5"
+            style={{
+              border: "1px solid #E5E7EB",
+              boxShadow: "0 2px 8px rgba(15,23,42,0.04)",
+            }}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLDivElement).style.borderColor =
+                "rgba(47,67,183,0.35)";
+              (e.currentTarget as HTMLDivElement).style.boxShadow =
+                "0 8px 28px rgba(47,67,183,0.10)";
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLDivElement).style.borderColor = "#E5E7EB";
+              (e.currentTarget as HTMLDivElement).style.boxShadow =
+                "0 2px 8px rgba(15,23,42,0.04)";
+            }}
+          >
             {/* Icon */}
-            <div className="flex-shrink-0 w-10 h-10 rounded-sm bg-[#2F43B7]/8 border border-[#2F43B7]/20 flex items-center justify-center text-[#2F43B7] group-hover:bg-[#2F43B7]/15 group-hover:border-[#2F43B7]/40 group-hover:shadow-[0_0_16px_rgba(47,67,183,0.15)] transition-all duration-300">
+            <div
+              className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 group-hover:shadow-[0_0_16px_rgba(47,67,183,0.18)]"
+              style={{
+                background: "linear-gradient(135deg, #EEF2FF 0%, #E0E7FF 100%)",
+                border: "1px solid rgba(47,67,183,0.15)",
+                color: "#2F43B7",
+              }}
+            >
               {card.icon}
             </div>
 
-            <div className="min-w-0">
-              <div className="flex items-center gap-2 mb-1.5">
-                <span className="text-[#2F43B7]/40 text-xs font-sans font-medium">
-                  {card.id}
-                </span>
-                <span className="text-[#2F43B7] text-sm font-sans font-semibold uppercase">
-                  {card.label}
-                </span>
-              </div>
-              <p className="text-[#0F172A] text-sm font-semibold mb-1.5">
-                {card.title}
+            {/* Content */}
+            <div className="min-w-0 flex-1">
+              <p className="text-[10px] font-bold tracking-[0.22em] uppercase text-[#2F43B7] mb-1">
+                {card.label}
               </p>
-              {card.lines.map((line, i) => (
-                <p key={i} className="text-[#64748B] text-xs leading-relaxed">
+
+              {card.title && (
+                <p className="text-[#0F172A] text-[13px] font-semibold leading-snug mb-0.5">
+                  {card.title}
+                </p>
+              )}
+
+              {card.lines.map((line, j) => (
+                <p
+                  key={j}
+                  className="text-[#64748B] text-[12px] leading-relaxed"
+                >
                   {line}
                 </p>
               ))}
+
+              {card.emails && (
+                <div className="mt-2 space-y-1.5">
+                  {card.emails.map((em) => (
+                    <div
+                      key={em.role}
+                      className="flex items-baseline gap-2 flex-wrap"
+                    >
+                      <span className="text-[#94A3B8] text-[10px] font-medium tracking-wide whitespace-nowrap">
+                        {em.role}
+                      </span>
+                      <a
+                        href={`mailto:${em.address}`}
+                        className="text-[#2F43B7] text-[12px] font-medium hover:underline break-all"
+                      >
+                        {em.address}
+                      </a>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
-          </div>
-        </motion.div>
-      ))}
-    </motion.div>
+          </motion.div>
+        ))}
+      </div>
+    </div>
   );
 }

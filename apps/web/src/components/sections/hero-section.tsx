@@ -17,7 +17,6 @@ const fadeUp = (delay = 0) => ({
 });
 
 const STATS = [
-  { value: "12+", label: "Years Expertise" },
   { value: "40+", label: "Global Partnerships" },
   { value: "6", label: "Integrated Verticals" },
 ];
@@ -114,7 +113,7 @@ export function HeroSection() {
             <motion.div {...fadeUp(0)} className="flex items-center gap-3 mb-9">
               <div className="w-8 h-px bg-[#4F6BFF]/70" />
               <span className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
-                Global Coffee Infrastructure
+                Global Coffee Solutions Infrastructure
               </span>
             </motion.div>
 
@@ -155,9 +154,10 @@ export function HeroSection() {
               {...fadeUp(0.22)}
               className="text-[#475569] text-base lg:text-[17px] leading-[1.75] max-w-lg mb-11 font-light"
             >
-              JPLC operates across sourcing, roasting, engineering, research,
-              manufacturing, hospitality infrastructure, and technical coffee
-              innovation for modern global markets.
+              JPLC is a vertically integrated premium coffee supplier and
+              infrastructure company operating across coffee sourcing, roasting,
+              engineering, manufacturing, and hospitality coffee solutions —
+              built for businesses that take quality seriously.
             </motion.p>
 
             {/* CTA buttons */}
@@ -177,7 +177,7 @@ export function HeroSection() {
                 }}
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out" />
-                <span className="relative">Explore Ecosystem</span>
+                <span className="relative">Explore the Ecosystem</span>
                 <svg
                   className="relative ml-2.5 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300"
                   fill="none"

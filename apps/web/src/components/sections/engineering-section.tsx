@@ -5,44 +5,44 @@ import { motion, type Variants } from "framer-motion";
 const capabilities = [
   {
     id: "01",
-    title: "Espresso Machine Engineering",
+    title: "Hardware ",
     description:
-      "Espresso machine engineering and product development, commercial coffee machine manufacturing, PID-controlled extraction systems, and flow-rate and pressure profiling calibration.",
+      "We design and build espresso machines from the ground up — not just spec them out from a catalogue.",
     tag: "Hardware",
   },
   {
     id: "02",
     title: "Thermal & Pressure Systems",
     description:
-      "Hydraulic and thermodynamic system optimisation, boiler pressure and temperature stability engineering, group head thermal management, and multi-boiler architecture development.",
+      "Boiler stability and group head consistency are what separate a good shot from a great one. We engineer both.",
     tag: "Thermodynamics",
   },
   {
     id: "03",
     title: "Grinder & Flow Engineering",
     description:
-      "Integrated grinder engineering and burr geometry optimisation, flow-rate and pressure profiling calibration, and energy-efficient heating system design.",
+      "Burr geometry, grind distribution, flow rate — the variables most operators never touch are the ones we obsess over.",
     tag: "Mechanical",
   },
   {
     id: "04",
-    title: "IoT Diagnostics & Firmware",
+    title: "IoT & Firmware",
     description:
-      "Smart telemetry and IoT-enabled machine diagnostics, firmware development and machine interface programming, and automatic cleaning and maintenance system integration.",
+      "Smart diagnostics that flag problems before they become downtime. The machine tells us what's wrong before you notice it.",
     tag: "Software",
   },
   {
     id: "05",
-    title: "Water & Filtration Systems",
+    title: "Water & Filtration",
     description:
-      "Water filtration, mineral balancing, and TDS optimisation — engineering precise water composition for consistent extraction quality across all machine types.",
+      "The wrong mineral balance ruins extraction regardless of bean quality. We get the water right first.",
     tag: "Chemistry",
   },
   {
     id: "06",
     title: "Prototyping & Field Services",
     description:
-      "Custom café equipment fabrication and prototyping, preventive maintenance engineering programmes, technical field-service infrastructure, and spare-parts logistics and lifecycle support.",
+      "Custom fabrication, on-site servicing, and spare parts support — because a machine that's down is revenue that's gone.",
     tag: "Operations",
   },
 ];
@@ -103,7 +103,7 @@ export function EngineeringSection() {
           </div>
 
           <h2 className="font-sans font-extrabold text-4xl lg:text-5xl text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-5">
-            Industrial precision,{" "}
+            Commercial Coffee Machine Supplier —{" "}
             <span
               style={{
                 background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
@@ -113,7 +113,7 @@ export function EngineeringSection() {
                 filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
               }}
             >
-              applied to every gram.
+              Industrial Precision, Applied to Every Gram
             </span>
           </h2>
 
@@ -126,9 +126,9 @@ export function EngineeringSection() {
 
           <div className="flex flex-col sm:flex-row sm:items-center gap-6">
             <p className="text-[#374151] text-base lg:text-[17px] leading-relaxed max-w-xl">
-              JPLC Engineering bridges industrial manufacturing methodology with
-              specialty coffee precision — designing, testing, and deploying
-              systems that operate reliably at enterprise scale.
+              A strong coffee bean supplier relationship gets you quality raw
+              material. What determines whether that quality reaches the cup is
+              the machine — and the engineering behind it.
             </p>
             <div className="flex-shrink-0 flex items-center gap-3 px-4 py-2.5 rounded-sm border border-[#2F43B7]/25 bg-[#2F43B7]/5">
               <div className="w-1.5 h-1.5 rounded-full bg-[#2F43B7] animate-pulse" />

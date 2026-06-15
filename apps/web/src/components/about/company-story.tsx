@@ -29,21 +29,21 @@ const stagger: Variants = {
 const storyBlocks = [
   {
     number: "01",
-    tag: "Philosophy",
-    title: "Built on Precision, Driven by Innovation",
-    body: "JPLC was founded on a singular conviction — that specialty coffee deserved the same engineering rigour as industrial manufacturing. We built systems, not just products. Processes, not just recipes.",
+    tag: "Market Context",
+    title: "Where We Sit in the UAE Coffee Market",
+    body: "The UAE coffee market has grown fast. What hasn't kept pace is the infrastructure behind it. Most operators still piece together their coffee programme from multiple vendors — a supplier here, a technician there, a training provider somewhere else. The result is inconsistency, gaps in accountability, and a programme only as strong as its weakest handoff.",
   },
   {
     number: "02",
     tag: "Operations",
-    title: "A Vertically Integrated Ecosystem",
-    body: "From green coffee procurement at origin to enterprise café deployments — JPLC operates across the entire specialty coffee value chain. Our vertical integration eliminates fragmentation and ensures consistency.",
+    title: "An Infrastructure Platform, Not Another Supplier",
+    body: "JPLC was built to address exactly that. Not as another supplier entering a crowded market, but as an infrastructure platform that sits behind coffee businesses and gives them the operational backbone to run well and scale with confidence.",
   },
   {
     number: "03",
-    tag: "Global",
-    title: "Enterprise Scale, Specialty Standards",
-    body: "Operating from DMCC in Dubai, we serve regional and international markets with the same uncompromising standards — from single-outlet deployments to multinational corporate coffee programmes.",
+    tag: "What We've Built",
+    title: "Eight Integrated Verticals, One Operation",
+    body: "JPLC operates across eight integrated verticals: green coffee procurement, roasting and production engineering, R&D, machine engineering and technical services, distribution, hospitality operations, brand development and manufacturing, and coffee training. Each vertical functions independently. The value compounds when they work together.",
   },
 ];
 

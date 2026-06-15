@@ -1,6 +1,7 @@
 import { AboutHero } from "@/components/about/about-hero";
 import { CompanyStory } from "@/components/about/company-story";
 import { MissionVision } from "@/components/about/mission-vision";
+import { ValuesSection } from "@/components/about/values-section";
 import { TeamSection } from "@/components/about/team-section";
 import { CertificationsSection } from "@/components/about/certifications-section";
 import { AboutCta } from "@/components/about/about-cta";
@@ -17,6 +18,7 @@ export default function AboutPage() {
       <AboutHero />
       <CompanyStory />
       <MissionVision />
+      <ValuesSection />
       <TeamSection />
       <CertificationsSection />
       <AboutCta />

@@ -316,7 +316,7 @@ export function ResearchSection() {
 
             {/* Heading */}
             <h2 className="font-extrabold text-[#0F172A] text-4xl lg:text-[46px] xl:text-[52px] leading-[1.06] tracking-[-0.03em] mb-6">
-              Coffee science at the{" "}
+              Coffee Sourcing and Roasting Science{" "}
               <span
                 style={{
                   background:
@@ -326,7 +326,7 @@ export function ResearchSection() {
                   backgroundClip: "text",
                 }}
               >
-                molecular level
+                at the Molecular Level
               </span>
             </h2>
 
@@ -339,10 +339,12 @@ export function ResearchSection() {
 
             {/* Body copy */}
             <p className="text-[#475569] text-[16.5px] leading-[1.80] max-w-lg mb-12 font-light">
-              JPLC R&amp;D combines sensory science, mechanical engineering,
-              thermodynamics, software integration, and product innovation —
-              developing proprietary methodologies that improve consistency,
-              efficiency, and beverage quality at enterprise scale.
+              Good coffee at scale is an engineering problem. Extraction yield,
+              thermal profiling, water mineralogy, grind calibration — each
+              variable compound. The work is applied, not academic. Every
+              finding feeds directly into the products and systems deployed for
+              JPLC partners — producing measurable, repeatable improvement in
+              cup quality over time.
             </p>
 
             {/* ── Research capability cards ── */}

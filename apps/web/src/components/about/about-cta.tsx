@@ -74,7 +74,7 @@ export function AboutCta() {
 
               <div className="relative z-10 max-w-lg">
                 <h2 className="font-extrabold text-4xl lg:text-5xl xl:text-[52px] text-[#0F172A] tracking-[-0.03em] leading-[1.08] mb-6">
-                  Partner With{" "}
+                  The Right Infrastructure Partner{" "}
                   <span
                     style={{
                       background:
@@ -85,7 +85,7 @@ export function AboutCta() {
                       filter: "drop-shadow(0 0 20px rgba(47,67,183,0.20))",
                     }}
                   >
-                    JPLC
+                    Makes All the Difference
                   </span>
                 </h2>
 
@@ -97,18 +97,20 @@ export function AboutCta() {
                 </div>
 
                 <p className="text-[#374151] text-base lg:text-[17px] leading-relaxed mb-10">
-                  Join the companies and brands building their coffee
-                  infrastructure with JPLC — from single-outlet deployments to
-                  enterprise-scale programmes.
+                  Eight verticals. One integrated operation — built specifically
+                  for businesses that are serious about coffee. Whether
+                  you&apos;re launching a café concept, scaling a hospitality
+                  programme, or building a coffee brand from the ground up, the
+                  conversation starts here.
                 </p>
 
                 {/* CTA buttons */}
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="mailto:hello@jplc.com"
+                    href="#partnership"
                     className="inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-[#2F43B7] text-white text-xs font-medium uppercase tracking-widest rounded-sm hover:bg-[#2941A8] transition-colors duration-200 shadow-[0_8px_32px_rgba(47,67,183,0.30)]"
                   >
-                    Contact Us
+                    Partner With Us
                     <svg
                       width="13"
                       height="13"
@@ -124,10 +126,10 @@ export function AboutCta() {
                     </svg>
                   </a>
                   <a
-                    href="#partnership"
+                    href="#ecosystem"
                     className="inline-flex items-center justify-center px-8 py-4 border border-[#2F43B7]/30 text-[#2F43B7] text-xs font-medium uppercase tracking-widest rounded-sm hover:border-[#2F43B7]/60 hover:bg-[#2F43B7]/5 transition-all duration-200"
                   >
-                    Partnership Inquiry
+                    Explore the Ecosystem
                   </a>
                 </div>
               </div>

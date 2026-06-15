@@ -8,35 +8,35 @@ const offerings = [
     id: "01",
     title: "Cafe Concept Creation",
     description:
-      "Full-service café concept development — from brand identity and spatial design to beverage menu curation and operational setup.",
+      "From brand identity and spatial design to beverage menu curation — we build café concepts that are operationally ready from day one.",
     image: "/cafe_image.jpg",
   },
   {
     id: "02",
     title: "Beverage R&D & Menu Engineering",
     description:
-      "Structured beverage research and development, menu innovation, and recipe engineering aligned with brand positioning and market demand.",
+      "Structured recipe development and menu innovation aligned with your brand positioning, target market, and commercial objectives.",
     image: "/bevarage.jpg",
   },
   {
     id: "03",
     title: "Packaging & Retail Product Development",
     description:
-      "Barrier packaging specification, retail product design, degassing valve integration, shelf-life validation, and consumer-ready presentation.",
+      "Barrier packaging, degassing valve integration, shelf-life validation, and consumer-ready presentation — built to perform on shelf and protect quality in transit.",
     image: "/packaging.jpg",
   },
   {
     id: "04",
     title: "Capsule Coffee & RTD Beverage Solutions",
     description:
-      "Nespresso-compatible and proprietary capsule systems, cold brew formulation, and RTD beverage development from concept to co-pack.",
+      "Nespresso-compatible and proprietary capsule systems, cold brew formulation, and RTD development from concept through to co-pack.",
     image: "/capsule_coffee.jpg",
   },
   {
     id: "05",
     title: "Contract Manufacturing Partnerships",
     description:
-      "OEM and white-label manufacturing partnerships for roasters, food service operators, and brands requiring scalable production capacity.",
+      "Scalable OEM and white-label production capacity for roasters, food service operators, and brands that need reliable output without building their own facility.",
     image:
       "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900&q=85&auto=format&fit=crop",
   },
@@ -44,7 +44,7 @@ const offerings = [
     id: "06",
     title: "International Sourcing & Supplier Management",
     description:
-      "Global green coffee sourcing, supplier qualification, traceability management, and import/export coordination across origin markets.",
+      "Global green coffee procurement, supplier qualification, traceability management, and import/export coordination across origin markets.",
     image:
       "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=900&q=85&auto=format&fit=crop",
   },
@@ -52,7 +52,7 @@ const offerings = [
     id: "07",
     title: "Brand Commercialization Strategies",
     description:
-      "Go-to-market strategy, retail channel development, brand positioning, and commercialization planning for specialty coffee and beverage brands.",
+      "Go-to-market planning, retail channel development, and brand positioning support — turning a production-ready product into a market-ready business.",
     image:
       "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&q=85&auto=format&fit=crop",
   },
@@ -130,7 +130,7 @@ export function ManufacturingSection() {
 
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
             <h2 className="font-sans font-extrabold text-4xl lg:text-5xl xl:text-[52px] text-[#0F172A] leading-[1.08] tracking-[-0.03em] max-w-lg">
-              Production{" "}
+              Private Label Coffee Manufacturing UAE —{" "}
               <span
                 style={{
                   background:
@@ -141,9 +141,8 @@ export function ManufacturingSection() {
                   filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
                 }}
               >
-                infrastructure
-              </span>{" "}
-              for ambitious coffee brands.
+                Production Infrastructure for Ambitious Brands
+              </span>
             </h2>
 
             <div className="max-w-sm">

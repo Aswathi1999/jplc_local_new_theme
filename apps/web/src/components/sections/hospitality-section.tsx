@@ -5,44 +5,44 @@ import { motion, type Variants } from "framer-motion";
 
 const solutions = [
   {
-    title: "Wholesale Coffee Bean Distribution",
+    title: "Wholesale Coffee Supplier & Specialty Coffee Beans Distribution ",
     description:
-      "Regional and international wholesale coffee bean distribution with temperature-controlled logistics, inventory management platforms, and reliable supply continuity.",
+      "Regional and international wholesale distribution with temperature-controlled logistics and reliable supply continuity. Consistent stock, correct storage conditions, delivered on schedule — no gaps in your service.",
     image:
       "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&q=85&auto=format&fit=crop",
   },
   {
-    title: "HoReCa Supply Solutions",
+    title: "HoReCa Hospitality Coffee Solutions",
     description:
-      "Full-service supply programmes for hotels, restaurants, and cafés — from green bean sourcing to finished product delivery with dedicated account management.",
+      "Full-service supply programmes for hotels, restaurants, and cafés — from green bean sourcing through to finished product delivery. Dedicated account management and supply chain oversight for operations where every service matters.",
     image:
       "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=85&auto=format&fit=crop",
   },
   {
-    title: "Office Coffee Systems & Managed Beverage Programs",
+    title: "Office Coffee Solutions & Managed Beverage Programs",
     description:
-      "Turnkey office coffee systems and managed beverage programmes for corporate campuses, co-working spaces, and multi-site enterprise environments.",
+      "Turnkey coffee solutions for corporate campuses, co-working spaces, and multi-site enterprise environments. Machine provisioning, supply, maintenance, and replenishment managed end-to-end — zero operational burden on your team.",
     image:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=85&auto=format&fit=crop",
   },
   {
-    title: "Corporate Coffee Infrastructure Deployment",
+    title: "Corporate Commercial Coffee Solutions Deployment",
     description:
-      "End-to-end corporate coffee infrastructure deployment — equipment provisioning, installation, technical support, and ongoing service management at scale.",
+      "Full-scale commercial coffee solutions UAE — equipment provisioning, installation, technical support, and ongoing service management. Built for enterprise environments that require infrastructure, not just a machine in the corner.",
     image:
       "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=85&auto=format&fit=crop",
   },
   {
-    title: "Event Coffee Activations & Mobile Solutions",
+    title: "Event Coffee Solutions & Mobile Activations",
     description:
-      "Mobile coffee solutions and event activations for exhibitions, corporate launches, trade shows, and premium hospitality experiences.",
+      "Mobile coffee setups and event activations for exhibitions, corporate launches, trade shows, and premium hospitality experiences. Specialty-grade coffee, professionally delivered — wherever the event takes place.",
     image:
       "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&q=85&auto=format&fit=crop",
   },
   {
-    title: "Inventory Forecasting & Supply-Chain Coordination",
+    title: "Inventory Forecasting & Coffee Bean Supplier Coordination",
     description:
-      "Data-driven demand planning, replenishment systems, and supply-chain coordination to minimise waste and ensure consistent product availability across all accounts.",
+      "Data-driven demand planning, replenishment systems, and supply chain coordination as a trusted coffee bean supplier partner. Proactive stock management that eliminates last-minute shortages and reduces waste across all accounts.",
     image:
       "https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&q=85&auto=format&fit=crop",
   },
@@ -104,7 +104,7 @@ export function HospitalitySection() {
           </div>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5">
             <h2 className="font-sans font-extrabold text-4xl lg:text-5xl xl:text-[52px] text-[#0F172A] leading-[1.08] tracking-[-0.03em]">
-              End-to-end beverage{" "}
+              Commercial Coffee Solutions UAE —{" "}
               <span
                 style={{
                   background:
@@ -115,21 +115,19 @@ export function HospitalitySection() {
                   filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
                 }}
               >
-                infrastructure
+                End-to-End Beverage Infrastructure
               </span>
             </h2>
-            <p className="text-[#374151] text-base leading-relaxed max-w-sm lg:text-right">
-              JPLC Hospitality powers the behind-the-scenes operations that keep
-              coffee programs running at scale — from procurement and logistics
-              to on-site deployment and service continuity.
-            </p>
+            {/* <p className="text-[#374151] text-base leading-relaxed max-w-sm lg:text-right">
+              Scaling coffee operations means managing supply continuity, equipment uptime, trained staff, and consistent product quality — simultaneously. JPLC hospitality coffee solutions are structured to handle all of it, giving operators a single, reliable infrastructure partner rather than a collection of disconnected vendors.
+            </p> */}
           </div>
           <div className="mt-8 h-px bg-gradient-to-r from-[#2F43B7]/40 via-[#E5E7EB] to-transparent" />
         </motion.div>
 
-        {/* â"€â"€ MAIN GRID â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
+        {/* â"€â"€ MAIN GRID  */}
         <div className="grid lg:grid-cols-5 gap-10 lg:gap-16 items-start">
-          {/* â"€â"€ LEFT COLUMN â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
+          {/* â"€â"€ LEFT COLUMN  */}
           <motion.div
             variants={fadeUp}
             initial="hidden"

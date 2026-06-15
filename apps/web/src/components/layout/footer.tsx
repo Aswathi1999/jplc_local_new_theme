@@ -1,10 +1,11 @@
 import Image from "next/image";
 
 const quickLinks = [
-  { label: "About Us", href: "/about" },
-  { label: "Training", href: "/training" },
-  { label: "Contact", href: "/contact" },
-  { label: "Partner With Us", href: "#partnership" },
+  { label: "R&D Lab", href: "/research-development" },
+  { label: "Hospitality Solutions", href: "/hospitality-solutions" },
+  { label: "Subscription Program", href: "/subscription" },
+  { label: "Sustainability", href: "/sustainability" },
+  { label: "Insights / Blog", href: "/insights" },
 ];
 
 const socialLinks = [

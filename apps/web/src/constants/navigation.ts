@@ -1,7 +1,40 @@
-export const navItems = [
-  { label: "About Us", href: "/about" },
+export interface NavChildItem {
+  label: string;
+  href: string;
+}
+
+export interface NavItem {
+  label: string;
+  href: string;
+  children?: NavChildItem[];
+}
+
+export const navItems: NavItem[] = [
+  { label: "About JPLC", href: "/about" },
+  { label: "Ecosystem", href: "/ecosystem" },
+  {
+    label: "Coffee Solutions",
+    href: "/#coffee-solutions",
+    children: [
+      { label: "Coffee Beans", href: "/coffee-beans" },
+      { label: "Private Label & OEM Coffee", href: "/private-label" },
+      { label: "Wholesale Coffee", href: "/wholesale" },
+    ],
+  },
+  {
+    label: "Coffee Machines",
+    href: "/#coffee-machines",
+    children: [
+      {
+        label: "Commercial Coffee Machines",
+        href: "/commercial-coffee-machines",
+      },
+      { label: "Equipment Service & Maintenance", href: "/equipment-service" },
+    ],
+  },
   { label: "Training", href: "/training" },
-] as const;
+  { label: "Contact", href: "/contact" },
+];
 
 export const footerLinks = {
   company: [

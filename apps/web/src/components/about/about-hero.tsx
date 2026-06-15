@@ -282,7 +282,7 @@ export function AboutHero() {
                 textTransform: "uppercase",
               }}
             >
-              About
+              Who We Are
             </span>
           </motion.div>
 
@@ -308,11 +308,9 @@ export function AboutHero() {
                 fontSize: "clamp(36px, 4.8vw, 74px)",
               }}
             >
-              {/* Line 1: "Global Coffee" — two contrasting weights */}
+              {/* Line 1: "Built for the" — two contrasting weights */}
               <motion.span {...stagger(0.32)} style={{ display: "block" }}>
-                <span style={{ fontWeight: 900, color: "#2F43B7" }}>
-                  Global
-                </span>
+                <span style={{ fontWeight: 900, color: "#2F43B7" }}>Built</span>
                 <span
                   style={{
                     fontWeight: 300,
@@ -321,11 +319,11 @@ export function AboutHero() {
                   }}
                 >
                   {" "}
-                  Coffee
+                  for the
                 </span>
               </motion.span>
 
-              {/* Line 2: "Infrastructure" — image bleeds through the letters */}
+              {/* Line 2: "Business of Coffee" — image bleeds through the letters */}
               <motion.span
                 {...stagger(0.44)}
                 style={{ display: "block", fontWeight: 900 }}
@@ -341,11 +339,11 @@ export function AboutHero() {
                     display: "inline",
                   }}
                 >
-                  Infrastructure
+                  Business of Coffee
                 </span>
               </motion.span>
 
-              {/* Line 3: "Company" — light, closing word */}
+              {/* Line 3: closing phrase — light */}
               <motion.span
                 {...stagger(0.56)}
                 style={{
@@ -353,9 +351,10 @@ export function AboutHero() {
                   fontWeight: 300,
                   color: "#CBD5E1",
                   letterSpacing: "-0.025em",
+                  fontSize: "0.72em",
                 }}
               >
-                Company
+                Not Just the Romance of It
               </motion.span>
             </div>
 
@@ -383,9 +382,10 @@ export function AboutHero() {
                 fontWeight: 400,
               }}
             >
-              Spanning sourcing, engineering, roasting, and global hospitality
-              infrastructure — JPLC operates across every dimension of the
-              modern coffee value chain.
+              JPLC is a specialty coffee infrastructure company headquartered at
+              the DMCC Coffee Centre, Dubai, operating across sourcing,
+              roasting, engineering, manufacturing, hospitality supply, and
+              training.
             </motion.p>
 
             {/* CTA buttons */}
@@ -435,46 +435,11 @@ export function AboutHero() {
             </motion.div>
           </div>
 
-          {/* ── Stats row ── */}
+          {/* ── Scroll indicator ── */}
           <motion.div
             {...stagger(1.0)}
-            className="flex items-end gap-8 pt-5 mt-auto relative z-10"
-            style={{ borderTop: "1px solid rgba(47,67,183,0.1)" }}
+            className="flex items-end pt-5 mt-auto relative z-10"
           >
-            {[
-              { val: "12+", label: "Countries" },
-              { val: "3", label: "Continents" },
-              { val: "2019", label: "Founded" },
-              { val: "100+", label: "Partners" },
-            ].map(({ val, label }) => (
-              <div key={label}>
-                <p
-                  style={{
-                    fontSize: "clamp(18px, 1.8vw, 28px)",
-                    fontWeight: 900,
-                    color: "#0F172A",
-                    letterSpacing: "-0.04em",
-                    lineHeight: 1,
-                  }}
-                >
-                  {val}
-                </p>
-                <p
-                  style={{
-                    fontSize: "8px",
-                    fontWeight: 700,
-                    letterSpacing: "0.4em",
-                    color: "#94A3B8",
-                    textTransform: "uppercase",
-                    marginTop: 5,
-                  }}
-                >
-                  {label}
-                </p>
-              </div>
-            ))}
-
-            {/* Scroll indicator pushed to the right */}
             <div className="ml-auto flex flex-col items-center gap-2">
               <div
                 className="relative overflow-hidden"
@@ -584,12 +549,15 @@ export function AboutHero() {
               fontSize: "clamp(44px, 12vw, 72px)",
             }}
           >
-            {/* Line 1: Global Coffee */}
+            {/* Line 1: Built for the */}
             <span style={{ display: "block" }}>
-              <span style={{ fontWeight: 900, color: "#2F43B7" }}>Global</span>
-              <span style={{ fontWeight: 300, color: "#0F172A" }}> Coffee</span>
+              <span style={{ fontWeight: 900, color: "#2F43B7" }}>Built</span>
+              <span style={{ fontWeight: 300, color: "#0F172A" }}>
+                {" "}
+                for the
+              </span>
             </span>
-            {/* Line 2: Infrastructure — image masked */}
+            {/* Line 2: Business of Coffee — image masked */}
             <span style={{ display: "block", fontWeight: 900 }}>
               <span
                 style={{
@@ -602,18 +570,19 @@ export function AboutHero() {
                   display: "inline",
                 }}
               >
-                Infrastructure
+                Business of Coffee
               </span>
             </span>
-            {/* Line 3: Company */}
+            {/* Line 3: closing phrase */}
             <span
               style={{
                 display: "block",
                 fontWeight: 300,
                 color: "#CBD5E1",
+                fontSize: "0.72em",
               }}
             >
-              Company
+              Not Just the Romance of It
             </span>
           </motion.div>
 
@@ -631,49 +600,71 @@ export function AboutHero() {
             {...stagger(0.4)}
             style={{ color: "#64748B", fontSize: 14, lineHeight: 1.82 }}
           >
-            Spanning sourcing, engineering, roasting, and global hospitality
-            infrastructure — JPLC operates across every dimension of the modern
-            coffee value chain.
+            JPLC is a specialty coffee infrastructure company headquartered at
+            the DMCC Coffee Centre, Dubai, operating across sourcing, roasting,
+            engineering, manufacturing, hospitality supply, and training.
           </motion.p>
 
-          {/* Stats grid */}
-          <motion.div
-            {...stagger(0.6)}
-            className="grid grid-cols-2 gap-x-6 gap-y-6 mt-8 pt-5"
-            style={{ borderTop: "1px solid rgba(47,67,183,0.10)" }}
-          >
+          {/* Service tags */}
+          <motion.div {...stagger(0.6)} className="flex flex-wrap gap-2 mt-7">
             {[
-              { val: "12+", label: "Countries" },
-              { val: "3", label: "Continents" },
-              { val: "2019", label: "Founded" },
-              { val: "100+", label: "Partners" },
-            ].map(({ val, label }) => (
-              <div key={label}>
-                <p
-                  style={{
-                    fontSize: 34,
-                    fontWeight: 900,
-                    color: "#0F172A",
-                    letterSpacing: "-0.04em",
-                    lineHeight: 1,
-                  }}
-                >
-                  {val}
-                </p>
-                <p
-                  style={{
-                    fontSize: 8.5,
-                    fontWeight: 700,
-                    letterSpacing: "0.38em",
-                    color: "#94A3B8",
-                    textTransform: "uppercase",
-                    marginTop: 5,
-                  }}
-                >
-                  {label}
-                </p>
-              </div>
+              "Sourcing",
+              "Roasting",
+              "Engineering",
+              "Manufacturing",
+              "Distribution",
+              "Training",
+              "Private Label",
+              "R&D",
+            ].map((tag) => (
+              <span
+                key={tag}
+                style={{
+                  fontSize: "10px",
+                  fontWeight: 700,
+                  letterSpacing: "0.1em",
+                  textTransform: "uppercase",
+                  color: "#2F43B7",
+                  background: "rgba(47,67,183,0.07)",
+                  border: "1px solid rgba(47,67,183,0.15)",
+                  borderRadius: "6px",
+                  padding: "5px 10px",
+                }}
+              >
+                {tag}
+              </span>
             ))}
+          </motion.div>
+
+          <motion.div {...stagger(0.75)} className="mt-8">
+            <a
+              href="/contact"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 8,
+                padding: "12px 24px",
+                borderRadius: "10px",
+                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                boxShadow: "0 6px 20px rgba(47,67,183,0.28)",
+                color: "#fff",
+                fontSize: "13px",
+                fontWeight: 600,
+                letterSpacing: "0.05em",
+                textDecoration: "none",
+              }}
+            >
+              Work With JPLC
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path
+                  d="M2 7h10M8 3l4 4-4 4"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
           </motion.div>
         </div>
       </div>

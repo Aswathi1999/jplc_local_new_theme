@@ -11,13 +11,6 @@ const fadeUp: Variants = {
   },
 };
 
-const stats = [
-  { v: "12+", l: "Years Expertise" },
-  { v: "500+", l: "MT Capacity" },
-  { v: "30+", l: "Global Markets" },
-  { v: "8", l: "Business Verticals" },
-];
-
 export function MissionVision() {
   return (
     <section className="relative bg-[#F8FAFC] overflow-hidden">
@@ -86,9 +79,11 @@ export function MissionVision() {
             </p>
 
             {/* Quote */}
-            <blockquote className="text-[#0F172A] font-extrabold text-3xl lg:text-4xl leading-snug">
-              Deliver scalable specialty coffee ecosystems through innovation,
-              engineering, and operational excellence.
+            <blockquote className="text-[#0F172A] font-extrabold text-xl lg:text-2xl leading-snug">
+              To build the most reliable and integrated coffee infrastructure in
+              the region — giving coffee businesses, hospitality operators, and
+              emerging brands the supply chain, production capability, and
+              technical depth they need to grow without limits.
             </blockquote>
 
             {/* Bottom accent bar */}
@@ -136,32 +131,15 @@ export function MissionVision() {
             </p>
 
             {/* Quote */}
-            <blockquote className="text-[#0F172A] font-extrabold text-3xl lg:text-4xl leading-snug">
-              Build a globally recognized specialty coffee infrastructure
-              company powered by research, technology, and enterprise coffee
-              solutions.
+            <blockquote className="text-[#0F172A] font-extrabold text-xl lg:text-2xl leading-snug">
+              To be the infrastructure behind the region&apos;s best coffee
+              experiences — known not for the brand on the cup, but for the
+              precision, consistency, and expertise that made it possible.
             </blockquote>
 
             {/* Bottom accent bar */}
             <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#2F43B7] via-[#4F6BFF] to-transparent" />
           </motion.div>
-        </div>
-
-        {/* Stats row */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
-          {stats.map((s) => (
-            <div
-              key={s.l}
-              className="bg-white border border-[#E5E7EB] rounded-sm px-6 py-5 text-center hover:border-[#2F43B7]/35 hover:-translate-y-0.5 transition duration-200 shadow-sm"
-            >
-              <p className="font-bold text-3xl text-[#2F43B7] mb-1 tracking-tight">
-                {s.v}
-              </p>
-              <p className="text-[#64748B] text-[10px] tracking-widest uppercase">
-                {s.l}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
     </section>

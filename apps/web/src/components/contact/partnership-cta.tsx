@@ -16,13 +16,6 @@ const fadeUp: Variants = {
   },
 };
 
-const stats = [
-  { value: "12+", label: "Years Expertise" },
-  { value: "500+", label: "MT Annual Capacity" },
-  { value: "30+", label: "Global Markets" },
-  { value: "8", label: "Business Verticals" },
-];
-
 export function PartnershipCta() {
   return (
     <section className="relative bg-[#F8FAFC] overflow-hidden py-16 lg:py-20">
@@ -140,26 +133,6 @@ export function PartnershipCta() {
               >
                 Email Us Directly
               </a>
-            </motion.div>
-
-            {/* Stats strip */}
-            <motion.div
-              variants={fadeUp}
-              className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-[#E5E7EB] rounded-sm overflow-hidden border border-[#E5E7EB]"
-            >
-              {stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="group bg-[#F8FAFC] hover:bg-white transition-colors duration-300 px-6 py-5 text-center"
-                >
-                  <p className="font-bold text-2xl text-[#2F43B7] mb-1 tracking-tight">
-                    {stat.value}
-                  </p>
-                  <p className="text-[#64748B] text-[10px] tracking-widest uppercase">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
             </motion.div>
           </div>
         </motion.div>

@@ -12,7 +12,6 @@ const fadeUp: Variants = {
 };
 
 const stats = [
-  { value: "12+", label: "Years of Industry Expertise" },
   { value: "6", label: "Integrated Business Verticals" },
   { value: "40+", label: "Enterprise Partnerships" },
 ];
@@ -23,16 +22,6 @@ export function AboutSection() {
       id="about"
       className="relative pt-8 pb-20 lg:pt-12 lg:pb-28 bg-[#F8FAFC] overflow-hidden"
     >
-      {/* â"€â"€ BACKGROUND TECHNICAL TEXTURE â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-[0.028]"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(47,67,183,1) 1px, transparent 1px), linear-gradient(90deg, rgba(47,67,183,1) 1px, transparent 1px)",
-          backgroundSize: "80px 80px",
-        }}
-      />
-
       {/* Top-right ambient glow */}
       <div className="absolute -top-40 right-0 w-[600px] h-[600px] rounded-full bg-[#2F43B7] opacity-[0.04] blur-[120px] pointer-events-none" />
       {/* Bottom-left ambient glow */}
@@ -68,7 +57,7 @@ export function AboutSection() {
             {/* Vertical accent line */}
 
             <h2 className="font-sans font-extrabold text-4xl lg:text-5xl xl:text-[54px] text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-7">
-              More than coffee.{" "}
+              More Than a Coffee Company —{" "}
               <span
                 className="relative inline-block"
                 style={{
@@ -80,7 +69,7 @@ export function AboutSection() {
                   filter: "drop-shadow(0 0 28px rgba(47,67,183,0.28))",
                 }}
               >
-                A precision-built infrastructure.
+                A Precision-Built Infrastructure
               </span>
             </h2>
 
@@ -160,38 +149,34 @@ export function AboutSection() {
               <div className="absolute bottom-0 left-0 w-8 h-px bg-[#2F43B7]/25" />
               <div className="absolute bottom-0 left-0 w-px h-8 bg-[#2F43B7]/25" />
 
-              <div className="space-y-5 text-[#374151] text-base lg:text-[17px] leading-[1.75]">
+              <div className="space-y-5 text-[#374151] text-base lg:text-[18px] leading-[1.75]">
                 <p>
-                  JPLC operates at a professional scale across sourcing,
-                  roasting, research and development, equipment engineering,
-                  manufacturing, technical support, distribution, and café
-                  operations — delivering a fully integrated specialty coffee
-                  ecosystem.
+                  JPLC is not a reseller, and not a single-function supplier. We
+                  are a full-stack specialty coffee company with direct control
+                  over every stage — from green bean procurement and coffee
+                  roasting to equipment engineering, private label coffee
+                  manufacturing, and end-to-end commercial coffee solutions.
                 </p>
                 <p>
-                  From direct-trade green coffee procurement and roast profile
-                  engineering to PID-controlled machine systems, beverage R&D,
-                  and HoReCa supply infrastructure — every vertical within JPLC
-                  is designed to interlock and amplify the others.
+                  Working with JPLC means one partner instead of four. One point
+                  of accountability across supply, quality, equipment, and
+                  training.
                 </p>
                 <p>
-                  This vertically integrated model enables extraction
-                  consistency, product innovation, engineering reliability, and
-                  supply-chain control — positioning JPLC as a premium global
-                  specialty coffee infrastructure platform.
+                  Over the years, we have built an operation that café owners,
+                  hotel groups, corporate campuses, and F&B brands across the
+                  UAE rely on — not just for consistent supply, but for the
+                  technical depth that actually moves their business forward.
                 </p>
               </div>
 
-              {/* â"€â"€ BLOCKQUOTE â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
+              {/* ── BLOCKQUOTE ─────────────────────────────────── */}
               <div className="relative mt-8 pl-6">
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[3px] rounded-full bg-gradient-to-b from-[#2F43B7] via-[#4056D6] to-[#2F43B7]/30" />
                 {/* Blue glow behind quote */}
                 <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-32 h-16 bg-[#2F43B7]/08 blur-2xl rounded-full pointer-events-none" />
 
-                <p className="text-[11px] text-[#2F43B7] font-semibold tracking-[0.35em] uppercase mb-3">
-                  Core Mandate
-                </p>
                 <blockquote className="font-bold text-xl lg:text-2xl text-[#0F172A] leading-[1.35] tracking-[-0.015em]">
                   &ldquo;We engineer coffee infrastructure so our partners can
                   focus on the experience.&rdquo;

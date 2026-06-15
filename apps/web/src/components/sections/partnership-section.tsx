@@ -96,7 +96,7 @@ export function PartnershipSection() {
             </div>
 
             <h2 className="font-sans font-extrabold text-4xl lg:text-5xl xl:text-6xl text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-6">
-              Build the future of coffee{" "}
+              Build the Future of Specialty Coffee With Us —{" "}
               <span
                 style={{
                   background:
@@ -107,14 +107,15 @@ export function PartnershipSection() {
                   filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
                 }}
               >
-                with us
+                Coffee Solutions for Every Scale
               </span>
             </h2>
 
             <p className="text-[#374151] text-lg leading-relaxed max-w-2xl mx-auto mb-10">
-              Whether you are scaling a coffee brand, deploying hospitality
-              infrastructure, or seeking a manufacturing partner — JPLC is built
-              to be the invisible engine behind your operation.
+              If the need is a trusted coffee bean supplier, a commercial coffee
+              machine supplier Dubai, professional barista training and
+              certification Dubai, or a coffee sourcing and roasting company UAE
+              — JPLC is the right conversation to start.
             </p>
 
             {/* Partner type chips */}
