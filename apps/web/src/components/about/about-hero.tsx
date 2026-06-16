@@ -151,7 +151,7 @@ export function AboutHero() {
             }}
           >
             <Image
-              src="/about_hero.jpg"
+              src="/about_hero_image.jpg"
               alt="JPLC Holdings"
               fill
               priority
@@ -330,7 +330,7 @@ export function AboutHero() {
               >
                 <span
                   style={{
-                    backgroundImage: "url('/about_hero.jpg')",
+                    backgroundImage: "url('/about_hero_image.jpg')",
                     backgroundClip: "text",
                     WebkitBackgroundClip: "text",
                     color: "transparent",
@@ -494,7 +494,7 @@ export function AboutHero() {
           }}
         >
           <Image
-            src="/about_hero.jpg"
+            src="/about_hero_image.jpg"
             alt="JPLC Holdings"
             fill
             priority
@@ -561,7 +561,7 @@ export function AboutHero() {
             <span style={{ display: "block", fontWeight: 900 }}>
               <span
                 style={{
-                  backgroundImage: "url('/about_hero.jpg')",
+                  backgroundImage: "url('/about_hero_image.jpg')",
                   backgroundClip: "text",
                   WebkitBackgroundClip: "text",
                   color: "transparent",

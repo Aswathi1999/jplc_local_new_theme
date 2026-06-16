@@ -3,7 +3,7 @@
 import { motion, type Variants } from "framer-motion";
 
 const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 0, y: 16 },
   visible: {
     opacity: 1,
     y: 0,
@@ -47,8 +47,9 @@ export function QualitySection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
+            style={{ willChange: "transform" }}
           >
-            <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase mb-4">
+            <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7] mb-4">
               Quality Assurance & Compliance
             </p>
             <h2 className="font-sans font-bold text-4xl lg:text-5xl text-[#0F172A] leading-tight tracking-[-0.02em] mb-6">

@@ -208,7 +208,7 @@ export function EquipmentServiceFaq() {
                   }}
                 >
                   <img
-                    src="/engineering_image.jpg"
+                    src="/eqipment_service/coffee_machine_maintenance.jpg"
                     alt="JPLC coffee equipment service engineering UAE"
                     className="w-full h-full object-cover"
                   />

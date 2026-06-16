@@ -48,7 +48,7 @@ const capabilities = [
 ];
 
 const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 0, y: 16 },
   visible: (delay: number = 0) => ({
     opacity: 1,
     y: 0,
@@ -62,7 +62,7 @@ const stagger: Variants = {
 };
 
 const cardVariant: Variants = {
-  hidden: { opacity: 0, y: 28 },
+  hidden: { opacity: 0, y: 14 },
   visible: {
     opacity: 1,
     y: 0,
@@ -93,11 +93,12 @@ export function EngineeringSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
+          style={{ willChange: "transform" }}
         >
           {/* Eyebrow */}
           <div className="flex items-center gap-4 mb-5">
             <div className="w-8 h-px bg-[#2F43B7]" />
-            <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
+            <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
               Coffee Machine Engineering & Technical Services
             </p>
           </div>

@@ -7,28 +7,28 @@ const items = [
     num: "01",
     title: "Preventive Coffee Machine Maintenance Programmes",
     body: "Scheduled coffee machine maintenance UAE visits covering group head servicing, gasket and seal inspection, boiler checks, pressure calibration, temperature profiling, and cleaning cycle verification. Preventive maintenance isn't about ticking boxes on a checklist. It's about catching the variables that drift before they affect the cup or before they cause a component failure at the worst possible moment. Maintenance programmes are structured around machine type, volume, and service environment — not a generic schedule applied to every account.",
-    image: "/coffee_machine_engg.jpg",
+    image: "/eqipment_service/coffee_machine_maintenance.jpg",
     alt: "Preventive coffee machine maintenance UAE — JPLC engineering",
   },
   {
     num: "02",
     title: "Coffee Machine Repair & Fault Resolution",
     body: "When equipment does go down, speed matters. JPLC coffee machine repair covers fault diagnosis, component replacement, and full recommissioning, handled by engineers who work on commercial equipment every day, not generalist technicians pulling up a manual on arrival. Espresso machine repair UAE, grinder faults, boiler failures, pump replacements, and electronic diagnostics — all managed in-house with direct parts access for major commercial brands.",
-    image: "/engineering_image.jpg",
+    image: "/eqipment_service/Coffee_Machine_Repair_Fault_Resolution.jpg",
     alt: "Coffee machine repair and fault resolution UAE — JPLC",
   },
   {
     num: "03",
     title: "Commercial Coffee Machine Service Dubai & UAE-Wide",
     body: "Commercial coffee machine service Dubai and across the UAE, covering installation commissioning, periodic servicing, calibration visits, and emergency response for commercial accounts. Local engineering team, direct accountability, no subcontracting. When a call comes in, the same team that knows the account responds, not a third-party technician seeing the equipment for the first time.",
-    image: "/cafe_image.jpg",
+    image: "/eqipment_service/service.jpg",
     alt: "Commercial coffee machine service Dubai UAE — JPLC",
   },
   {
     num: "04",
     title: "Espresso Machine Repair & Calibration",
     body: "Espresso machine repair UAE covering mechanical, thermal, and electronic faults across major commercial brands. Beyond repair, JPLC engineers recalibrate extraction parameters post-service — temperature stability, pressure profiling, flow rate — so the machine doesn't just work again, it works correctly. Most coffee machine repair visits stop at the fault. Ours don't.",
-    image: "/bevarage.jpg",
+    image: "/eqipment_service/Espresso_Machine_Repair_Calibration.jpg",
     alt: "Espresso machine repair and calibration UAE — JPLC",
   },
   {
@@ -36,7 +36,7 @@ const items = [
     title:
       "Coffee Equipment Maintenance — Grinders, Filtration & Ancillary Systems",
     body: "Coffee equipment maintenance UAE beyond the espresso machine — commercial grinder servicing, burr replacement, water filtration system checks, scale management, and ancillary equipment calibration. Grinder performance and water quality are the two variables most operators underinvest in maintaining. Both affect extraction directly and both degrade gradually enough that the change goes unnoticed until the product is meaningfully worse.",
-    image: "/capsule_coffee.jpg",
+    image: "/eqipment_service/Coffee_Equipmet_Maintenance — Grinders.jpg",
     alt: "Coffee equipment maintenance grinders filtration UAE — JPLC",
   },
   {
@@ -44,7 +44,7 @@ const items = [
     title:
       "Coffee Machine Support Services UAE — Remote Diagnostics & IoT Monitoring",
     body: "IoT-enabled diagnostics for connected equipment — real-time performance monitoring, remote fault identification, and usage data that informs maintenance scheduling. Coffee machine support services UAE that flag issues before they require a physical call-out. For accounts running multiple machines across multiple sites, remote monitoring turns reactive servicing into a managed programme.",
-    image: "/engineering_1.jpg",
+    image: "/eqipment_service/Coffee-Machine-Support-Services.jpg",
     alt: "Coffee machine support services UAE IoT monitoring — JPLC",
   },
 ];

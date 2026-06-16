@@ -49,7 +49,7 @@ export function EcosystemHero() {
           <div>
             <motion.div {...fadeUp(0)} className="flex items-center gap-3 mb-8">
               <div className="w-8 h-px bg-[#4F6BFF]/70" />
-              <span className="text-[#4F6BFF] text-[13px] font-semibold tracking-[0.38em] uppercase">
+              <span className="text-[13px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
                 The JPLC Model
               </span>
             </motion.div>
@@ -150,20 +150,6 @@ export function EcosystemHero() {
                     "linear-gradient(135deg, rgba(47,67,183,0.22) 0%, transparent 55%)",
                 }}
               />
-              <div className="absolute bottom-5 left-5 right-5">
-                <div
-                  className="flex items-center gap-3 px-4 py-3 rounded-xl backdrop-blur-md"
-                  style={{
-                    background: "rgba(15,23,42,0.55)",
-                    border: "1px solid rgba(255,255,255,0.15)",
-                  }}
-                >
-                  <div className="w-2 h-2 rounded-full bg-[#4F6BFF] flex-shrink-0 animate-pulse" />
-                  <span className="text-white text-xs font-medium tracking-wide">
-                    Eight verticals · One partner · Full accountability
-                  </span>
-                </div>
-              </div>
             </div>
 
             <div

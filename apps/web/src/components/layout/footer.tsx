@@ -3,9 +3,7 @@ import Image from "next/image";
 const quickLinks = [
   { label: "R&D Lab", href: "/research-development" },
   { label: "Hospitality Solutions", href: "/hospitality-solutions" },
-  { label: "Subscription Program", href: "/subscription" },
   { label: "Sustainability", href: "/sustainability" },
-  { label: "Insights / Blog", href: "/insights" },
 ];
 
 const socialLinks = [
@@ -133,9 +131,9 @@ export function Footer() {
                   </svg>
                 </span>
                 <p className="text-white text-sm leading-relaxed">
-                  DMCC Coffee Centre
+                  Bean Brew Coffee and Entertainment LLC
                   <br />
-                  Dubai, United Arab Emirates
+                  Al Nahda 2, Dubai — UAE
                 </p>
               </div>
 
@@ -158,10 +156,10 @@ export function Footer() {
                   </svg>
                 </span>
                 <a
-                  href="mailto:hello@jplc.com"
+                  href="mailto:info@beanbrewcoffee.com"
                   className="text-white text-sm hover:text-white/70 transition-colors"
                 >
-                  hello@jplc.com
+                  info@beanbrewcoffee.com
                 </a>
               </div>
 
@@ -183,7 +181,12 @@ export function Footer() {
                     />
                   </svg>
                 </span>
-                <p className="text-white text-sm">+971 4 XXX XXXX</p>
+                <a
+                  href="tel:+97145765629"
+                  className="text-white text-sm hover:text-white/70 transition-colors"
+                >
+                  +971 4 576 5629
+                </a>
               </div>
             </div>
           </div>
@@ -196,16 +199,10 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="/privacy-policy"
               className="text-white text-xs hover:text-white/70 transition-colors"
             >
               Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="text-white text-xs hover:text-white/70 transition-colors"
-            >
-              Terms & Conditions
             </a>
           </div>
         </div>

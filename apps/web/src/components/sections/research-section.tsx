@@ -166,7 +166,7 @@ const kpis = [
 ══════════════════════════════════════════════════════════ */
 
 const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 0, y: 16 },
   visible: {
     opacity: 1,
     y: 0,
@@ -309,7 +309,7 @@ export function ResearchSection() {
             {/* Eyebrow */}
             <div className="flex items-center gap-3 mb-8">
               <div className="w-8 h-px bg-[#4F6BFF]/65" />
-              <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
+              <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
                 Research &amp; Development
               </p>
             </div>

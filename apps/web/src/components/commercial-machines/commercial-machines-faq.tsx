@@ -208,7 +208,7 @@ export function CommercialMachinesFaq() {
                   }}
                 >
                   <img
-                    src="/coffee_machine_engg.jpg"
+                    src="/coffee_machine/cta_image.jpg"
                     alt="JPLC commercial coffee equipment engineering UAE"
                     className="w-full h-full object-cover"
                   />

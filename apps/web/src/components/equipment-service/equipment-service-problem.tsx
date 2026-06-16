@@ -30,12 +30,6 @@ export function EquipmentServiceProblem() {
           transition={{ duration: 0.75, ease: "easeOut" }}
           className="max-w-3xl mb-12 lg:mb-14"
         >
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-px bg-[#2F43B7]" />
-            <span className="text-[#4F6BFF] text-[12px] font-bold tracking-[0.42em] uppercase">
-              The Service Problem
-            </span>
-          </div>
           <h2 className="font-black text-[#0F172A] text-4xl lg:text-5xl xl:text-[56px] leading-[1.02] tracking-[-0.03em]">
             Downtime Costs More Than
             <br />
@@ -81,12 +75,8 @@ export function EquipmentServiceProblem() {
               maintenance costs a fraction of that and keeps the equipment
               performing at spec between visits rather than just after them.
             </p>
-          </div>
-
-          {/* Right: JPLC solution */}
-          <div>
             <div
-              className="rounded-2xl p-8 lg:p-9 h-full"
+              className="rounded-2xl p-8 lg:p-9"
               style={{
                 background: "white",
                 boxShadow: "0 2px 24px rgba(47,67,183,0.07)",
@@ -98,6 +88,21 @@ export function EquipmentServiceProblem() {
                 equipment running, not responding when it doesn&apos;t.
               </p>
             </div>
+          </div>
+
+          {/* Right: image */}
+          <div
+            className="relative rounded-2xl overflow-hidden"
+            style={{
+              minHeight: "320px",
+              boxShadow: "0 2px 24px rgba(47,67,183,0.10)",
+            }}
+          >
+            <img
+              src="/eqipment_service/problem_right_image.jpg"
+              alt="Coffee equipment service — JPLC UAE"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
           </div>
         </motion.div>
       </div>

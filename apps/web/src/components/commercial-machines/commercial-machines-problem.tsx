@@ -30,12 +30,6 @@ export function CommercialMachinesProblem() {
           transition={{ duration: 0.75, ease: "easeOut" }}
           className="max-w-3xl mb-12 lg:mb-14"
         >
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-px bg-[#2F43B7]" />
-            <span className="text-[#4F6BFF] text-[12px] font-bold tracking-[0.42em] uppercase">
-              The Equipment Problem
-            </span>
-          </div>
           <h2 className="font-black text-[#0F172A] text-4xl lg:text-5xl xl:text-[56px] leading-[1.02] tracking-[-0.03em]">
             The Machine Is Where Most
             <br />

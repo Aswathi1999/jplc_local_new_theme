@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion, type Variants } from "framer-motion";
 
@@ -219,7 +219,7 @@ export function GlobalInfrastructure() {
               <div className="w-2 h-2 rounded-full bg-[#4F6BFF]" />
             </div>
             <div className="w-7 h-px bg-[#4F6BFF]/50" />
-            <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
+            <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
               Global Infrastructure
             </p>
           </div>

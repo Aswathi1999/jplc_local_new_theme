@@ -89,13 +89,13 @@ export function PartnershipSection() {
             {/* Eyebrow */}
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="w-8 h-px bg-[#2F43B7]" />
-              <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
+              <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
                 Enterprise Collaboration
               </p>
               <div className="w-8 h-px bg-[#2F43B7]" />
             </div>
 
-            <h2 className="font-sans font-extrabold text-4xl lg:text-5xl xl:text-6xl text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-6">
+            <h2 className="font-sans font-extrabold text-3xl lg:text-4xl xl:text-5xl text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-6">
               Build the Future of Specialty Coffee With Us —{" "}
               <span
                 style={{

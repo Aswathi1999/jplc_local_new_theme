@@ -9,7 +9,7 @@ export function EquipmentServiceHero() {
     target: imageRef,
     offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["-40px", "40px"]);
 
   return (
     <section className="relative bg-white overflow-hidden">
@@ -32,7 +32,7 @@ export function EquipmentServiceHero() {
       />
 
       {/* ─── Text zone ─── */}
-      <div className="relative z-10 pt-32 lg:pt-44 pb-14 lg:pb-20 px-5 lg:px-10">
+      <div className="relative z-10 pt-32 lg:pt-44 pb-6 lg:pb-8 px-5 lg:px-10">
         <div className="max-w-5xl mx-auto text-center">
           {/* Eyebrow */}
           <motion.div
@@ -50,10 +50,10 @@ export function EquipmentServiceHero() {
 
           {/* Headline */}
           <motion.h1
-            initial={{ opacity: 0, y: 36 }}
+            initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 1,
+              duration: 0.9,
               delay: 0.08,
               ease: [0.21, 0.47, 0.32, 0.98] as const,
             }}
@@ -101,7 +101,7 @@ export function EquipmentServiceHero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.38 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center mb-16 lg:mb-20"
+            className="flex flex-col sm:flex-row gap-4 justify-center mb-8 lg:mb-10"
           >
             <a
               href="/contact"
@@ -148,10 +148,16 @@ export function EquipmentServiceHero() {
       >
         <motion.div
           className="absolute w-full"
-          style={{ top: "-10%", height: "120%", y }}
+          style={{
+            top: "-10%",
+            height: "120%",
+            y,
+            willChange: "transform",
+            backfaceVisibility: "hidden",
+          }}
         >
           <img
-            src="/engineering_1.jpg"
+            src="/eqipment_service/Coffee-Machine-Support-Services.jpg"
             alt="Coffee equipment service and maintenance — JPLC UAE"
             className="w-full h-full object-cover"
           />

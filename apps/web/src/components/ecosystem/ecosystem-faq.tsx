@@ -101,19 +101,30 @@ export function EcosystemFaq() {
   return (
     <>
       {/* CTA section */}
-      <section className="relative bg-[#EEF2FF] overflow-hidden py-16 lg:py-24">
+      <section className="relative overflow-hidden py-16 lg:py-24">
+        {/* Background image */}
+        <img
+          src="/ecosystem/ecosystem_cta.jpg"
+          alt="JPLC coffee infrastructure platform UAE"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        {/* Overlay */}
         <div
-          className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
+          className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse at top right, rgba(47,67,183,0.1) 0%, transparent 65%)",
+              "linear-gradient(135deg, rgba(15,23,42,0.70) 0%, rgba(47,67,183,0.22) 100%)",
           }}
         />
+
+        {/* Blueprint grid */}
         <div
-          className="absolute bottom-0 left-0 w-[400px] h-[400px] pointer-events-none"
+          className="absolute inset-0 pointer-events-none opacity-[0.04]"
           style={{
-            background:
-              "radial-gradient(ellipse at bottom left, rgba(47,67,183,0.06) 0%, transparent 70%)",
+            backgroundImage:
+              "linear-gradient(rgba(255,255,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,1) 1px, transparent 1px)",
+            backgroundSize: "80px 80px",
           }}
         />
 
@@ -124,34 +135,28 @@ export function EcosystemFaq() {
             viewport={{ once: true }}
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
-            <div className="flex items-center justify-center gap-2 mb-8">
-              <div className="w-10 h-[2px] rounded-full bg-[#2F43B7]" />
-              <div className="w-3 h-[2px] rounded-full bg-[#4F6BFF]/40" />
-              <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <div className="w-8 h-px bg-white/50" />
+              <span className="text-white text-[11px] font-semibold tracking-[0.45em] uppercase">
+                Build With JPLC
+              </span>
+              <div className="w-8 h-px bg-white/50" />
             </div>
 
-            <h2 className="font-black text-[#0F172A] text-3xl lg:text-[42px] xl:text-[48px] leading-[1.06] tracking-[-0.03em] mb-6">
+            <h2 className="font-black text-white text-3xl lg:text-[42px] xl:text-[48px] leading-[1.06] tracking-[-0.03em] mb-6">
               Ready to Build on a Real{" "}
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
+              <span className="text-white">
                 Coffee Infrastructure Platform UAE?
               </span>
             </h2>
 
-            <p className="text-[#475569] text-base lg:text-[17px] leading-[1.78] mb-4 max-w-2xl mx-auto">
+            <p className="text-white text-base lg:text-[17px] leading-[1.78] mb-4 max-w-2xl mx-auto font-light">
               Whether you&apos;re scaling a café group, launching a private
               label coffee brand, or looking for end-to-end coffee solutions UAE
               — the JPLC coffee ecosystem is built to be the backbone of your
               operation.
             </p>
-            <p className="text-[#475569] text-base lg:text-[17px] leading-[1.78] mb-10 max-w-2xl mx-auto">
+            <p className="text-white text-base lg:text-[17px] leading-[1.78] mb-10 max-w-2xl mx-auto font-light">
               Tell us where you are and what you&apos;re building. We&apos;ll
               show you exactly where the integrated coffee ecosystem UAE
               infrastructure fits in — and where it adds the most value to your
@@ -161,15 +166,17 @@ export function EcosystemFaq() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2.5 px-8 py-4 text-white text-sm font-semibold tracking-wide rounded-xl transition-all duration-300 hover:-translate-y-0.5"
-                style={{
-                  background:
-                    "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
-                  boxShadow: "0 8px 28px rgba(79,107,255,0.28)",
-                }}
+                className="group relative inline-flex items-center justify-center gap-2.5 px-8 py-4 bg-white text-[#2F43B7] text-sm font-semibold tracking-wide rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-black/20"
               >
-                Partner With Us
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-[#2F43B7]/10 to-transparent pointer-events-none" />
+                <span className="relative">Partner With Us</span>
+                <svg
+                  className="relative w-4 h-4"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                >
                   <path
                     d="M2 7h10M8 3l4 4-4 4"
                     stroke="currentColor"
@@ -181,8 +188,7 @@ export function EcosystemFaq() {
               </a>
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-[#2F43B7] text-sm font-semibold tracking-wide rounded-xl transition-all duration-300 hover:bg-[#2F43B7]/8 hover:-translate-y-0.5"
-                style={{ border: "1.5px solid rgba(47,67,183,0.22)" }}
+                className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white text-sm font-semibold tracking-wide rounded-xl hover:bg-white/10 hover:border-white/50 transition-all duration-300"
               >
                 Contact Us
               </a>

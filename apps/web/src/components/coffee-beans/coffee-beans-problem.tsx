@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion, type Variants } from "framer-motion";
 
@@ -82,7 +82,7 @@ export function CoffeeBeansProblem() {
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-px bg-[#2F43B7]" />
-              <span className="text-[#4F6BFF] text-[13px] font-semibold tracking-[0.38em] uppercase">
+              <span className="text-[13px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
                 The Supply Problem
               </span>
             </div>

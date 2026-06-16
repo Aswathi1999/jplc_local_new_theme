@@ -9,7 +9,7 @@ export function CommercialMachinesHero() {
     target: imageRef,
     offset: ["start end", "end start"],
   });
-  const y = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
+  const y = useTransform(scrollYProgress, [0, 1], ["-40px", "40px"]);
 
   return (
     <section className="relative bg-white overflow-hidden">
@@ -50,10 +50,10 @@ export function CommercialMachinesHero() {
 
           {/* Headline */}
           <motion.h1
-            initial={{ opacity: 0, y: 36 }}
+            initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 1,
+              duration: 0.9,
               delay: 0.08,
               ease: [0.21, 0.47, 0.32, 0.98] as const,
             }}
@@ -147,7 +147,13 @@ export function CommercialMachinesHero() {
       >
         <motion.div
           className="absolute w-full"
-          style={{ top: "-10%", height: "120%", y }}
+          style={{
+            top: "-10%",
+            height: "120%",
+            y,
+            willChange: "transform",
+            backfaceVisibility: "hidden",
+          }}
         >
           <img
             src="/coffee_machine/coffee-machine.jpg"

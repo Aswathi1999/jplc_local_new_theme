@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion, type Variants } from "framer-motion";
 
@@ -171,7 +171,7 @@ export function WholesaleServices() {
         >
           <div className="flex items-center gap-4 mb-5">
             <div className="w-8 h-px bg-[#2F43B7]" />
-            <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
+            <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
               Supply Options
             </p>
           </div>

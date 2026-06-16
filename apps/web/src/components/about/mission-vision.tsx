@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion, type Variants } from "framer-motion";
 
@@ -41,7 +41,7 @@ export function MissionVision() {
           className="flex items-center justify-center gap-4 mb-12"
         >
           <div className="w-8 h-px bg-[#2F43B7]" />
-          <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
+          <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
             Mission &amp; Vision
           </p>
           <div className="w-8 h-px bg-[#2F43B7]" />

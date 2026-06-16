@@ -59,7 +59,7 @@ const offerings = [
 ];
 
 const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 36 },
+  hidden: { opacity: 0, y: 16 },
   visible: (delay: number = 0) => ({
     opacity: 1,
     y: 0,
@@ -68,7 +68,7 @@ const fadeUp: Variants = {
 };
 
 const slideLeft: Variants = {
-  hidden: { opacity: 0, x: -50 },
+  hidden: { opacity: 0, x: -30 },
   visible: {
     opacity: 1,
     x: 0,
@@ -77,7 +77,7 @@ const slideLeft: Variants = {
 };
 
 const slideRight: Variants = {
-  hidden: { opacity: 0, x: 50 },
+  hidden: { opacity: 0, x: 30 },
   visible: {
     opacity: 1,
     x: 0,
@@ -86,7 +86,7 @@ const slideRight: Variants = {
 };
 
 const contentFade: Variants = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: { opacity: 0, y: 12 },
   visible: {
     opacity: 1,
     y: 0,
@@ -119,18 +119,19 @@ export function ManufacturingSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
+          style={{ willChange: "transform" }}
         >
           {/* Eyebrow */}
           <div className="flex items-center gap-4 mb-6">
             <div className="w-8 h-px bg-[#2F43B7]" />
-            <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
+            <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
               Manufacturing & Brand Development
             </p>
           </div>
 
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
             <h2 className="font-sans font-extrabold text-4xl lg:text-5xl xl:text-[52px] text-[#0F172A] leading-[1.08] tracking-[-0.03em] max-w-lg">
-              Private Label Coffee Manufacturing UAE —{" "}
+              Private Label Coffee Manufacturing{" "}
               <span
                 style={{
                   background:
@@ -141,7 +142,7 @@ export function ManufacturingSection() {
                   filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
                 }}
               >
-                Production Infrastructure for Ambitious Brands
+                in UAE
               </span>
             </h2>
 

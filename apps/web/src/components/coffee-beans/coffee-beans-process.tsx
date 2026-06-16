@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion, type Variants } from "framer-motion";
 
@@ -26,7 +26,7 @@ const steps = [
 ];
 
 const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 0, y: 16 },
   visible: {
     opacity: 1,
     y: 0,
@@ -70,7 +70,7 @@ export function CoffeeBeansProcess() {
         >
           <div className="flex items-center gap-4 mb-5">
             <div className="w-8 h-px bg-[#2F43B7]" />
-            <p className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
+            <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
               Our Process
             </p>
           </div>

@@ -14,13 +14,20 @@ JPLC operates across eight integrated verticals: green coffee procurement, roast
 Each vertical functions independently. The value compounds when they work together and that integration is what separates JPLC from any single-function coffee company in this region.
 We hold a DMCC certification and operate from one of the most recognised coffee trade hubs in the world — a deliberate choice that places us at the centre of the supply chains, partnerships, and market relationships that matter most to our clients.
 
+H2: Bean Brew Coffee — The Consumer Face of JPLC
+Bean Brew Coffee is JPLC's consumer brand — the part of the operation that faces the end customer directly.
+Where JPLC builds the infrastructure behind coffee businesses, Bean Brew is where that infrastructure meets the cup. A specialty coffee shop experience built on the same sourcing standards, roast quality, and technical rigour that runs through every JPLC vertical — just delivered directly to the person on the other side of the bar.
+H3: The Coffee Shop
+Bean Brew operates as a specialty café — serving coffees developed and roasted in-house, using equipment maintained to the same standards JPLC applies across its commercial accounts. Every cup reflects the depth of the operation behind it.
+H3: The Coffee Subscription
+Bean Brew's subscription programme gives coffee drinkers access to freshly roasted coffee on a yearly basis — collected directly from the shop. Choose your preferred coffee, subscribe for the year, and collect at your convenience.
+It's the simplest way to stay connected to quality coffee — without reordering every time you run out. The same coffee, consistently roasted, ready when you are.
+
 H2: Our Mission
 To build the most reliable and integrated coffee infrastructure in the region, giving coffee businesses, hospitality operators, and emerging brands the supply chain, production capability, and technical depth they need to grow without limits.
-We exist to remove the operational friction that holds coffee programmes back. Every vertical we operate, every system we engineer, and every partnership we build serves that one objective.
 
 H2: Our Vision
 To be the infrastructure behind the region's best coffee experiences, known not for the brand on the cup, but for the precision, consistency, and expertise that made it possible.
-JPLC is built to be the engine others run on. A decade from now, the coffee businesses that lead this market will have one thing in common — a foundation strong enough to carry them there. We intend to be that foundation.
 
 H2: Our Values
 Precision Over Shortcuts

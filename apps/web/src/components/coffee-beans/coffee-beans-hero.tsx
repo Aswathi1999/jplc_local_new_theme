@@ -1,9 +1,9 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 
 const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 28 },
+  initial: { opacity: 0, y: 14 },
   animate: { opacity: 1, y: 0 },
   transition: {
     duration: 0.85,
@@ -46,7 +46,7 @@ export function CoffeeBeansHero() {
             {/* Eyebrow */}
             <motion.div {...fadeUp(0)} className="flex items-center gap-3 mb-8">
               <div className="w-8 h-px bg-[#4F6BFF]/70" />
-              <span className="text-[#4F6BFF] text-[13px] font-semibold tracking-[0.38em] uppercase">
+              <span className="text-[13px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
                 What We Source &amp; Supply
               </span>
             </motion.div>

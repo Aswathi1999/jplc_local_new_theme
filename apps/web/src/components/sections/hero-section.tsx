@@ -11,7 +11,7 @@ const IMG_FLOAT_2 = "/manufacturing.jpg";
 
 /* ── animation helpers ────────────────────────────────────── */
 const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 32 },
+  initial: { opacity: 0, y: 16 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.8, delay, ease: [0.21, 0.47, 0.32, 0.98] as const },
 });
@@ -112,7 +112,7 @@ export function HeroSection() {
             {/* Eyebrow */}
             <motion.div {...fadeUp(0)} className="flex items-center gap-3 mb-9">
               <div className="w-8 h-px bg-[#4F6BFF]/70" />
-              <span className="text-[#4F6BFF] text-[14px] font-semibold tracking-[0.38em] uppercase">
+              <span className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
                 Global Coffee Solutions Infrastructure
               </span>
             </motion.div>
