@@ -141,7 +141,7 @@ export function CompanyStory() {
 
       {/* ── Bean Brew sub-section ── */}
       <div className="relative bg-[#EEF3FF] overflow-hidden">
-        <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 py-16 lg:py-24">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 pt-16 pb-6 lg:pt-24 lg:pb-10">
           <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-12 items-stretch">
             {/* LEFT: Three Bean Brew images staggered */}
             <motion.div
@@ -149,14 +149,10 @@ export function CompanyStory() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              className="flex items-start gap-3"
-              style={{ minHeight: "820px" }}
+              className="flex items-start gap-2 lg:gap-3 lg:min-h-[880px]"
             >
               {/* Image 1 — up */}
-              <div
-                className="relative rounded-2xl overflow-hidden group flex-1"
-                style={{ height: "640px", marginTop: "0px" }}
-              >
+              <div className="relative rounded-2xl overflow-hidden group flex-1 h-[220px] sm:h-[360px] lg:h-[720px]">
                 <Image
                   src="/bean_brew_1.png"
                   alt="Bean Brew Coffee Shop"
@@ -167,10 +163,7 @@ export function CompanyStory() {
               </div>
 
               {/* Image 2 — down */}
-              <div
-                className="relative rounded-2xl overflow-hidden group flex-1"
-                style={{ height: "640px", marginTop: "120px" }}
-              >
+              <div className="relative rounded-2xl overflow-hidden group flex-1 h-[220px] sm:h-[360px] lg:h-[720px] lg:mt-[120px]">
                 <Image
                   src="/bean brew_2.png"
                   alt="Bean Brew Subscription"
@@ -181,10 +174,7 @@ export function CompanyStory() {
               </div>
 
               {/* Image 3 — up */}
-              <div
-                className="relative rounded-2xl overflow-hidden group flex-1"
-                style={{ height: "640px", marginTop: "0px" }}
-              >
+              <div className="relative rounded-2xl overflow-hidden group flex-1 h-[220px] sm:h-[360px] lg:h-[720px]">
                 <Image
                   src="/bean_brew_3.webp"
                   alt="Bean Brew Experience"

@@ -74,7 +74,8 @@ export function TrainingProgrammes() {
   const scrollBy = useCallback((dir: 1 | -1) => {
     const el = trackRef.current;
     if (!el) return;
-    const step = (el.clientWidth - 3 * GAP) / 3.25 + GAP;
+    const firstCard = el.firstElementChild as HTMLElement;
+    const step = (firstCard?.offsetWidth ?? el.clientWidth) + GAP;
     el.scrollBy({ left: dir * step, behavior: "smooth" });
   }, []);
 
@@ -86,7 +87,8 @@ export function TrainingProgrammes() {
       if (atEnd) {
         el.scrollTo({ left: 0, behavior: "smooth" });
       } else {
-        const step = (el.clientWidth - 3 * GAP) / 3.25 + GAP;
+        const firstCard = el.firstElementChild as HTMLElement;
+        const step = (firstCard?.offsetWidth ?? el.clientWidth) + GAP;
         el.scrollBy({ left: step, behavior: "smooth" });
       }
     }, AUTO_SCROLL_INTERVAL);
@@ -110,7 +112,7 @@ export function TrainingProgrammes() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.75, ease: "easeOut" }}
-          className="py-10 lg:py-14 flex items-end justify-between gap-6"
+          className="py-10 lg:py-14 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-6"
         >
           <div>
             <div className="flex items-center gap-2 mb-6">
@@ -118,7 +120,7 @@ export function TrainingProgrammes() {
               <div className="w-3 h-[2px] rounded-full bg-[#4F6BFF]/40" />
               <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
             </div>
-            <h2 className="font-black text-[#0F172A] text-4xl lg:text-5xl xl:text-[56px] leading-[1.03] tracking-[-0.03em] mb-3">
+            <h2 className="font-black text-[#0F172A] text-3xl sm:text-4xl lg:text-5xl xl:text-[56px] leading-[1.03] tracking-[-0.03em] mb-3">
               Barista Courses &amp;
               <br />
               <span
@@ -139,7 +141,7 @@ export function TrainingProgrammes() {
           </div>
 
           {/* Arrow buttons */}
-          <div className="flex items-center gap-3 flex-shrink-0 pb-1">
+          <div className="flex items-center gap-3 flex-shrink-0 pb-1 self-end sm:self-auto">
             <button
               onClick={() => {
                 stopAuto();
@@ -148,7 +150,7 @@ export function TrainingProgrammes() {
               }}
               disabled={!canPrev}
               aria-label="Previous"
-              className="w-11 h-11 flex items-center justify-center rounded-full border transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
+              className="w-9 h-9 sm:w-11 sm:h-11 flex items-center justify-center rounded-full border transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
               style={{
                 borderColor: canPrev ? "#2F43B7" : "rgba(47,67,183,0.3)",
                 background: canPrev ? "#2F43B7" : "transparent",
@@ -173,7 +175,7 @@ export function TrainingProgrammes() {
               }}
               disabled={!canNext}
               aria-label="Next"
-              className="w-11 h-11 flex items-center justify-center rounded-full border transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
+              className="w-9 h-9 sm:w-11 sm:h-11 flex items-center justify-center rounded-full border transition-all duration-200 disabled:opacity-30 disabled:cursor-not-allowed"
               style={{
                 borderColor: canNext ? "#2F43B7" : "rgba(47,67,183,0.3)",
                 background: canNext ? "#2F43B7" : "transparent",
@@ -201,7 +203,7 @@ export function TrainingProgrammes() {
           onScroll={updateArrows}
           onMouseEnter={stopAuto}
           onMouseLeave={startAuto}
-          className="flex gap-4 overflow-x-auto scroll-smooth"
+          className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory"
           style={{
             scrollbarWidth: "none",
             msOverflowStyle: "none",
@@ -211,8 +213,7 @@ export function TrainingProgrammes() {
           {programmes.map((item, i) => (
             <div
               key={item.num}
-              className="flex-shrink-0"
-              style={{ width: "calc((100% - 48px) / 3.25)" }}
+              className="flex-shrink-0 w-full sm:w-[calc((100%-32px)/2.2)] lg:w-[calc((100%-48px)/3.25)] snap-start"
             >
               <motion.div
                 initial={{ opacity: 0, y: 28 }}
