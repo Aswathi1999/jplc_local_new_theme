@@ -66,37 +66,10 @@ export default function PrivacyPolicyPage() {
                 General Inquiries
               </span>
               <a
-                href="mailto:info@beanbrewcoffee.com"
+                href="mailto:Info@jplc-coffee.com"
                 className="text-[#2F43B7] text-sm hover:underline"
               >
-                info@beanbrewcoffee.com
-              </a>
-            </div>
-            <div className="flex items-baseline gap-2 flex-wrap">
-              <span className="text-[#94A3B8] text-[11px]">Partnerships</span>
-              <a
-                href="mailto:hello@beanbrewcoffee.com"
-                className="text-[#2F43B7] text-sm hover:underline"
-              >
-                hello@beanbrewcoffee.com
-              </a>
-            </div>
-            <div className="flex items-baseline gap-2 flex-wrap">
-              <span className="text-[#94A3B8] text-[11px]">Leo Clements</span>
-              <a
-                href="mailto:leo.clements@beanbrewcoffee.com"
-                className="text-[#2F43B7] text-sm hover:underline"
-              >
-                leo.clements@beanbrewcoffee.com
-              </a>
-            </div>
-            <div className="flex items-baseline gap-2 flex-wrap">
-              <span className="text-[#94A3B8] text-[11px]">John Prathap</span>
-              <a
-                href="mailto:john.prathap@beanbrewcoffee.com"
-                className="text-[#2F43B7] text-sm hover:underline"
-              >
-                john.prathap@beanbrewcoffee.com
+                Info@jplc-coffee.com
               </a>
             </div>
           </div>
