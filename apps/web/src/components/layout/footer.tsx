@@ -131,7 +131,7 @@ export function Footer() {
                   </svg>
                 </span>
                 <p className="text-white text-sm leading-relaxed">
-                  Bean Brew Coffee and Entertainment LLC
+                  JPLC COFFEE SHOP LLC
                   <br />
                   Al Nahda 2, Dubai — UAE
                 </p>
@@ -156,10 +156,10 @@ export function Footer() {
                   </svg>
                 </span>
                 <a
-                  href="mailto:info@beanbrewcoffee.com"
+                  href="mailto:Info@jplc-coffee.com"
                   className="text-white text-sm hover:text-white/70 transition-colors"
                 >
-                  info@beanbrewcoffee.com
+                  Info@jplc-coffee.com
                 </a>
               </div>
 

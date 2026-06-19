@@ -75,7 +75,7 @@ const infoCards: {
   {
     id: "01",
     label: "Visit Us",
-    title: "Bean Brew Coffee and Entertainment LLC",
+    title: "JPLC COFFEE SHOP LLC",
     lines: ["Al Nahda 2, Dubai — UAE"],
     icon: <LocationIcon />,
   },
@@ -91,12 +91,7 @@ const infoCards: {
     label: "Email Us",
     title: "",
     lines: [],
-    emails: [
-      { role: "General Inquiries", address: "info@beanbrewcoffee.com" },
-      { role: "Partnerships", address: "hello@beanbrewcoffee.com" },
-      { role: "Leo Clements", address: "leo.clements@beanbrewcoffee.com" },
-      { role: "John Prathap", address: "john.prathap@beanbrewcoffee.com" },
-    ],
+    emails: [{ role: "General Inquiries", address: "Info@jplc-coffee.com" }],
     icon: <EmailIcon />,
   },
 ];
