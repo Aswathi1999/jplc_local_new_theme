@@ -74,12 +74,12 @@ export function MissionVision() {
             </span>
 
             {/* Label */}
-            <p className="text-[#2F43B7] font-mono text-xs uppercase tracking-[0.35em] mb-8">
+            <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7] mb-4">
               Mission
             </p>
 
             {/* Quote */}
-            <blockquote className="text-[#0F172A] font-extrabold text-xl lg:text-2xl leading-snug">
+            <blockquote className="text-[#0F172A] font-semibold text-xl lg:text-2xl leading-snug">
               To build the most reliable and integrated coffee infrastructure in
               the region — giving coffee businesses, hospitality operators, and
               emerging brands the supply chain, production capability, and
@@ -126,12 +126,12 @@ export function MissionVision() {
             </span>
 
             {/* Label */}
-            <p className="text-[#2F43B7] font-mono text-xs uppercase tracking-[0.35em] mb-8">
+            <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7] mb-4">
               Vision
             </p>
 
             {/* Quote */}
-            <blockquote className="text-[#0F172A] font-extrabold text-xl lg:text-2xl leading-snug">
+            <blockquote className="text-[#0F172A] font-semibold text-xl lg:text-2xl leading-snug">
               To be the infrastructure behind the region&apos;s best coffee
               experiences — known not for the brand on the cup, but for the
               precision, consistency, and expertise that made it possible.

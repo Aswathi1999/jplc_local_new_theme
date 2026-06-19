@@ -6,7 +6,7 @@ const services = [
   {
     id: "01",
     title: "Custom Coffee Blends & Roast Profile Development",
-    body: "Our R&D team works directly with brand partners to develop custom coffee blends, profiled around the intended brewing method, target customer, and flavour brief. Roast curves, origin combinations, extraction parameters — all developed from scratch to match your specification.",
+    body: "Our R&D team develops blends around your brewing method, target customer, and flavour brief — roast curves, origin combinations, and extraction parameters built from scratch to your specification.",
     tag: "R&D",
     icon: (
       <svg
@@ -27,7 +27,7 @@ const services = [
   {
     id: "02",
     title: "White Label Coffee Production & OEM Coffee Manufacturing",
-    body: "Full-scale OEM coffee manufacturing for brands that need consistent, repeatable output at volume. Production runs are managed with documented batch tolerances, quality checks at every stage, and full traceability from green bean to finished product.",
+    body: "Full-scale OEM production with documented batch tolerances and full traceability from green bean to finished product. The manufacturing infrastructure brands use to scale without their own facility.",
     tag: "Production",
     icon: (
       <svg
@@ -54,7 +54,7 @@ const services = [
   {
     id: "03",
     title: "Coffee Packaging & Retail Product Development",
-    body: "JPLC handles coffee packaging solutions UAE end-to-end — barrier packaging, degassing valve integration, format selection, shelf-life validation, and print-ready artwork coordination. The result is a retail-ready product that protects quality, meets regulatory requirements, and looks like it belongs on the shelf.",
+    body: "Barrier packaging, degassing valve integration, shelf-life validation, and print-ready artwork coordination — end-to-end. A retail-ready product that protects quality, meets regulations, and looks like it belongs on shelf.",
     tag: "Packaging",
     icon: (
       <svg
@@ -75,7 +75,7 @@ const services = [
   {
     id: "04",
     title: "Capsule & RTD Coffee Production",
-    body: "Nespresso-compatible and proprietary capsule formats, cold brew development, and ready-to-drink coffee production — from formulation through to co-pack. A growing category where the technical barriers are high enough that most brands need a manufacturing partner with real capability behind them.",
+    body: "Nespresso-compatible and proprietary capsule formats, cold brew, and RTD development from formulation through to co-pack — for brands entering a category where technical capability matters.",
     tag: "Capsule & RTD",
     icon: (
       <svg
@@ -96,7 +96,7 @@ const services = [
   {
     id: "05",
     title: "Coffee Branding & Brand Development UAE",
-    body: "For brands at an earlier stage, JPLC offers coffee brand development UAE support — brand positioning, naming, visual identity direction, and go-to-market strategy alongside the production programme. Coffee branding and manufacturing under the same roof means the product and brand develop in parallel.",
+    body: "Brand positioning, naming, visual identity, and go-to-market strategy developed alongside the production programme — product and brand built in parallel, not handed between agencies and factories separately.",
     tag: "Brand Dev",
     icon: (
       <svg
@@ -117,7 +117,7 @@ const services = [
   {
     id: "06",
     title: "Coffee Supplier UAE — Ongoing Supply & Account Management",
-    body: "A private label coffee launch isn't a one-time project. JPLC operates as an ongoing coffee supplier UAE partner, managing replenishment, seasonal blend updates, packaging refreshes, and supply chain continuity as the brand scales.",
+    body: "A private label isn't a one-time project. JPLC manages replenishment, seasonal updates, packaging refreshes, and supply chain continuity as the brand grows.",
     tag: "Supply",
     icon: (
       <svg
@@ -177,17 +177,16 @@ export function PrivateLabelServices() {
             </p>
           </div>
           <h2 className="font-sans font-extrabold text-4xl lg:text-5xl text-[#0F172A] leading-[1.08] tracking-[-0.03em] max-w-3xl">
-            Private Label Coffee &amp;{" "}
+            Private Label Coffee &amp; OEM Coffee{" "}
             <span
               style={{
                 background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
-                filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
               }}
             >
-              OEM Manufacturing Services
+              Manufacturing Services
             </span>
           </h2>
           <div className="mt-6 h-px bg-gradient-to-r from-[#2F43B7]/40 via-[#E5E7EB] to-transparent max-w-2xl" />

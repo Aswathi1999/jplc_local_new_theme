@@ -138,7 +138,7 @@ export function CoffeeBeansHero() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#2F43B7]/15">
               <img
-                src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=900&q=85&auto=format&fit=crop"
+                src="/images/coffee_beans_hero.jpg"
                 alt="Premium specialty coffee beans"
                 className="w-full h-[520px] object-cover"
               />

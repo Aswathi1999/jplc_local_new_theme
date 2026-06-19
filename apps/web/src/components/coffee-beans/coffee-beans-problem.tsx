@@ -80,14 +80,8 @@ export function CoffeeBeansProblem() {
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-px bg-[#2F43B7]" />
-              <span className="text-[13px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
-                The Supply Problem
-              </span>
-            </div>
             <h2 className="font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em] mb-8">
-              The Problem With Most{" "}
+              Most Operators Don&apos;t Know{" "}
               <span
                 style={{
                   background:
@@ -95,33 +89,22 @@ export function CoffeeBeansProblem() {
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
-                  filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
                 }}
               >
-                Coffee Bean Supply
+                What&apos;s in the Bag
               </span>
             </h2>
 
             <div className="space-y-5 text-[#475569] text-base lg:text-[17px] leading-[1.78]">
               <p>
-                Most operators don&apos;t know where their coffee beans actually
-                come from. They know the bag, the blend name, maybe the origin
-                country printed on the label. What they don&apos;t know is the
-                farm, the processing method, the harvest season, or whether the
-                lot they&apos;re receiving today is the same quality as the one
-                from three months ago.
+                They know the blend name. Maybe the origin country. What they
+                don&apos;t know is the farm, the processing method, or whether
+                today&apos;s lot matches last month&apos;s quality.
               </p>
               <p className="font-medium text-[#374151]">
-                That inconsistency is a supply chain problem — and it shows up
-                in the cup every single day.
-              </p>
-              <p>
-                As a dedicated coffee bean supplier with direct-trade
-                relationships across producing regions, JPLC operates
-                differently. Every lot is traceable, Q-graded, and evaluated
-                before it enters our roastery. The coffee beans reaching your
-                operation are verified at origin — not just branded at the
-                warehouse.
+                That inconsistency shows up in the cup every day. Every JPLC lot
+                is traceable, Q-graded, and evaluated at origin — not just
+                branded at the warehouse.
               </p>
             </div>
 

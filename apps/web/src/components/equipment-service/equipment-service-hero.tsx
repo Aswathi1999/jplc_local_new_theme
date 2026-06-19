@@ -59,10 +59,9 @@ export function EquipmentServiceHero() {
             }}
             className="font-black text-[#0F172A] text-4xl sm:text-6xl lg:text-[72px] xl:text-[84px] leading-[1.0] tracking-[-0.04em] mb-5"
           >
-            Coffee Machine Maintenance,
+            Coffee Machine Maintenance &amp;
             <br />
             <span
-              className="text-3xl sm:text-5xl lg:text-[52px] xl:text-[60px]"
               style={{
                 background:
                   "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 55%, #6366F1 100%)",
@@ -71,7 +70,7 @@ export function EquipmentServiceHero() {
                 backgroundClip: "text",
               }}
             >
-              Repair &amp; Coffee Equipment Service
+              Equipment Service
             </span>
           </motion.h1>
           <motion.p

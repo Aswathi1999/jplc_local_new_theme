@@ -5,19 +5,15 @@ import { motion, useInView } from "framer-motion";
 
 const paragraphs = [
   {
-    text: "A five-star hotel serving average coffee isn't a minor inconsistency. It's a brand problem. The same applies to a restaurant group where the espresso varies by location, or a corporate campus where the machine is down three days a week.",
+    text: "A five-star hotel serving average coffee isn't a minor inconsistency — it's a brand problem.",
     highlight: false,
   },
   {
-    text: "Coffee solutions for hotels and hospitality operations carry a different weight than a standalone café setup. The volume is higher, the outlets are multiple, the staff turnover is constant, and the guest expectation doesn't adjust for operational difficulties behind the bar.",
+    text: "Most hospitality operators piece together their programme from separate vendors. Different suppliers for beans, another for equipment, an independent technician for servicing. No single point of contact when something goes wrong.",
     highlight: false,
   },
   {
-    text: "Most hospitality operators piece together their coffee programme from separate vendors — a commercial coffee supplier for beans, a different company for equipment, an independent technician for servicing, and no single point of contact when something goes wrong. The result is a programme held together by goodwill and phone calls rather than structure.",
-    highlight: false,
-  },
-  {
-    text: "Hospitality coffee solutions from JPLC are built around the operational reality of running coffee at scale — one partner, full coverage, active account management.",
+    text: "JPLC covers all of it. One partner, full accountability.",
     highlight: true,
   },
 ];
@@ -37,7 +33,7 @@ export function HospitalityProblem() {
       />
 
       <div className="max-w-7xl mx-auto px-5 lg:px-10 xl:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-12 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-12 lg:gap-20 items-center">
           {/* Left: sticky H2 + image */}
           <div className="lg:sticky lg:top-32">
             <motion.h2
@@ -45,19 +41,19 @@ export function HospitalityProblem() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 1.0, ease: [0.22, 0.61, 0.36, 1] }}
-              className="font-black text-[#0F172A] text-[38px] lg:text-[46px] xl:text-[52px] leading-[1.0] tracking-[-0.035em] mb-10"
+              className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em] mb-10"
             >
-              Hospitality Coffee Programmes Fail at the{" "}
+              Where Hospitality Coffee Programmes{" "}
               <span
                 style={{
                   background:
-                    "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                    "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
                 }}
               >
-                Infrastructure Level
+                Fall Apart
               </span>
             </motion.h2>
 
@@ -110,7 +106,7 @@ export function HospitalityProblem() {
               </motion.div>
             </div>
 
-            <div className="flex flex-col flex-1 gap-0">
+            <div className="flex flex-col flex-1 gap-6">
               {paragraphs.map((para, i) => (
                 <motion.div
                   key={i}
@@ -122,7 +118,7 @@ export function HospitalityProblem() {
                     delay: i * 0.12,
                     ease: [0.25, 0.46, 0.45, 0.94],
                   }}
-                  className={i < paragraphs.length - 1 ? "pb-8" : ""}
+                  className=""
                 >
                   {para.highlight ? (
                     <div
@@ -137,24 +133,9 @@ export function HospitalityProblem() {
                       </p>
                     </div>
                   ) : (
-                    <>
-                      <p className="text-[#475569] text-[15px] lg:text-[16px] leading-[1.88]">
-                        {para.text}
-                      </p>
-                      <div className="flex items-center gap-3 mt-8">
-                        <div
-                          className="w-6 h-[2px] rounded-full"
-                          style={{
-                            background:
-                              "linear-gradient(90deg, #2F43B7, #4F6BFF)",
-                          }}
-                        />
-                        <div
-                          className="flex-1 h-px"
-                          style={{ background: "rgba(15,23,42,0.07)" }}
-                        />
-                      </div>
-                    </>
+                    <p className="text-[#475569] text-[15px] lg:text-[16px] leading-[1.88]">
+                      {para.text}
+                    </p>
                   )}
                 </motion.div>
               ))}

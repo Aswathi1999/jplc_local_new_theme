@@ -6,27 +6,27 @@ const steps = [
   {
     number: "01",
     title: "Skills Assessment",
-    body: "Every programme starts with an honest assessment of where the barista or team currently sits — technical ability, knowledge gaps, equipment familiarity, and the specific standard the café is trying to reach.",
+    body: "Honest assessment of where the barista or team sits — technical ability, knowledge gaps, equipment familiarity, and the standard the café wants to reach.",
   },
   {
     number: "02",
     title: "Programme Selection & Customisation",
-    body: "Based on the assessment, we match the right barista course and customise the content around the café's specific equipment, coffee, and workflow requirements.",
+    body: "Right course matched to the assessment, content built around the café's specific equipment, coffee, and workflow — nothing generic.",
   },
   {
     number: "03",
     title: "Delivery — On-Site or Academy",
-    body: "Barista training is delivered either on-site at the café using the team's own bar setup, or at JPLC's dedicated training facility — fully equipped with commercial espresso systems, grinders, and brewing equipment. On-site delivery is recommended where bar-specific workflow training is the priority.",
+    body: "Delivered on-site using the café's own bar setup, or at JPLC's fully equipped training facility. On-site is recommended where workflow training is the priority.",
   },
   {
     number: "04",
     title: "Assessment & Barista Certification",
-    body: "For programmes including formal barista certification, assessment is conducted against documented competency standards — practical, sensory, and written components. Results are certificated and documented for the café's records.",
+    body: "Formal certification assessed against documented competency standards — practical, sensory, and written components. Results certificated and kept on record for the café.",
   },
   {
     number: "05",
     title: "Follow-Up & Refresher Training",
-    body: "Post-programme follow-up visits, refresher sessions, and access to ongoing barista classes UAE for teams that want to keep developing. Barista training is most effective when it's treated as an ongoing investment rather than a one-time event.",
+    body: "Post-programme follow-up visits and refresher sessions available ongoing. Barista training works best as a continuous investment — not a one-time event.",
   },
 ];
 
@@ -183,7 +183,7 @@ function ProcessCard({
 
 export function TrainingProcess() {
   return (
-    <section className="relative bg-white overflow-hidden py-14 lg:py-20">
+    <section className="relative bg-white overflow-hidden py-10 lg:py-14">
       {/* Very subtle warm tint overlay */}
       <div
         className="absolute inset-0 pointer-events-none"
@@ -207,11 +207,11 @@ export function TrainingProcess() {
             <div className="w-3 h-[2px] rounded-full bg-[#4F6BFF]/40" />
             <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
           </div>
-          <h2 className="font-black text-[#0F172A] text-4xl lg:text-5xl xl:text-[52px] leading-[1.03] tracking-[-0.03em]">
+          <h2 className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em]">
             The Way JPLC Delivers{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",

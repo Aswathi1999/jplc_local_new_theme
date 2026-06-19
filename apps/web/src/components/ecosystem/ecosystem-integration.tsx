@@ -21,7 +21,7 @@ const benefits = [
   },
   {
     title: "Faster response, fuller picture",
-    body: "A coffee sourcing, roasting, and distribution UAE operation under one roof means faster fault resolution, tighter SLAs, and a partner who understands the full context of your programme — not just the slice they're responsible for.",
+    body: "A coffee sourcing, roasting, and distribution UAE operation under one roof means faster fault resolution, tighter SLAs, and a partner who understands the full context of your programme.",
   },
 ];
 
@@ -53,7 +53,7 @@ export function EcosystemIntegration() {
             </div>
 
             <h2 className="font-black text-[#0F172A] text-3xl lg:text-[40px] xl:text-[44px] leading-[1.08] tracking-[-0.03em] mb-6">
-              How the Coffee Ecosystem{" "}
+              How Our Coffee{" "}
               <span
                 style={{
                   background:
@@ -63,15 +63,29 @@ export function EcosystemIntegration() {
                   backgroundClip: "text",
                 }}
               >
-                Delivers What Single-Function Suppliers Can&apos;t
+                Ecosystem Works
               </span>
             </h2>
 
+            {/* Coffee ecosystem image */}
+            <div
+              className="relative rounded-2xl overflow-hidden mb-8"
+              style={{ boxShadow: "0 8px 32px rgba(15,23,42,0.12)" }}
+            >
+              <img
+                src="/ecosystem/coffee_ecosystem.jpg"
+                alt="How the JPLC coffee ecosystem works"
+                className="w-full object-cover"
+                style={{ maxHeight: "420px" }}
+              />
+            </div>
+
             <p className="text-[#475569] text-base lg:text-[17px] leading-[1.78] mb-8 max-w-md">
-              Integration is the point. When every vertical — coffee sourcing,
-              roasting, technology, engineering, and distribution — operates
-              within the same infrastructure, the benefits compound across the
-              entire coffee supply chain.
+              Integration is the point. When every vertical, such as coffee
+              sourcing, roasting, coffee technology, engineering, and coffee
+              distribution, operates within the same infrastructure, the
+              benefits compound across the entire coffee supply chain solutions
+              UAE.
             </p>
 
             <div

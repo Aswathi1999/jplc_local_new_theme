@@ -6,42 +6,42 @@ const items = [
   {
     num: "01",
     title: "Espresso Machines — Commercial & Prosumer Grade",
-    body: "Espresso machines for every commercial application — single group through to high-volume multi-group configurations for busy café and hotel environments. Machine selection is matched to the volume, workflow, and skill level of the operation — not pushed toward the highest margin unit. As an espresso machine supplier UAE, JPLC works with leading manufacturers and handles import, warranty management, and local technical support in-house.",
+    body: "Espresso machines for every commercial application — single group through to high-volume multi-group configurations for busy café and hotel environments. Machine selection is matched to the volume, workflow, and skill level of the operation — not pushed toward the highest margin unit.",
     image: "/coffee_machine/posumer grade.jpg",
     alt: "Commercial espresso machine engineering — JPLC UAE",
   },
   {
     num: "02",
     title: "Coffee Machines for Cafés UAE — Full Setup & Workflow Design",
-    body: "Coffee machines for cafés UAE isn't just equipment selection — it's workflow. Bar layout, grinder positioning, water filtration integration, and extraction consistency across a full service day. JPLC approaches café equipment setup as an operational design problem, not a product sale. Bean-to-cup, traditional espresso, batch brew, and filter systems — matched to the concept, the team, and the volume.",
+    body: "Coffee machines for cafés UAE isn't just equipment selection — it's workflow. Bar layout, grinder positioning, water filtration integration, and extraction consistency across a full service day. JPLC approaches café equipment setup as an operational design problem, not a product sale.",
     image: "/coffee_machine/cafe_machine.jpg",
     alt: "Coffee machines for cafés UAE — full setup and workflow",
   },
   {
     num: "03",
     title: "Coffee Machines for Hotels UAE & Hospitality Groups",
-    body: "Hotel coffee operations are more complex than a single machine. Lobby café, restaurant breakfast service, in-room systems, banqueting, executive lounge, each space has different volume, format, and consistency requirements. Coffee machines for hotels UAE need to perform reliably across multiple outlets, managed by staff with varying skill levels, through long service periods. JPLC supplies and services hotel coffee equipment programmes with account management built around hospitality operational realities.",
+    body: "Coffee machines for hotels UAE need to perform reliably across multiple outlets, managed by staff with varying skill levels, through long service periods. JPLC supplies and services hotel coffee equipment programmes with account management built around hospitality operational realities.",
     image: "/engineering_image.jpg",
     alt: "Hotel coffee equipment installation UAE",
   },
   {
     num: "04",
     title: "Coffee Machines for Restaurants UAE & F&B Operations",
-    body: "Restaurants need professional coffee machines that deliver consistent espresso through a dinner service without requiring a dedicated barista to babysit the equipment. JPLC supplies coffee machine solutions matched to the kitchen workflow — reliable, low-maintenance, and consistent under pressure. Technical servicing and parts support managed locally, not through a distant manufacturer warranty process.",
+    body: "Restaurants need professional coffee machines that deliver consistent espresso through a dinner service without requiring a dedicated barista to babysit the equipment. JPLC supplies coffee machine solutions matched to the kitchen workflow — reliable, low-maintenance, and consistent under pressure.",
     image: "/coffee_machine/coffee_machine_restaurant.jpg",
     alt: "Restaurant coffee machine solutions UAE",
   },
   {
     num: "05",
     title: "Coffee Grinders & Ancillary Coffee Equipment",
-    body: "The grinder is the most underrated variable in commercial espresso. Coffee grinders set particle size distribution, which determines extraction rate, which determines flavour. A mismatched or poorly calibrated grinder undoes the work of every other part of the setup. JPLC supplies commercial coffee grinders and ancillary coffee equipment — water filtration, knock boxes, tamping stations, batch brewers — selected and calibrated to work as a complete system, not as individual products.",
+    body: "JPLC supplies commercial coffee grinders and ancillary coffee equipment — water filtration, knock boxes, tamping stations, batch brewers — selected and calibrated to work as a complete system, not as individual products.",
     image: "/coffee_machine/coffee_grinders.jpg",
     alt: "Commercial coffee grinders and ancillary equipment",
   },
   {
     num: "06",
     title: "Technical Services & Coffee Equipment Supplier UAE Support",
-    body: "Supply is the starting point. Ongoing performance is what actually matters. As a full-service coffee equipment supplier UAE, JPLC provides installation, commissioning, calibration, preventive maintenance, and emergency technical support for all equipment we supply, and for existing equipment from other suppliers. IoT diagnostics, grinder calibration, group head servicing, water system checks — managed on a schedule before faults develop, not after.",
+    body: "Supply is the starting point. Ongoing performance is what actually matters. As a full-service coffee equipment supplier UAE, JPLC provides installation, commissioning, calibration, preventive maintenance, and emergency technical support for all equipment we supply, and for existing equipment from other suppliers.",
     image: "/coffee_machine/technical_services.jpg",
     alt: "Coffee equipment technical services UAE — JPLC engineering",
   },
@@ -83,18 +83,17 @@ export function CommercialMachinesProducts() {
             <div className="w-3 h-[2px] rounded-full bg-[#4F6BFF]/40" />
             <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
           </div>
-          <h2 className="font-black text-[#0F172A] text-4xl lg:text-5xl xl:text-[56px] leading-[1.03] tracking-[-0.03em]">
-            What — Commercial Coffee Machines
-            <br />
+          <h2 className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em]">
+            Commercial Coffee Machines &amp;{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
               }}
             >
-              &amp; Coffee Equipment Supply
+              Coffee Equipment Supply
             </span>
           </h2>
         </motion.div>

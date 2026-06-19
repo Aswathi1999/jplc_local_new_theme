@@ -5,45 +5,43 @@ import { motion } from "framer-motion";
 const items = [
   {
     num: "01",
-    title: "Preventive Coffee Machine Maintenance Programmes",
-    body: "Scheduled coffee machine maintenance UAE visits covering group head servicing, gasket and seal inspection, boiler checks, pressure calibration, temperature profiling, and cleaning cycle verification. Preventive maintenance isn't about ticking boxes on a checklist. It's about catching the variables that drift before they affect the cup or before they cause a component failure at the worst possible moment. Maintenance programmes are structured around machine type, volume, and service environment — not a generic schedule applied to every account.",
+    title: "Preventive Maintenance",
+    body: "Scheduled visits covering group head servicing, boiler checks, pressure calibration, and temperature profiling. Structured around machine type and volume — not a generic schedule applied to every account.",
     image: "/eqipment_service/coffee_machine_maintenance.jpg",
     alt: "Preventive coffee machine maintenance UAE — JPLC engineering",
   },
   {
     num: "02",
-    title: "Coffee Machine Repair & Fault Resolution",
-    body: "When equipment does go down, speed matters. JPLC coffee machine repair covers fault diagnosis, component replacement, and full recommissioning, handled by engineers who work on commercial equipment every day, not generalist technicians pulling up a manual on arrival. Espresso machine repair UAE, grinder faults, boiler failures, pump replacements, and electronic diagnostics — all managed in-house with direct parts access for major commercial brands.",
+    title: "Repair & Fault Resolution",
+    body: "Fault diagnosis, component replacement, and full recommissioning — handled by engineers who work on commercial equipment daily. Grinder faults, boiler failures, pump replacements, and electronic diagnostics managed in-house.",
     image: "/eqipment_service/Coffee_Machine_Repair_Fault_Resolution.jpg",
     alt: "Coffee machine repair and fault resolution UAE — JPLC",
   },
   {
     num: "03",
-    title: "Commercial Coffee Machine Service Dubai & UAE-Wide",
-    body: "Commercial coffee machine service Dubai and across the UAE, covering installation commissioning, periodic servicing, calibration visits, and emergency response for commercial accounts. Local engineering team, direct accountability, no subcontracting. When a call comes in, the same team that knows the account responds, not a third-party technician seeing the equipment for the first time.",
+    title: "Commercial Service — Dubai & UAE",
+    body: "Installation commissioning, periodic servicing, calibration, and emergency response across the UAE. Local engineering team, direct accountability, no subcontracting. The same team that knows the account always responds.",
     image: "/eqipment_service/service.jpg",
     alt: "Commercial coffee machine service Dubai UAE — JPLC",
   },
   {
     num: "04",
     title: "Espresso Machine Repair & Calibration",
-    body: "Espresso machine repair UAE covering mechanical, thermal, and electronic faults across major commercial brands. Beyond repair, JPLC engineers recalibrate extraction parameters post-service — temperature stability, pressure profiling, flow rate — so the machine doesn't just work again, it works correctly. Most coffee machine repair visits stop at the fault. Ours don't.",
+    body: "Mechanical, thermal, and electronic fault resolution across major commercial brands. Post-repair, extraction parameters are fully recalibrated — temperature, pressure, flow rate. The machine doesn't just work again, it works correctly.",
     image: "/eqipment_service/Espresso_Machine_Repair_Calibration.jpg",
     alt: "Espresso machine repair and calibration UAE — JPLC",
   },
   {
     num: "05",
-    title:
-      "Coffee Equipment Maintenance — Grinders, Filtration & Ancillary Systems",
-    body: "Coffee equipment maintenance UAE beyond the espresso machine — commercial grinder servicing, burr replacement, water filtration system checks, scale management, and ancillary equipment calibration. Grinder performance and water quality are the two variables most operators underinvest in maintaining. Both affect extraction directly and both degrade gradually enough that the change goes unnoticed until the product is meaningfully worse.",
+    title: "Grinders, Filtration & Ancillary Equipment",
+    body: "Grinder servicing, burr replacement, water filtration checks, and scale management. Grinder performance and water quality affect extraction directly — both degrade gradually until the product is noticeably worse.",
     image: "/eqipment_service/Coffee_Equipmet_Maintenance — Grinders.jpg",
     alt: "Coffee equipment maintenance grinders filtration UAE — JPLC",
   },
   {
     num: "06",
-    title:
-      "Coffee Machine Support Services UAE — Remote Diagnostics & IoT Monitoring",
-    body: "IoT-enabled diagnostics for connected equipment — real-time performance monitoring, remote fault identification, and usage data that informs maintenance scheduling. Coffee machine support services UAE that flag issues before they require a physical call-out. For accounts running multiple machines across multiple sites, remote monitoring turns reactive servicing into a managed programme.",
+    title: "Remote Diagnostics & IoT Monitoring",
+    body: "Real-time performance monitoring, remote fault identification, and usage data that informs maintenance scheduling. Flags issues before they require a physical call-out — essential for multi-site operations.",
     image: "/eqipment_service/Coffee-Machine-Support-Services.jpg",
     alt: "Coffee machine support services UAE IoT monitoring — JPLC",
   },
@@ -85,18 +83,17 @@ export function EquipmentServiceServices() {
             <div className="w-3 h-[2px] rounded-full bg-[#4F6BFF]/40" />
             <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
           </div>
-          <h2 className="font-black text-[#0F172A] text-4xl lg:text-5xl xl:text-[56px] leading-[1.03] tracking-[-0.03em]">
-            Coffee Machine Maintenance
-            <br />
+          <h2 className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em]">
+            Coffee Machine Maintenance &amp;{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
               }}
             >
-              &amp; Repair Services
+              Repair Services
             </span>
           </h2>
         </motion.div>

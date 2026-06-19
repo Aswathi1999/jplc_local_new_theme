@@ -30,12 +30,11 @@ export function EquipmentServiceProblem() {
           transition={{ duration: 0.75, ease: "easeOut" }}
           className="max-w-3xl mb-12 lg:mb-14"
         >
-          <h2 className="font-black text-[#0F172A] text-4xl lg:text-5xl xl:text-[56px] leading-[1.02] tracking-[-0.03em]">
-            Downtime Costs More Than
-            <br />
+          <h2 className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em]">
+            Downtime Costs More Than{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -57,23 +56,16 @@ export function EquipmentServiceProblem() {
           {/* Left: the problems */}
           <div className="space-y-5 text-[#475569] text-base lg:text-[17px] leading-[1.78]">
             <p>
-              A commercial espresso machine going down during morning service
-              isn&apos;t just an equipment problem. It&apos;s a revenue problem,
-              a staff problem, and a customer experience problem — all at once.
+              A machine going down during morning service isn&apos;t just an
+              equipment problem — it&apos;s revenue, staff, and guest experience
+              hit simultaneously.
             </p>
             <p>
-              Most operators only think about coffee machine servicing after
-              something breaks. By that point, the fault has usually been
-              developing for weeks, through gradual extraction inconsistency,
-              temperature instability, or grinder drift that nobody flagged
-              because nobody was looking.
-            </p>
-            <p>
-              Reactive maintenance is expensive. It means emergency call-outs,
-              parts on back-order, and service technicians who&apos;ve never
-              seen the specific machine before. Preventive coffee equipment
-              maintenance costs a fraction of that and keeps the equipment
-              performing at spec between visits rather than just after them.
+              Most operators only think about servicing after something breaks.
+              By then, the fault has been developing for weeks. Reactive
+              maintenance is expensive. Preventive coffee equipment maintenance
+              costs a fraction — and keeps equipment performing between visits,
+              not just after them.
             </p>
             <div
               className="rounded-2xl p-8 lg:p-9"

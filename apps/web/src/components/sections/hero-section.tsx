@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 /* ── images ──────────────────────────────────────────────── */
-const IMG_MAIN = "/hero_new_image.jpg";
 const IMG_FLOAT_1 = "/coffee_machine_engg.jpg";
 const IMG_FLOAT_2 = "/manufacturing.jpg";
 
@@ -21,13 +20,28 @@ const STATS = [
   { value: "6", label: "Integrated Verticals" },
 ];
 
+const IMG_HERO_1 = "/images/image_1.png";
+const IMG_HERO_2 = "/images/image_2.JPG";
+
 const SLIDES = [
   {
-    src: IMG_MAIN,
-    alt: "JPLC industrial coffee infrastructure",
-    label: "Engineering Division",
-    sub: "JPLC Technical Operations",
+    src: IMG_HERO_1,
+    alt: "JPLC coffee infrastructure UAE",
+    label: "Coffee Infrastructure",
+    sub: "JPLC — Built for Scale",
   },
+  {
+    src: IMG_HERO_2,
+    alt: "JPLC coffee operations UAE",
+    label: "Coffee Operations",
+    sub: "JPLC — End to End",
+  },
+  // {
+  //   src: IMG_MAIN,
+  //   alt: "JPLC industrial coffee infrastructure",
+  //   label: "Engineering Division",
+  //   sub: "JPLC Technical Operations",
+  // },
   {
     src: IMG_FLOAT_1,
     alt: "Coffee machine engineering",
@@ -435,22 +449,6 @@ export function HeroSection() {
                     <p className="text-white/55 text-[9px] tracking-wider mt-0.5">
                       {SLIDES[active].sub}
                     </p>
-                  </div>
-
-                  {/* Slide counter — top right */}
-                  <div className="absolute top-4 right-4">
-                    <span
-                      className="text-[9px] font-bold tracking-[0.3em] text-white/70"
-                      style={{
-                        background: "rgba(15,23,42,0.45)",
-                        backdropFilter: "blur(8px)",
-                        borderRadius: "6px",
-                        padding: "4px 8px",
-                      }}
-                    >
-                      {String(active + 1).padStart(2, "0")} /{" "}
-                      {String(SLIDES.length).padStart(2, "0")}
-                    </span>
                   </div>
                 </motion.div>
               </AnimatePresence>

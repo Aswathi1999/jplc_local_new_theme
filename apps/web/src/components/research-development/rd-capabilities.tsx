@@ -7,12 +7,12 @@ const capabilities = [
   {
     num: "01",
     title: "Coffee Extraction Science & Brew Research",
-    desc: "Systematic coffee extraction science, yield mapping, TDS analysis, extraction uniformity testing, and brewing variable isolation. Understanding exactly what's happening in the cup and why, across different brewing methods, grind profiles, and water compositions. This is the foundation of every brew protocol and extraction parameter JPLC sets for commercial accounts — built on lab data, not industry convention.",
+    desc: "Systematic coffee extraction science, yield mapping, TDS analysis, extraction uniformity testing, and brewing variable isolation. Understanding exactly what's happening in the cup and why, across different brewing methods, grind profiles, and water compositions.",
   },
   {
     num: "02",
     title: "Roast Profile Engineering",
-    desc: "Roast curve development, Maillard reaction mapping, development time ratios, and post-roast degassing analysis. Roast profile engineering at JPLC treats the roaster as a precision instrument — every variable documented, every profile reproducible. For private label partners, this means a roast that can be replicated batch after batch, not approximated.",
+    desc: "Roast curve development, Maillard reaction mapping, development time ratios, and post-roast degassing analysis. Roast profile engineering at JPLC treats the roaster as a precision instrument — every variable documented, every profile reproducible.",
   },
   {
     num: "03",
@@ -22,17 +22,17 @@ const capabilities = [
   {
     num: "04",
     title: "Coffee Product Development UAE",
-    desc: "New beverage formulation, capsule development, RTD product testing, and menu engineering — coffee product development UAE brands and hospitality operators use to bring new products to market with confidence. Development is conducted in-lab with iterative testing cycles before any product moves to commercial production. What reaches the shelf or the menu has already been validated.",
+    desc: "Compound analysis, sensory evaluation, and flavour profiling across origins, processing methods, and roast degrees — understanding the chemical basis of flavour, not just the subjective experience of it.",
   },
   {
     num: "05",
     title: "Coffee Testing & Quality Control",
-    desc: "Incoming green coffee evaluation, roasted batch verification, extraction consistency testing, and equipment performance benchmarking. Coffee testing at JPLC is embedded in the production process, not a separate quality department that sees the product after the fact. Every lot, every batch, every calibration visit produces documented data that builds a performance record over time.",
+    desc: "Green coffee evaluation, roasted batch verification, extraction consistency testing, and equipment benchmarking — embedded in the production process, not a separate department reviewing the product after the fact.",
   },
   {
     num: "06",
     title: "Coffee Engineering & Technology Development",
-    desc: "Applied coffee engineering — PID control systems, IoT diagnostics, grinder calibration methodology, and water treatment protocol development. The coffee technology side of R&D that connects lab findings to the equipment on the floor. Coffee technology solutions UAE operations can actually deploy — not theoretical research that stays in the lab.",
+    desc: "Applied coffee engineering — PID control systems, IoT diagnostics, grinder calibration methodology, and water treatment protocol development. The coffee technology side of R&D that connects lab findings to the equipment on the floor.",
   },
 ];
 
@@ -131,11 +131,11 @@ export function RdCapabilities() {
           transition={{ duration: 0.75, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="mb-12 lg:mb-16"
         >
-          <h2 className="font-black text-[#0F172A] text-[38px] lg:text-[50px] xl:text-[58px] leading-[1.0] tracking-[-0.035em]">
+          <h2 className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em]">
             Coffee Technology &amp;{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",

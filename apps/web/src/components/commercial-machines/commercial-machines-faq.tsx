@@ -16,14 +16,6 @@ const faqs = [
     q: "Can you service equipment that wasn't supplied by JPLC?",
     a: "Yes. JPLC's technical services team services commercial coffee machines from other suppliers, covering calibration, preventive maintenance, fault diagnosis, and parts supply for most major commercial brands.",
   },
-  {
-    q: "How quickly can you respond to an equipment breakdown?",
-    a: "Response times depend on the service agreement in place. Accounts on a managed service programme receive priority response. Contact our technical team directly for service agreement options and current response time commitments.",
-  },
-  {
-    q: "Do you offer coffee equipment supplier UAE services outside Dubai?",
-    a: "Yes. JPLC supplies and services coffee equipment across the UAE — not just Dubai. Coverage and logistics for specific locations can be confirmed at the inquiry stage.",
-  },
 ];
 
 const fadeUp: Variants = {
@@ -118,18 +110,18 @@ export function CommercialMachinesFaq() {
                 <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
               </div>
 
-              <h2 className="font-black text-[#0F172A] text-3xl lg:text-[40px] xl:text-[44px] leading-[1.08] tracking-[-0.03em] mb-6">
-                Need a Commercial Coffee Machine Supplier Who Stays{" "}
+              <h2 className="font-sans font-extrabold text-[#0F172A] text-3xl lg:text-4xl xl:text-5xl leading-[1.08] tracking-[-0.03em] mb-6">
+                Need a Commercial Coffee{" "}
                 <span
                   style={{
                     background:
-                      "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                      "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
                   }}
                 >
-                  Involved After Delivery?
+                  Machine Supplier?
                 </span>
               </h2>
 

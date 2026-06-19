@@ -10,19 +10,11 @@ const faqs = [
   },
   {
     q: "What's the difference between private label coffee and white label coffee?",
-    a: "White label coffee refers to a standardised product produced for multiple brands with minimal customisation — typically a set blend in generic packaging with your label applied. Private label coffee is developed specifically for your brand: custom blend, custom roast profile, custom packaging. JPLC offers both, depending on the requirement and timeline.",
+    a: "White label coffee refers to a standardised product produced for multiple brands with minimal customisation, typically a set blend in generic packaging with your label applied. Private label coffee is developed specifically for your brand — custom blend, custom roast profile, custom packaging. JPLC offers both, depending on the requirement and timeline.",
   },
   {
     q: "What's the minimum order for OEM coffee manufacturing in the UAE?",
     a: "Minimum order quantities vary by format — roasted whole bean, ground, capsule, and RTD each have different production thresholds. Contact our manufacturing team directly for volume-specific pricing and lead times.",
-  },
-  {
-    q: "Can JPLC help with coffee brand development UAE as well as production?",
-    a: "Yes. For brands at an earlier stage, we offer coffee branding and brand development support alongside the manufacturing programme, covering product positioning, visual identity direction, and go-to-market planning.",
-  },
-  {
-    q: "How long does it take to launch a custom coffee manufacturing UAE product?",
-    a: "Timeline depends on the complexity of the brief, the number of sample iterations required, and packaging lead times. A straightforward white label coffee programme can move from brief to first production run in six to eight weeks. Custom blend development with new packaging typically takes longer — our team will give a realistic timeline at the briefing stage.",
   },
 ];
 

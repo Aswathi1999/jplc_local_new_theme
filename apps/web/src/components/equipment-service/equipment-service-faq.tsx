@@ -16,14 +16,6 @@ const faqs = [
     q: "How quickly can you respond to a breakdown for commercial coffee machine service Dubai?",
     a: "Response times depend on the service agreement in place. Managed service accounts receive priority response. Contact our team directly for current response time commitments and service agreement options for your location.",
   },
-  {
-    q: "What's covered under espresso machine repair UAE callouts?",
-    a: "Espresso machine repair UAE callouts cover fault diagnosis, component replacement, and full post-repair calibration, including extraction temperature, pressure profiling, and grind settings. We don't hand the machine back until it's performing correctly, not just running.",
-  },
-  {
-    q: "Do you offer coffee equipment maintenance UAE for grinders and water filtration systems?",
-    a: "Yes. Coffee equipment maintenance UAE at JPLC covers the full equipment setup — espresso machines, commercial grinders, water filtration systems, and ancillary equipment. Grinder and filtration maintenance is included in managed service programmes or available as standalone scheduled visits.",
-  },
 ];
 
 const fadeUp: Variants = {
@@ -118,18 +110,18 @@ export function EquipmentServiceFaq() {
                 <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
               </div>
 
-              <h2 className="font-black text-[#0F172A] text-3xl lg:text-[40px] xl:text-[44px] leading-[1.08] tracking-[-0.03em] mb-6">
-                Equipment That&apos;s Properly Maintained Pays for Itself.{" "}
+              <h2 className="font-sans font-extrabold text-[#0F172A] text-3xl lg:text-4xl xl:text-5xl leading-[1.08] tracking-[-0.03em] mb-6">
+                Coffee Machine Maintenance UAE{" "}
                 <span
                   style={{
                     background:
-                      "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                      "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
                   }}
                 >
-                  Coffee Machine Maintenance UAE That Proves It.
+                  That Proves It.
                 </span>
               </h2>
 
@@ -208,7 +200,7 @@ export function EquipmentServiceFaq() {
                   }}
                 >
                   <img
-                    src="/eqipment_service/coffee_machine_maintenance.jpg"
+                    src="/ecosystem/maintanance.png"
                     alt="JPLC coffee equipment service engineering UAE"
                     className="w-full h-full object-cover"
                   />
@@ -235,7 +227,7 @@ export function EquipmentServiceFaq() {
                 FAQ
               </p>
             </div>
-            <h2 className="font-black text-[#0F172A] text-3xl lg:text-4xl leading-[1.1] tracking-[-0.03em]">
+            <h2 className="font-sans font-extrabold text-[#0F172A] text-3xl lg:text-4xl leading-[1.08] tracking-[-0.03em]">
               Frequently Asked Questions
             </h2>
           </motion.div>

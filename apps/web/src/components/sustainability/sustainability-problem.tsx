@@ -8,9 +8,9 @@ const EASE = [0.25, 0.46, 0.45, 0.94] as const;
 const chain = ["Origin", "Processing", "Roasting", "Packaging", "Partner"];
 
 const paragraphs = [
-  "The coffee industry has a complicated relationship with sustainability. A lot of brands talk about it. Far fewer have made the structural changes to their sourcing, production, and packaging that the word actually requires.",
-  "Sustainable coffee sourcing means paying fair prices at origin, maintaining long-term relationships with producers, and understanding the full environmental and social context of every lot purchased. It means traceability that goes beyond a country of origin printed on a bag. It means responsible sourcing decisions that consider the farmer, the community, and the land — not just the flavour profile and the cost per kilo.",
-  "At JPLC, ethical coffee sourcing is the foundation of the supply chain — not a marketing layer applied on top of it. The farms we work with are known to us. The practices are verified. The relationships are built to last.",
+  "A lot of brands talk about sustainability. Few have made the structural changes the word actually requires.",
+  "Sustainable coffee sourcing means fair prices at origin, long-term producer relationships, and traceability that goes beyond a country printed on the bag. It means considering the farmer, the community, and the land — not just the flavour and the cost per kilo.",
+  "At JPLC, that's the foundation — not the marketing.",
 ];
 
 export function SustainabilityProblem() {
@@ -29,7 +29,7 @@ export function SustainabilityProblem() {
 
       <div className="max-w-7xl mx-auto px-5 lg:px-10 xl:px-10">
         {/* Split layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-12 lg:gap-20 items-start mb-16 lg:mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.3fr] gap-12 lg:gap-20 items-center mb-16 lg:mb-24">
           {/* Left: H2 + pull quote + mini supply chain diagram */}
           <div className="lg:sticky lg:top-32">
             <motion.h2
@@ -37,13 +37,13 @@ export function SustainabilityProblem() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 1.0, ease: [0.22, 0.61, 0.36, 1] }}
-              className="font-black text-[#0F172A] text-[38px] lg:text-[46px] xl:text-[52px] leading-[1.0] tracking-[-0.035em] mb-10"
+              className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em] mb-10"
             >
               Sustainability in Coffee Is{" "}
               <span
                 style={{
                   background:
-                    "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                    "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -85,57 +85,31 @@ export function SustainabilityProblem() {
           </div>
 
           {/* Right: paragraphs */}
-          <div className="flex gap-8 lg:gap-10 pt-1">
-            <div className="flex flex-col flex-1 gap-0">
-              {paragraphs.map((para, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 18 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-40px" }}
-                  transition={{
-                    duration: 0.75,
-                    delay: i * 0.12,
-                    ease: EASE,
-                  }}
-                  className={i < paragraphs.length - 1 ? "pb-8" : ""}
-                >
-                  {i === paragraphs.length - 1 ? (
-                    <div
-                      className="p-5 lg:p-6 rounded-xl"
-                      style={{
-                        background: "rgba(47,67,183,0.04)",
-                        border: "1px solid rgba(47,67,183,0.1)",
-                      }}
-                    >
-                      <p className="text-[#0F172A] font-semibold text-[15px] lg:text-[16px] leading-[1.85]">
-                        {para}
-                      </p>
-                    </div>
-                  ) : (
-                    <>
-                      <p className="text-[#475569] text-[15px] lg:text-[16px] leading-[1.88]">
-                        {para}
-                      </p>
-                      <div className="flex items-center gap-3 mt-8">
-                        <div
-                          className="w-6 h-[2px] rounded-full"
-                          style={{
-                            background:
-                              "linear-gradient(90deg, #2F43B7, #4F6BFF)",
-                          }}
-                        />
-                        <div
-                          className="flex-1 h-px"
-                          style={{ background: "rgba(15,23,42,0.07)" }}
-                        />
-                      </div>
-                    </>
-                  )}
-                </motion.div>
-              ))}
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.75, delay: 0.1, ease: EASE }}
+            className="flex flex-col gap-6 pt-1"
+          >
+            <p className="text-[#475569] text-[15px] lg:text-[16px] leading-[1.88]">
+              {paragraphs[0]}
+            </p>
+            <p className="text-[#475569] text-[15px] lg:text-[16px] leading-[1.88]">
+              {paragraphs[1]}
+            </p>
+            <div
+              className="p-5 lg:p-6 rounded-xl"
+              style={{
+                background: "rgba(47,67,183,0.04)",
+                border: "1px solid rgba(47,67,183,0.1)",
+              }}
+            >
+              <p className="text-[#0F172A] font-semibold text-[15px] lg:text-[16px] leading-[1.85]">
+                {paragraphs[2]}
+              </p>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         {/* Animated supply chain */}

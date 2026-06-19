@@ -74,7 +74,7 @@ export function AboutCta() {
 
               <div className="relative z-10 max-w-lg">
                 <h2 className="font-extrabold text-4xl lg:text-5xl xl:text-[52px] text-[#0F172A] tracking-[-0.03em] leading-[1.08] mb-6">
-                  The Right Infrastructure Partner{" "}
+                  Your Right{" "}
                   <span
                     style={{
                       background:
@@ -82,10 +82,9 @@ export function AboutCta() {
                       WebkitBackgroundClip: "text",
                       WebkitTextFillColor: "transparent",
                       backgroundClip: "text",
-                      filter: "drop-shadow(0 0 20px rgba(47,67,183,0.20))",
                     }}
                   >
-                    Makes All the Difference
+                    Infrastructure Partner
                   </span>
                 </h2>
 
@@ -97,11 +96,9 @@ export function AboutCta() {
                 </div>
 
                 <p className="text-[#374151] text-base lg:text-[17px] leading-relaxed mb-10">
-                  Eight verticals. One integrated operation — built specifically
-                  for businesses that are serious about coffee. Whether
-                  you&apos;re launching a café concept, scaling a hospitality
-                  programme, or building a coffee brand from the ground up, the
-                  conversation starts here.
+                  Whether you&apos;re launching a café concept, scaling a
+                  hospitality programme, or building a coffee brand from the
+                  ground up — the conversation starts here.
                 </p>
 
                 {/* CTA buttons */}

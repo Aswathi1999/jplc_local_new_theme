@@ -16,14 +16,6 @@ const faqs = [
     q: "What does the beginner barista training programme cover?",
     a: "The foundation programme covers specialty coffee introduction, grind calibration, espresso fundamentals, milk texturing, machine operation, cleaning routines, and customer workflow — with the science explained behind each skill, not just the procedure.",
   },
-  {
-    q: "What does barista training and certification cover?",
-    a: "Barista training and certification at JPLC covers practical espresso, milk work, sensory evaluation, and written components — assessed against documented competency standards at foundation, intermediate, and advanced levels.",
-  },
-  {
-    q: "What's included in the professional barista course UAE intensive format?",
-    a: "The professional barista course intensive covers the full technical range — espresso training, extraction science, sensory calibration, equipment management, and workflow — in a compressed, high-intensity format with formal assessment included.",
-  },
 ];
 
 const fadeUp: Variants = {
@@ -100,7 +92,7 @@ export function TrainingFaq() {
   return (
     <>
       {/* ─── CTA — light section ─── */}
-      <section className="relative bg-[#EEF2FF] overflow-hidden py-16 lg:py-24">
+      <section className="relative bg-[#EEF2FF] overflow-hidden py-10 lg:py-16">
         {/* Radial glows */}
         <div
           className="absolute top-0 right-0 w-[600px] h-[500px] pointer-events-none"
@@ -131,19 +123,18 @@ export function TrainingFaq() {
                 <div className="w-3 h-[2px] rounded-full bg-[#4F6BFF]/40" />
                 <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
               </div>
-              <h2 className="font-black text-[#0F172A] text-3xl lg:text-[42px] xl:text-[48px] leading-[1.06] tracking-[-0.03em] mb-6">
-                Build a Bar Team That Knows
-                <br />
+              <h2 className="font-sans font-extrabold text-[#0F172A] text-3xl lg:text-4xl xl:text-5xl leading-[1.08] tracking-[-0.03em] mb-6">
+                Build a Team That{" "}
                 <span
                   style={{
                     background:
-                      "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                      "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
                   }}
                 >
-                  Exactly What They&apos;re Doing
+                  Knows Coffee
                 </span>
               </h2>
               <p className="text-[#475569] text-base lg:text-[17px] leading-[1.78] mb-10 max-w-lg">
@@ -226,7 +217,7 @@ export function TrainingFaq() {
       </section>
 
       {/* ─── FAQ ─── */}
-      <section className="relative bg-white overflow-hidden py-10 lg:py-14">
+      <section className="relative bg-white overflow-hidden py-8 lg:py-10">
         <div className="max-w-5xl mx-auto px-5 lg:px-10">
           <motion.div
             variants={fadeUp}
@@ -241,7 +232,7 @@ export function TrainingFaq() {
                 FAQ
               </p>
             </div>
-            <h2 className="font-black text-[#0F172A] text-3xl lg:text-4xl leading-[1.1] tracking-[-0.03em]">
+            <h2 className="font-sans font-extrabold text-[#0F172A] text-3xl lg:text-4xl leading-[1.08] tracking-[-0.03em]">
               Frequently Asked Questions
             </h2>
           </motion.div>

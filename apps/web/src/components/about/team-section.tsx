@@ -8,36 +8,31 @@ const team = [
     name: "Ahmed Al-Rashid",
     role: "Founder & CEO",
     bio: "20 years across specialty coffee, food manufacturing, and enterprise infrastructure. Pioneer of JPLC's vertically integrated coffee ecosystem model.",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=480&q=85&auto=format&fit=crop&crop=faces",
+    image: "/images/team_1.jpg",
   },
   {
     name: "Sara Mansouri",
     role: "Head of Coffee Operations",
     bio: "Q-grader and specialty coffee expert with deep expertise in green procurement, sensory evaluation, and production roasting standards.",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=480&q=85&auto=format&fit=crop&crop=faces",
+    image: "/images/team_2.jpg",
   },
   {
     name: "Dr. Khalid Ibrahim",
     role: "Director of R&D",
     bio: "PhD in Food Science. Leads JPLC's research agenda across extraction science, beverage innovation, and AI-assisted brewing systems.",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=480&q=85&auto=format&fit=crop&crop=faces",
+    image: "/images/team_3.jpg",
   },
   {
     name: "Lena Hoffmann",
     role: "Engineering Lead",
     bio: "Industrial engineer specialising in espresso machine systems, thermodynamic optimisation, and IoT-enabled diagnostic infrastructure.",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=480&q=85&auto=format&fit=crop&crop=faces",
+    image: "/images/team_4.jpg",
   },
   {
     name: "Marcus Chen",
     role: "Hospitality Operations Manager",
     bio: "15 years in HoReCa operations. Architect of JPLC's B2B supply chain and corporate beverage infrastructure programmes.",
-    image:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=480&q=85&auto=format&fit=crop&crop=faces",
+    image: "/images/team_5.jpg",
   },
 ];
 

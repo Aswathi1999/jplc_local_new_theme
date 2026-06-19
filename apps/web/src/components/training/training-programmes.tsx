@@ -7,49 +7,49 @@ const programmes = [
   {
     num: "01",
     title: "Introduction to Specialty Coffee",
-    body: "Origins, processing methods, and the flavour journey from bean to cup — the context that makes everything else make sense.",
+    body: "Origins, processing methods, and the flavour journey from bean to cup — the context that makes every other skill make sense.",
     image: "/training/Coffee-tr-4.webp",
     alt: "Introduction to specialty coffee — JPLC barista training UAE",
   },
   {
     num: "02",
     title: "Coffee Beans & Grind Calibration",
-    body: "Choosing the right grind size, calibrating grinders, and maintaining flavour consistency across a full service day. The grinder is where most baristas have the least understanding and the most impact.",
+    body: "Choosing grind size, calibrating correctly, and maintaining consistency across a full service day. Where most baristas have the biggest knowledge gap.",
     image: "/training/Coffee-tr-7.webp",
     alt: "Coffee beans and grind calibration — JPLC barista training UAE",
   },
   {
     num: "03",
     title: "Espresso Fundamentals",
-    body: "Extraction mechanics, dosing, tamping, yield control, and troubleshooting — understanding what a correctly pulled shot looks and tastes like, and how to get back there when it drifts.",
+    body: "Extraction mechanics, dosing, tamping, yield control, and troubleshooting. Understanding what a correctly pulled shot tastes like — and how to get back there.",
     image: "/training/Coffee-tr-8.webp",
     alt: "Espresso fundamentals barista training — JPLC UAE",
   },
   {
     num: "04",
     title: "Milk Texturing & Latte Art Basics",
-    body: "Silky microfoam, correct milk temperatures, and simple latte art shapes. The technical side of milk work that most baristas pick up informally and never fully correct.",
+    body: "Microfoam technique, correct milk temperatures, and simple latte art. The skills most baristas pick up informally and never fully correct.",
     image: "/training/Coffee-tr-10.webp",
     alt: "Milk texturing and latte art barista training — JPLC UAE",
   },
   {
     num: "05",
     title: "Machine & Grinder Operation",
-    body: "Safe, proper use of espresso machines, grinders, boilers, and essential café tools — operated correctly, not just switched on and left running.",
+    body: "Safe, correct use of espresso machines, grinders, and boilers — operated properly, not just switched on and left running.",
     image: "/training/we.webp",
     alt: "Machine and grinder operation barista training — JPLC UAE",
   },
   {
     num: "06",
     title: "Cleaning & Maintenance",
-    body: "Daily, mid-shift, and closing routines that keep equipment performing at spec. A machine that isn't cleaned properly doesn't extract properly — this is non-negotiable.",
+    body: "Daily, mid-shift, and closing routines that keep equipment performing at spec. A machine cleaned poorly extracts poorly — non-negotiable.",
     image: "/training/Coffee-tr-4.webp",
     alt: "Cleaning and maintenance barista training — JPLC UAE",
   },
   {
     num: "07",
     title: "Customer Interaction & Workflow",
-    body: "Service etiquette, order flow, and the speed-quality balance that determines whether a busy service runs smoothly or falls apart.",
+    body: "Service etiquette, order flow, and speed-quality balance — the difference between a service that runs smoothly and one that falls apart.",
     image: "/training/Coffee-tr-7.webp",
     alt: "Customer interaction and workflow barista training — JPLC UAE",
   },
@@ -112,7 +112,7 @@ export function TrainingProgrammes() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.75, ease: "easeOut" }}
-          className="py-10 lg:py-14 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-6"
+          className="py-6 lg:py-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 sm:gap-6"
         >
           <div>
             <div className="flex items-center gap-2 mb-6">
@@ -120,13 +120,12 @@ export function TrainingProgrammes() {
               <div className="w-3 h-[2px] rounded-full bg-[#4F6BFF]/40" />
               <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
             </div>
-            <h2 className="font-black text-[#0F172A] text-3xl sm:text-4xl lg:text-5xl xl:text-[56px] leading-[1.03] tracking-[-0.03em] mb-3">
-              Barista Courses &amp;
-              <br />
+            <h2 className="font-sans font-extrabold text-[#0F172A] text-3xl sm:text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em] mb-3">
+              Barista Courses &amp;{" "}
               <span
                 style={{
                   background:
-                    "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                    "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -197,7 +196,7 @@ export function TrainingProgrammes() {
       </div>
 
       {/* Carousel track */}
-      <div className="pb-12 lg:pb-16 max-w-7xl mx-auto px-5 lg:px-10">
+      <div className="pb-8 lg:pb-12 max-w-7xl mx-auto px-5 lg:px-10">
         <div
           ref={trackRef}
           onScroll={updateArrows}

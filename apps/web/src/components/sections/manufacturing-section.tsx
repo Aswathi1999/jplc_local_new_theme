@@ -37,24 +37,21 @@ const offerings = [
     title: "Contract Manufacturing Partnerships",
     description:
       "Scalable OEM and white-label production capacity for roasters, food service operators, and brands that need reliable output without building their own facility.",
-    image:
-      "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=900&q=85&auto=format&fit=crop",
+    image: "/images/manufacturing_1.jpg",
   },
   {
     id: "06",
     title: "International Sourcing & Supplier Management",
     description:
       "Global green coffee procurement, supplier qualification, traceability management, and import/export coordination across origin markets.",
-    image:
-      "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=900&q=85&auto=format&fit=crop",
+    image: "/images/manufacturing_2.jpg",
   },
   {
     id: "07",
     title: "Brand Commercialization Strategies",
     description:
       "Go-to-market planning, retail channel development, and brand positioning support — turning a production-ready product into a market-ready business.",
-    image:
-      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&q=85&auto=format&fit=crop",
+    image: "/images/manufacturing_3.jpg",
   },
 ];
 

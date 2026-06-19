@@ -7,27 +7,27 @@ const steps = [
   {
     number: "01",
     title: "Needs Assessment",
-    body: "Volume, workflow, team skill level, available space, water quality, and budget — we assess all of it before recommending equipment. The right commercial coffee machines for a 40-cover restaurant look very different from the right setup for a 200-seat hotel breakfast operation.",
+    body: "Volume, workflow, space, water quality, and budget — assessed before anything is recommended. A restaurant setup looks very different from a hotel breakfast operation.",
   },
   {
     number: "02",
-    title: "Equipment Selection & Sourcing",
-    body: "Based on the assessment, we recommend a system — espresso machines, coffee grinders, filtration, and ancillary coffee equipment — from our supplier network. No single-brand bias. The right equipment for the operation.",
+    title: "Selection & Sourcing",
+    body: "Espresso machines, grinders, filtration, and ancillary equipment recommended from our supplier network. No single-brand bias — the right equipment for the operation.",
   },
   {
     number: "03",
     title: "Installation & Calibration",
-    body: "Equipment is installed, plumbed, and commissioned by JPLC's engineering team. Extraction parameters, grind settings, temperature stability, and pressure profiling are set to spec before handover, not left for the operator to figure out.",
+    body: "Installed, plumbed, and commissioned by JPLC's engineering team. Extraction parameters, grind settings, and pressure profiling set to spec before handover.",
   },
   {
     number: "04",
     title: "Training & Handover",
-    body: "Operators and baristas are trained on the specific equipment installed, not generic machine training. Staff leave the session knowing how to use, clean, and identify basic faults on their actual equipment.",
+    body: "Staff trained on the specific equipment installed — not generic machine training. How to use it, clean it, and spot basic faults.",
   },
   {
     number: "05",
-    title: "Ongoing Servicing & Coffee Machine Solutions",
-    body: "Preventive maintenance schedules, priority call-out for breakdowns, and parts availability managed locally. As a coffee machine supplier with in-house engineering, JPLC doesn't subcontract, servicing the same team that installed the equipment services.",
+    title: "Ongoing Servicing",
+    body: "Preventive maintenance, priority call-outs, and locally managed parts. The same team that installed the equipment services it — no subcontracting.",
   },
 ];
 
@@ -54,11 +54,11 @@ export function CommercialMachinesProcess() {
             <div className="w-3 h-[2px] rounded-full bg-[#4F6BFF]/40" />
             <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
           </div>
-          <h2 className="font-black text-[#0F172A] text-4xl lg:text-5xl leading-[1.04] tracking-[-0.03em]">
-            How — From Equipment Selection{" "}
+          <h2 className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em]">
+            From Equipment Selection{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",

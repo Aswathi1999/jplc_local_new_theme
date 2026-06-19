@@ -6,22 +6,22 @@ const steps = [
   {
     number: "01",
     title: "Account Assessment",
-    body: "Before supply starts, we map your consumption patterns, service requirements, equipment setup, and delivery constraints. A commercial coffee supplier UAE relationship built on guesswork costs both sides time. We start with the right information.",
+    body: "We map consumption patterns, service requirements, equipment setup, and delivery constraints before anything starts. No guesswork.",
   },
   {
     number: "02",
     title: "Supply Programme Design",
-    body: "Based on the assessment, we structure a supply programme — product selection, pack formats, order frequency, delivery schedule, and volume pricing. Tailored to the operation, not copied from a standard template.",
+    body: "Product selection, pack formats, order frequency, delivery schedule, and volume pricing — built around your operation, not a template.",
   },
   {
     number: "03",
     title: "Onboarding & First Supply",
-    body: "First delivery is managed with direct account oversight — the right products, the right formats, confirmed delivery window. No assumption that everything works perfectly without someone checking.",
+    body: "First delivery managed with direct oversight — right products, right formats, confirmed window. Nothing assumed, everything checked.",
   },
   {
     number: "04",
-    title: "Ongoing Coffee Distribution & Account Management",
-    body: "Once supply is running, JPLC manages replenishment cycles, flags consumption changes, and handles any supply or quality issues directly. We run the account — you focus on the operation.",
+    title: "Supply & Account Management",
+    body: "Replenishment, consumption changes, quality issues — JPLC runs the account. You focus on the operation.",
   },
 ];
 
@@ -81,7 +81,6 @@ export function WholesaleProcess() {
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
-                filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
               }}
             >
               Wholesale Coffee Accounts

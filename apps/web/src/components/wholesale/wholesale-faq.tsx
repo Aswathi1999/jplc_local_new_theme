@@ -5,16 +5,8 @@ import { motion, AnimatePresence, type Variants } from "framer-motion";
 
 const faqs = [
   {
-    q: "What types of businesses does JPLC supply as a wholesale coffee supplier?",
-    a: "JPLC supplies cafés, hotels, restaurants, corporate campuses, institutional buyers, and multi-site F&B operators across the UAE. As a coffee distributor with an in-house roastery and direct-trade sourcing, we work with accounts at every volume level — from independent cafés to large hospitality groups.",
-  },
-  {
     q: "Do you supply wholesale coffee beans as well as roasted coffee?",
     a: "Yes. JPLC supplies both green wholesale coffee beans for roasters and roasted coffee in whole bean and ground formats for commercial accounts. All lots are sourced through direct-trade relationships and Q-graded before roasting.",
-  },
-  {
-    q: "What makes JPLC different from other bulk coffee supplier options in the UAE?",
-    a: "Most bulk coffee supplier arrangements are transactional — order placed, product delivered, no further involvement. JPLC operates as a coffee supply company with active account management, demand forecasting, and quality oversight built into the relationship. We also control our own sourcing, roasting, and coffee distribution — which means fewer handoffs and direct accountability across the supply chain.",
   },
   {
     q: "Can you supply a coffee distributor Dubai network needs for multi-site operations?",
@@ -139,7 +131,7 @@ export function WholesaleFaq() {
               </div>
 
               <h2 className="font-sans font-extrabold text-4xl lg:text-5xl text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-6 max-w-3xl mx-auto">
-                Looking for a Wholesale Coffee Supplier UAE That{" "}
+                Looking for a Wholesale Coffee Supplier{" "}
                 <span
                   style={{
                     background:
@@ -149,7 +141,7 @@ export function WholesaleFaq() {
                     backgroundClip: "text",
                   }}
                 >
-                  Actually Manages the Account?
+                  in UAE?
                 </span>
               </h2>
 

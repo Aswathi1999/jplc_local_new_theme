@@ -6,22 +6,22 @@ const steps = [
   {
     num: "01",
     title: "Operational Assessment",
-    body: "Every hospitality engagement starts with a detailed assessment — outlet mapping, volume analysis, equipment audit, current supply review, and staff capability evaluation. Commercial coffee solutions UAE built on assumptions don't last. We start with the full picture.",
+    body: "Outlet mapping, volume analysis, equipment audit, supply review, and staff evaluation — before anything is proposed. Built on the full picture, not assumptions.",
   },
   {
     num: "02",
     title: "Programme Design",
-    body: "Based on the assessment, we structure a complete hospitality coffee solutions UAE programme — supply agreements, equipment configuration, service schedules, training plans, and account management structure. One document, full scope, clear accountability.",
+    body: "Supply agreements, equipment configuration, service schedules, and training plans structured into one document. Full scope, clear accountability from the start.",
   },
   {
     num: "03",
     title: "Deployment",
-    body: "Supply, equipment, and training are deployed simultaneously — not sequenced across separate vendor onboarding processes. The programme goes live as a complete system, not a series of disconnected handovers.",
+    body: "Supply, equipment, and training deployed simultaneously — not sequenced across separate onboarding processes. The programme goes live as one complete system.",
   },
   {
     num: "04",
-    title: "Ongoing Management & Coffee Service Solutions",
-    body: "Active account management, scheduled equipment servicing, supply continuity monitoring, and regular programme reviews. Hospitality coffee supplier UAE relationships that run on autopilot — managed by JPLC so the operator's team focuses on the guest, not the supply chain.",
+    title: "Ongoing Management",
+    body: "Active account management, scheduled servicing, and supply monitoring handled by JPLC. The operator's team focuses on the guest — not the supply chain.",
   },
 ];
 
@@ -51,11 +51,11 @@ export function HospitalityProcess() {
               Hospitality Operations Journey
             </span>
           </div>
-          <h2 className="font-black text-[#0F172A] text-[38px] lg:text-[50px] xl:text-[58px] leading-[1.0] tracking-[-0.035em]">
+          <h2 className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em]">
             The Way JPLC Manages{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",

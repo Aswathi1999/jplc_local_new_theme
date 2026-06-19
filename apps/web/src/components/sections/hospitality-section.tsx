@@ -5,46 +5,40 @@ import { motion, type Variants } from "framer-motion";
 
 const solutions = [
   {
-    title: "Wholesale Coffee Supplier & Specialty Coffee Beans Distribution ",
+    title: "Wholesale Coffee Supplier & Specialty Coffee Beans Distribution",
     description:
-      "Regional and international wholesale distribution with temperature-controlled logistics and reliable supply continuity. Consistent stock, correct storage conditions, delivered on schedule — no gaps in your service.",
-    image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&q=85&auto=format&fit=crop",
+      "Consistent stock, correct storage, delivered on schedule. No gaps, no surprises.",
+    image: "/images/hospitality_1.jpg",
   },
   {
     title: "HoReCa Hospitality Coffee Solutions",
     description:
-      "Full-service supply programmes for hotels, restaurants, and cafés — from green bean sourcing through to finished product delivery. Dedicated account management and supply chain oversight for operations where every service matters.",
-    image:
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&q=85&auto=format&fit=crop",
+      "Full supply programmes for hotels, restaurants, and cafés — managed start to finish.",
+    image: "/images/hospitality_2.jpg",
   },
   {
     title: "Office Coffee Solutions & Managed Beverage Programs",
     description:
-      "Turnkey coffee solutions for corporate campuses, co-working spaces, and multi-site enterprise environments. Machine provisioning, supply, maintenance, and replenishment managed end-to-end — zero operational burden on your team.",
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=85&auto=format&fit=crop",
+      "Bean to machine to maintenance — your office coffee handled completely.",
+    image: "/images/hospitality_3.jpg",
   },
   {
     title: "Corporate Commercial Coffee Solutions Deployment",
     description:
-      "Full-scale commercial coffee solutions UAE — equipment provisioning, installation, technical support, and ongoing service management. Built for enterprise environments that require infrastructure, not just a machine in the corner.",
-    image:
-      "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=85&auto=format&fit=crop",
+      "Enterprise-scale equipment, installation, and ongoing service. Infrastructure, not just a machine.",
+    image: "/images/hospitality_4.jpg",
   },
   {
     title: "Event Coffee Solutions & Mobile Activations",
     description:
-      "Mobile coffee setups and event activations for exhibitions, corporate launches, trade shows, and premium hospitality experiences. Specialty-grade coffee, professionally delivered — wherever the event takes place.",
-    image:
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&q=85&auto=format&fit=crop",
+      "Specialty coffee, professionally set up and served — wherever the event is.",
+    image: "/images/hospitality_5.jpg",
   },
   {
     title: "Inventory Forecasting & Coffee Bean Supplier Coordination",
     description:
-      "Data-driven demand planning, replenishment systems, and supply chain coordination as a trusted coffee bean supplier partner. Proactive stock management that eliminates last-minute shortages and reduces waste across all accounts.",
-    image:
-      "https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&q=85&auto=format&fit=crop",
+      "Proactive stock management that eliminates shortages before they become your problem.",
+    image: "/images/hospitality_6.jpg",
   },
 ];
 
@@ -104,7 +98,7 @@ export function HospitalitySection() {
           </div>
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-5">
             <h2 className="font-sans font-extrabold text-4xl lg:text-5xl xl:text-[52px] text-[#0F172A] leading-[1.08] tracking-[-0.03em]">
-              Commercial Coffee Solutions UAE —{" "}
+              Commercial Coffee Solutions{" "}
               <span
                 style={{
                   background:
@@ -112,10 +106,9 @@ export function HospitalitySection() {
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
-                  filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
                 }}
               >
-                End-to-End Beverage Infrastructure
+                UAE
               </span>
             </h2>
             {/* <p className="text-[#374151] text-base leading-relaxed max-w-sm lg:text-right">
@@ -171,7 +164,7 @@ export function HospitalitySection() {
                 className="group relative h-[300px] lg:h-[340px] rounded-sm overflow-hidden shadow-lg"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=85&auto=format&fit=crop"
+                  src="/images/hospitality_6_lg.jpg"
                   alt="Coffee supply chain operations"
                   fill
                   quality={85}
@@ -210,7 +203,7 @@ export function HospitalitySection() {
                 className="absolute -bottom-2 -right-2 w-36 h-28 rounded-sm overflow-hidden shadow-xl border-[3px] border-white"
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=300&q=85&auto=format&fit=crop"
+                  src="/images/hospitality_7.jpg"
                   alt="HoReCa hospitality service"
                   fill
                   quality={80}
@@ -225,8 +218,11 @@ export function HospitalitySection() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 mt-10">
-              <button className="group flex-1 flex items-center justify-center gap-2.5 bg-[#2F43B7] text-white text-xs font-semibold tracking-widest uppercase px-6 py-4 rounded-sm hover:bg-[#4056D6] transition-colors duration-300 shadow-md shadow-[#2F43B7]/25">
-                <span>Become a Partner</span>
+              <a
+                href="/hospitality-solutions"
+                className="group flex-1 flex items-center justify-center gap-2.5 bg-[#2F43B7] text-white text-xs font-semibold tracking-widest uppercase px-6 py-4 rounded-sm hover:bg-[#4056D6] transition-colors duration-300 shadow-md shadow-[#2F43B7]/25"
+              >
+                <span>View Hospitality Solutions</span>
                 <svg
                   width="14"
                   height="14"
@@ -242,10 +238,13 @@ export function HospitalitySection() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </button>
-              <button className="group flex-1 flex items-center justify-center gap-2.5 border border-[#0F172A]/20 text-[#0F172A] text-xs font-semibold tracking-widest uppercase px-6 py-4 rounded-sm hover:border-[#2F43B7] hover:text-[#2F43B7] transition-colors duration-300">
-                <span>Request a Quote</span>
-              </button>
+              </a>
+              <a
+                href="/contact"
+                className="group flex-1 flex items-center justify-center gap-2.5 border border-[#0F172A]/20 text-[#0F172A] text-xs font-semibold tracking-widest uppercase px-6 py-4 rounded-sm hover:border-[#2F43B7] hover:text-[#2F43B7] transition-colors duration-300"
+              >
+                <span>Get in Touch</span>
+              </a>
             </div>
           </motion.div>
 

@@ -6,27 +6,27 @@ const values = [
   {
     number: "01",
     title: "Precision Over Shortcuts",
-    body: "Every variable in coffee — extraction yield, roast curve, water composition, machine calibration — compounds over time. We engineer the details because the details determine the outcome.",
+    body: "Extraction yield, roast curve, water, calibration — every variable compounds. We engineer the details because they determine the outcome.",
   },
   {
     number: "02",
     title: "Accountability Without Deflection",
-    body: "One partner, full ownership. When something isn't right, we don't point elsewhere. We fix it.",
+    body: "One partner, full ownership. When something isn't right, we don't point elsewhere — we fix it.",
   },
   {
     number: "03",
     title: "Depth Over Volume",
-    body: "We don't work with everyone. The businesses we partner with are serious about coffee, and we give them the depth of expertise and infrastructure that reflects that seriousness.",
+    body: "We don't work with everyone. The businesses we partner with are serious, and we treat them that way.",
   },
   {
     number: "04",
     title: "Integration as a Principle",
-    body: "Sourcing, roasting, engineering, training — none of these work in isolation. Every vertical we operate is designed to strengthen the ones around it. That's not an operational preference. It's a founding principle.",
+    body: "Sourcing, roasting, engineering, training — none work in isolation. Every vertical is built to strengthen the ones around it.",
   },
   {
     number: "05",
     title: "Long-Term Thinking",
-    body: "Coffee infrastructure takes time to build right. We invest in partnerships, systems, and capabilities with a long horizon in mind.",
+    body: "We invest in partnerships and systems with a long horizon in mind — not the next transaction.",
   },
 ];
 
@@ -69,24 +69,17 @@ export function ValuesSection() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <div className="flex items-center gap-4 mb-5">
-            <div className="w-8 h-px bg-[#2F43B7]" />
-            <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
-              Our Values
-            </p>
-          </div>
           <h2 className="font-sans font-extrabold text-4xl lg:text-5xl text-[#0F172A] leading-[1.08] tracking-[-0.03em] max-w-xl">
-            What We Stand For —{" "}
+            Our{" "}
             <span
               style={{
                 background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
-                filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
               }}
             >
-              Every Decision, Every Day
+              Values
             </span>
           </h2>
           <div className="mt-6 h-px bg-gradient-to-r from-[#2F43B7]/40 via-[#E5E7EB] to-transparent max-w-2xl" />

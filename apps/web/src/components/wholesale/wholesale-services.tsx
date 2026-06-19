@@ -5,8 +5,8 @@ import { motion, type Variants } from "framer-motion";
 const services = [
   {
     id: "01",
-    title: "Wholesale Coffee Beans — Single Origin & Blends",
-    body: "Green and roasted wholesale coffee beans across single-origin lots and custom blends, sourced through direct-trade relationships, Q-graded, and roasted to consistent batch profiles. As a coffee bean wholesaler with an in-house roastery, JPLC controls quality from procurement through to dispatch.",
+    title: "Wholesale Beans — Single Origin & Blends",
+    body: "Direct-trade, Q-graded, roasted to consistent batch profiles. What leaves our roastery is what arrives at your operation — no substitutions, no secondary suppliers.",
     tag: "Coffee Beans",
     icon: (
       <svg
@@ -26,8 +26,8 @@ const services = [
   },
   {
     id: "02",
-    title: "Bulk Coffee Supplier — Commercial Formats & Volume Orders",
-    body: "Bulk formats for high-consumption accounts — whole bean, ground, and pre-portioned options across commercial pack sizes. Structured ordering cycles, volume pricing, and supply agreements built around your actual consumption rather than a standard catalogue.",
+    title: "Bulk Supply — Commercial Formats & Volume Orders",
+    body: "Whole bean, ground, and pre-portioned bulk formats with volume pricing and ordering cycles built around your actual consumption — not a standard catalogue.",
     tag: "Bulk Supply",
     icon: (
       <svg
@@ -47,8 +47,8 @@ const services = [
   },
   {
     id: "03",
-    title: "Coffee Supplier for Hotels UAE & Hospitality Groups",
-    body: "Hotel F&B programmes have specific requirements — multiple outlets, varying volume across service periods, different products for different spaces, and a brand standard that can't slip. JPLC operates as a dedicated coffee supplier for hotels in the UAE with account management, scheduled delivery, and supply continuity.",
+    title: "Hotel Coffee Supply UAE",
+    body: "Multiple outlets, varying volumes, different products per space — one supplier managing it all. Consistent product, scheduled delivery, full account oversight.",
     tag: "Hospitality",
     icon: (
       <svg
@@ -68,8 +68,8 @@ const services = [
   },
   {
     id: "04",
-    title: "Coffee Supplier for Restaurants UAE & F&B Operations",
-    body: "Restaurants need wholesale coffee that performs consistently across service — morning through to late night, across different brewing formats, handled by staff with varying skill levels. JPLC supplies specialty-grade products with the volume capacity and delivery reliability that F&B operations require.",
+    title: "Restaurant & F&B Coffee Supply",
+    body: "Consistent wholesale coffee across a full service day, every brewing format, every skill level. Scheduled replenishment and equipment support included.",
     tag: "Restaurants",
     icon: (
       <svg
@@ -89,8 +89,8 @@ const services = [
   },
   {
     id: "05",
-    title: "Wholesale Specialty Coffee UAE — Premium Accounts",
-    body: "For operations where coffee is a genuine differentiator, JPLC supplies wholesale specialty coffee UAE with full traceability, cupping notes, and origin documentation. Specialty-grade lots, seasonal rotations, and single-origin programmes for accounts that want to do more with their coffee offering.",
+    title: "Wholesale Specialty Coffee UAE",
+    body: "Full traceability, cupping notes, origin documentation. Specialty-grade lots and single-origin programmes for operations where coffee is a genuine differentiator.",
     tag: "Specialty",
     icon: (
       <svg
@@ -110,8 +110,8 @@ const services = [
   },
   {
     id: "06",
-    title: "Coffee Distribution & Logistics Infrastructure",
-    body: "Coffee distribution managed end to end — temperature-controlled vehicles, scheduled delivery windows, inventory tracking, and demand forecasting. As a coffee distributor Dubai and UAE-wide, JPLC runs its own logistics rather than outsourcing, which means direct accountability when something needs to move fast.",
+    title: "Distribution & Logistics",
+    body: "Temperature-controlled, scheduled, tracked. JPLC runs its own logistics — no outsourcing, direct accountability when something needs to move fast.",
     tag: "Distribution",
     icon: (
       <svg
@@ -183,7 +183,6 @@ export function WholesaleServices() {
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
-                filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
               }}
             >
               Distribution Services

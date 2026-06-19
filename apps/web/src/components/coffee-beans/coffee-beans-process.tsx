@@ -6,22 +6,22 @@ const steps = [
   {
     number: "01",
     title: "Origin Selection & Coffee Sourcing",
-    body: "Direct relationships with farms and cooperatives across producing regions. Every lot goes through cupping, Q-grading, and sensory evaluation before purchase. Coffee sourcing at JPLC isn't catalogue browsing — it's active procurement with quality as the filter.",
+    body: "Direct farm relationships, cupped and Q-graded before purchase. Active procurement — not catalogue browsing.",
   },
   {
     number: "02",
     title: "Roast Profile Development",
-    body: "Once green coffee is selected, roast profiles are engineered to match the intended application. Espresso, filter, cold brew, capsule — each format has different extraction requirements and the roast is built around that, not applied generically.",
+    body: "Every roast is engineered around the application — espresso, filter, cold brew, capsule. Nothing generic.",
   },
   {
     number: "03",
     title: "Quality Control & Batch Consistency",
-    body: "Every roast batch is checked against reference profiles before it leaves the facility. Consistency isn't a talking point — it's a production requirement with documented tolerances on every run.",
+    body: "Every batch checks against reference profiles before it leaves. Documented tolerances, every single run.",
   },
   {
     number: "04",
-    title: "Wholesale Delivery & Supply Management",
-    body: "Scheduled delivery, temperature-controlled logistics, and demand forecasting for wholesale coffee beans UAE accounts. Stock arrives on time, in the right condition, and at the right volume — without your team having to micromanage the process.",
+    title: "Wholesale Coffee Beans Delivery & Supply Management",
+    body: "Scheduled delivery, temperature-controlled logistics, demand forecasting. Stock arrives right — without your team chasing it.",
   },
 ];
 

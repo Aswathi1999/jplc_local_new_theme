@@ -135,25 +135,18 @@ export function ContactInfo() {
 
         <div className="space-y-4">
           <p className="text-[#475569] text-[14px] leading-[1.85]">
-            Most coffee businesses eventually hit the same wall — a supplier who
-            can&apos;t scale with them, equipment that nobody services properly,
-            or a programme that works on paper but falls apart in practice.
+            Most coffee businesses hit the same wall — a supplier who can&apos;t
+            scale, equipment nobody services, a programme that looks good on
+            paper and falls apart in practice.
           </p>
           <p className="text-[#475569] text-[14px] leading-[1.85]">
-            JPLC exists to remove that friction. As a fully integrated specialty
-            coffee infrastructure company, we don&apos;t just solve one part of
-            the problem. We cover the whole chain — sourcing, roasting,
-            equipment, manufacturing, training, and distribution — under one
-            roof, with one team accountable for all of it.
-          </p>
-          <p className="text-[#475569] text-[14px] leading-[1.85]">
-            The businesses that work with us aren&apos;t looking for the
-            cheapest option. They&apos;re looking for the right partner — one
-            who understands the product, knows the market, and has the
-            infrastructure to back it up.
+            JPLC covers the whole chain. Sourcing, roasting, equipment,
+            manufacturing, training, and distribution — one roof, one team, full
+            accountability.
           </p>
           <p className="text-[#0F172A] font-medium text-[14px] leading-[1.85]">
-            If that sounds like the right fit, we&apos;d like to hear from you.
+            If you&apos;re looking for the right partner, not just the cheapest
+            option — let&apos;s talk.
           </p>
         </div>
       </motion.div>

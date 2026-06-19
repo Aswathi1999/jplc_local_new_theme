@@ -9,8 +9,7 @@ const pillars = [
     title: "Green Coffee Sourcing & Procurement",
     description:
       "Direct-trade sourcing backed by Q-grading and single-origin traceability. Every lot is sensory-evaluated before it enters production. We work directly with origin farms so there's full visibility into where your specialty coffee beans come from — and why they taste the way they do.",
-    image:
-      "https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=700&q=85&auto=format&fit=crop",
+    image: "/images/CAPPUCCINO.jpg",
     icon: (
       <svg
         className="w-5 h-5"
@@ -32,8 +31,7 @@ const pillars = [
     title: "Coffee Roasting & Production Engineering",
     description:
       "Roast profile development, batch consistency controls, and private label coffee manufacturing UAE-wide for brands that demand repeatable output at scale. Whether the requirement is a signature house blend, a single-origin programme, or an OEM private label range — we build it to specification.",
-    image:
-      "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=700&q=85&auto=format&fit=crop",
+    image: "/images/roasting.jpg",
     icon: (
       <svg
         className="w-5 h-5"
@@ -55,8 +53,7 @@ const pillars = [
     title: "Research & Development",
     description:
       "Extraction science, brew optimisation, flavour profiling, and new beverage formulation — all developed in-house. This is what keeps JPLC's products and systems ahead of market standards.",
-    image:
-      "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=700&q=85&auto=format&fit=crop",
+    image: "/images/research.jpg",
     icon: (
       <svg
         className="w-5 h-5"
@@ -78,7 +75,7 @@ const pillars = [
     title: "Commercial Coffee Machine Supplier & Technical Services",
     description:
       "PID-controlled extraction systems, IoT diagnostics, grinder calibration, and preventive maintenance infrastructure. As a full-service coffee equipment supplier, JPLC doesn't just deliver machines — we engineer, calibrate, and service them. A system that drifts by a few degrees costs quality on every shot pulled.",
-    image: "/coffee_machine_engg.jpg",
+    image: "/images/image_5.png",
     icon: (
       <svg
         className="w-5 h-5"
@@ -106,8 +103,7 @@ const pillars = [
     title: "Wholesale Coffee Supplier & Distribution",
     description:
       "Structured wholesale coffee supplier infrastructure across regional and international markets. Temperature-controlled logistics, inventory forecasting, and supply continuity designed specifically for HoReCa operators.",
-    image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&q=85&auto=format&fit=crop",
+    image: "/images/ecosystem_wholesale.jpg",
     icon: (
       <svg
         className="w-5 h-5"
@@ -135,8 +131,7 @@ const pillars = [
     title: "Hospitality Coffee Solutions & Retail Operations",
     description:
       "From hotel F&B programmes to corporate campuses and managed café operations — JPLC deploys coffee programmes that run with consistency and without constant intervention. Office beverage systems, event activations, and multi-site account management included.",
-    image:
-      "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=700&q=85&auto=format&fit=crop",
+    image: "/images/bbc-250g-Lightgrey-back.jpg",
     icon: (
       <svg
         className="w-5 h-5"
@@ -180,7 +175,7 @@ const pillars = [
     title: "Barista Training & Coffee Education",
     description:
       "Professional barista training and certification Dubai and beyond — covering brew science, sensory evaluation, roasting workshops, and full hospitality coffee operations training. Strong programmes are built on people who understand the craft.",
-    image: "/coffee_training.jpg",
+    image: "/images/image_6.png",
     icon: (
       <svg
         className="w-5 h-5"
@@ -402,11 +397,11 @@ export function EcosystemSection() {
 
               {/* â"€â"€ OVERLAY STACK â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
               {/* Top fade — very light, just enough for the icon */}
-              <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/20 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-b from-[#0F172A]/10 via-transparent to-transparent" />
               {/* Bottom gradient — light at rest, for title legibility */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-[#0F172A]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/70 via-[#0F172A]/20 to-transparent" />
               {/* Blue glow on hover */}
-              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#2F43B7]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#2F43B7]/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               {/* â"€â"€ TOP: icon + number â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
               <div className="absolute top-5 left-5 right-5 z-10 flex items-start justify-between">

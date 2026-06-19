@@ -27,26 +27,24 @@ export function RdProblem() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 1.0, ease: [0.22, 0.61, 0.36, 1] }}
-            className="font-black text-[#0F172A] text-[38px] lg:text-[50px] xl:text-[58px] leading-[1.0] tracking-[-0.035em]"
+            className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em]"
           >
-            Most Coffee Operations
-            <br />
-            Run on{" "}
+            Most Coffee Operations Run on{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
               }}
             >
-              Outdated Assumptions
+              Assumptions
             </span>
           </motion.h2>
         </div>
 
         {/* Split: image left, paragraphs right */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 xl:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-14 xl:gap-20 items-center">
           {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: -24 }}
@@ -148,114 +146,40 @@ export function RdProblem() {
           </motion.div>
 
           {/* Paragraphs */}
-          <div className="flex flex-col gap-0 pt-2">
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{
-                duration: 0.7,
-                delay: 0.1,
-                ease: [0.25, 0.46, 0.45, 0.94],
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{
+              duration: 0.7,
+              delay: 0.1,
+              ease: [0.25, 0.46, 0.45, 0.94],
+            }}
+            className="flex flex-col gap-6 pt-2"
+          >
+            <p className="text-[#475569] text-[15px] lg:text-[16px] leading-[1.88]">
+              Extraction science, roast chemistry, water mineralogy — the
+              understanding of what makes a great cup has moved. Most commercial
+              operations haven&apos;t kept pace.
+            </p>
+            <p className="text-[#475569] text-[15px] lg:text-[16px] leading-[1.88]">
+              The result is roast profiles nobody has reviewed in years,
+              extraction parameters set at installation and never touched, water
+              systems nobody has tested.
+            </p>
+            <div
+              className="p-5 lg:p-6 rounded-xl"
+              style={{
+                background: "rgba(47,67,183,0.05)",
+                border: "1px solid rgba(47,67,183,0.11)",
               }}
-              className="pb-8"
             >
-              <p className="text-[#475569] text-[15px] lg:text-[16px] leading-[1.88]">
-                Coffee knowledge moves. Extraction science, roast chemistry,
-                water mineralogy, brewing technology, the understanding of what
-                produces a great cup has shifted significantly over the last
-                decade. Most commercial operations haven&apos;t kept pace.
+              <p className="text-[#0F172A] font-semibold text-[15px] lg:text-[16px] leading-[1.85]">
+                Coffee innovation requires dedicated infrastructure. That&apos;s
+                what JPLC R&amp;D exists to provide.
               </p>
-            </motion.div>
-
-            {/* Accent divider */}
-            <motion.div
-              initial={{ opacity: 0, scaleX: 0 }}
-              whileInView={{ opacity: 1, scaleX: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="flex items-center gap-3 mb-8"
-              style={{ transformOrigin: "left" }}
-            >
-              <div
-                className="w-6 h-[2px] rounded-full"
-                style={{
-                  background: "linear-gradient(90deg, #2F43B7, #4F6BFF)",
-                }}
-              />
-              <div
-                className="flex-1 h-px"
-                style={{ background: "rgba(15,23,42,0.07)" }}
-              />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{
-                duration: 0.7,
-                delay: 0.18,
-                ease: [0.25, 0.46, 0.45, 0.94],
-              }}
-            >
-              <p className="text-[#475569] text-[15px] lg:text-[16px] leading-[1.88]">
-                The result is programmes built on inherited assumptions — roast
-                profiles that haven&apos;t been reviewed in years, extraction
-                parameters set at installation and never touched, water systems
-                that nobody has tested against the brew chemistry. Everything
-                functions, but nothing is optimised.
-              </p>
-            </motion.div>
-
-            {/* Accent divider */}
-            <motion.div
-              initial={{ opacity: 0, scaleX: 0 }}
-              whileInView={{ opacity: 1, scaleX: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-              className="flex items-center gap-3 my-8"
-              style={{ transformOrigin: "left" }}
-            >
-              <div
-                className="w-6 h-[2px] rounded-full"
-                style={{
-                  background: "linear-gradient(90deg, #2F43B7, #4F6BFF)",
-                }}
-              />
-              <div
-                className="flex-1 h-px"
-                style={{ background: "rgba(15,23,42,0.07)" }}
-              />
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{
-                duration: 0.7,
-                delay: 0.26,
-                ease: [0.25, 0.46, 0.45, 0.94],
-              }}
-            >
-              <div
-                className="p-5 lg:p-6 rounded-xl"
-                style={{
-                  background: "rgba(47,67,183,0.05)",
-                  border: "1px solid rgba(47,67,183,0.11)",
-                }}
-              >
-                <p className="text-[#0F172A] font-semibold text-[15px] lg:text-[16px] leading-[1.85]">
-                  Coffee innovation doesn&apos;t happen by accident. It requires
-                  dedicated coffee research and development infrastructure, the
-                  equipment, the methodology, and the people to run it.
-                  That&apos;s what JPLC R&amp;D exists to provide, both
-                  internally and for partners who want access to it.
-                </p>
-              </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

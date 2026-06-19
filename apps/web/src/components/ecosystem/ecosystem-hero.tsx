@@ -58,7 +58,7 @@ export function EcosystemHero() {
               {...fadeUp(0.1)}
               className="font-extrabold text-[#0F172A] text-4xl sm:text-5xl lg:text-[50px] xl:text-[56px] leading-[1.06] tracking-[-0.035em] mb-7"
             >
-              An Integrated{" "}
+              Integrated{" "}
               <span
                 style={{
                   background:
@@ -70,8 +70,6 @@ export function EcosystemHero() {
               >
                 Coffee Ecosystem
               </span>
-              <br />
-              Built for Serious Operations
             </motion.h1>
 
             <motion.p

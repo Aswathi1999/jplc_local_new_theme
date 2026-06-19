@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function TrainingHero() {
   return (
-    <section className="relative min-h-screen flex flex-col bg-white overflow-hidden">
+    <section className="relative flex flex-col bg-white overflow-hidden">
       {/* Gradient orbs */}
       <div
         className="absolute top-[-120px] left-[-80px] w-[700px] h-[700px] rounded-full pointer-events-none"
@@ -34,23 +34,10 @@ export function TrainingHero() {
       />
 
       {/* Main content */}
-      <div className="relative z-10 flex-1 flex items-center max-w-7xl mx-auto w-full px-5 lg:px-12 xl:px-10 pt-36 pb-10">
+      <div className="relative z-10 flex-1 flex items-center max-w-7xl mx-auto w-full px-5 lg:px-12 xl:px-10 pt-32 pb-28">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] xl:grid-cols-[1fr_480px] gap-12 xl:gap-20 w-full items-center">
           {/* ── Left: text ── */}
           <div>
-            {/* Eyebrow */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="flex items-center gap-4 mb-10"
-            >
-              <div className="w-12 h-px bg-[#2F43B7]/60" />
-              <span className="text-[#2F43B7] text-[11px] font-bold tracking-[0.55em] uppercase">
-                From First Shot to Full Competence
-              </span>
-            </motion.div>
-
             {/* H1 */}
             <motion.h1
               initial={{ opacity: 0, y: 36 }}
@@ -62,20 +49,18 @@ export function TrainingHero() {
               }}
               className="font-black text-[#0F172A] text-5xl lg:text-[58px] xl:text-[68px] leading-[0.97] tracking-[-0.04em] mb-8"
             >
+              Barista Courses Built for the
+              <br />
               <span
                 style={{
                   background:
-                    "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                    "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 55%, #6366F1 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
                 }}
               >
-                Barista Courses Built
-              </span>
-              <br />
-              <span className="text-[#0F172A]/50 font-black">
-                for the Real Bar Environment
+                Real Bar Environment
               </span>
             </motion.h1>
 

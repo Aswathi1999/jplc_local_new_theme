@@ -6,7 +6,7 @@ const options = [
   {
     id: "01",
     title: "Single-Origin Specialty Coffee Beans",
-    body: "Traceable lots from established and emerging origins — Ethiopia, Colombia, Brazil, Guatemala, and beyond. Each lot is cupped, graded, and selected for flavour clarity, consistency, and suitability for the end application, whether that's espresso, filter, or cold brew.",
+    body: "Traceable lots from Ethiopia, Colombia, Brazil, Guatemala, and beyond — cupped, graded, and selected for flavour clarity across espresso, filter, and cold brew applications.",
     tag: "Single Origin",
     icon: (
       <svg
@@ -27,7 +27,7 @@ const options = [
   {
     id: "02",
     title: "Coffee Blends & House Profiles",
-    body: "Custom coffee blends developed around your extraction method, equipment setup, and flavour brief. Milk-forward espresso blends, black coffee profiles, seasonal rotations — built to your specification and replicated consistently across every batch.",
+    body: "Custom blends built around your extraction method, equipment, and flavour brief. Milk-forward, black coffee, seasonal rotations — replicated consistently across every batch.",
     tag: "Custom Blends",
     icon: (
       <svg
@@ -48,7 +48,7 @@ const options = [
   {
     id: "03",
     title: "Wholesale Coffee Beans for Commercial Operations",
-    body: "Structured wholesale supply for high-volume accounts — coffee beans for restaurants UAE, hotel groups, corporate campuses, and multi-site operators. Bulk formats, scheduled delivery, and inventory management built around your consumption cycle.",
+    body: "Bulk supply for hotels, restaurants, and corporate accounts — scheduled delivery and inventory management built around your consumption cycle, not ours.",
     tag: "Wholesale",
     icon: (
       <svg
@@ -75,7 +75,7 @@ const options = [
   {
     id: "04",
     title: "Private Label Coffee Beans & Branded Ranges",
-    body: "Your brand, our production. From roast profile development and blend creation through to retail packaging and private label fulfilment, JPLC produces coffee beans under your brand with full manufacturing oversight.",
+    body: "Your brand, our production. Roast profile development, blend creation, and retail packaging — full manufacturing oversight without building your own facility.",
     tag: "Private Label",
     icon: (
       <svg

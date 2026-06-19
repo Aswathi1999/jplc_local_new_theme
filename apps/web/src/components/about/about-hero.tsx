@@ -342,20 +342,6 @@ export function AboutHero() {
                   Business of Coffee
                 </span>
               </motion.span>
-
-              {/* Line 3: closing phrase — light */}
-              <motion.span
-                {...stagger(0.56)}
-                style={{
-                  display: "block",
-                  fontWeight: 300,
-                  color: "#CBD5E1",
-                  letterSpacing: "-0.025em",
-                  fontSize: "0.72em",
-                }}
-              >
-                Not Just the Romance of It
-              </motion.span>
             </div>
 
             {/* Bottom accent line */}
@@ -387,6 +373,40 @@ export function AboutHero() {
               roasting, engineering, manufacturing, hospitality supply, and
               training.
             </motion.p>
+
+            {/* Service tags */}
+            <motion.div
+              {...stagger(0.88)}
+              className="flex flex-wrap gap-2 mt-7"
+            >
+              {[
+                "Sourcing",
+                "Roasting",
+                "Engineering",
+                "Manufacturing",
+                "Distribution",
+                "Training",
+                "Private Label",
+                "R&D",
+              ].map((tag) => (
+                <span
+                  key={tag}
+                  style={{
+                    fontSize: "10px",
+                    fontWeight: 700,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    color: "#2F43B7",
+                    background: "rgba(47,67,183,0.07)",
+                    border: "1px solid rgba(47,67,183,0.15)",
+                    borderRadius: "6px",
+                    padding: "5px 10px",
+                  }}
+                >
+                  {tag}
+                </span>
+              ))}
+            </motion.div>
 
             {/* CTA buttons */}
             <motion.div
@@ -573,17 +593,6 @@ export function AboutHero() {
                 Business of Coffee
               </span>
             </span>
-            {/* Line 3: closing phrase */}
-            <span
-              style={{
-                display: "block",
-                fontWeight: 300,
-                color: "#CBD5E1",
-                fontSize: "0.72em",
-              }}
-            >
-              Not Just the Romance of It
-            </span>
           </motion.div>
 
           <div
@@ -636,34 +645,47 @@ export function AboutHero() {
             ))}
           </motion.div>
 
-          <motion.div {...stagger(0.75)} className="mt-8">
+          <motion.div
+            {...stagger(0.75)}
+            className="flex items-center gap-4 mt-8 flex-wrap"
+          >
             <a
-              href="/contact"
+              href="#story"
+              className="group relative inline-flex items-center justify-center px-7 py-3 text-white text-sm font-semibold tracking-wide overflow-hidden transition-all duration-300 hover:-translate-y-0.5"
               style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 8,
-                padding: "12px 24px",
-                borderRadius: "10px",
-                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
-                boxShadow: "0 6px 20px rgba(47,67,183,0.28)",
-                color: "#fff",
-                fontSize: "13px",
-                fontWeight: 600,
-                letterSpacing: "0.05em",
-                textDecoration: "none",
+                borderRadius: 10,
+                background:
+                  "linear-gradient(135deg, #1e3a9e 0%, #2F43B7 40%, #4F6BFF 80%)",
+                boxShadow:
+                  "0 8px 28px rgba(47,67,183,0.30), 0 2px 8px rgba(47,67,183,0.18)",
               }}
             >
-              Work With JPLC
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/12 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-600 ease-in-out" />
+              <span className="relative">Our Story</span>
+              <svg
+                className="relative ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200"
+                fill="none"
+                viewBox="0 0 16 16"
+              >
                 <path
-                  d="M2 7h10M8 3l4 4-4 4"
+                  d="M3 8h10M9 4l4 4-4 4"
                   stroke="currentColor"
-                  strokeWidth="1.5"
+                  strokeWidth="1.6"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
               </svg>
+            </a>
+            <a
+              href="#partnership"
+              className="inline-flex items-center justify-center px-7 py-3 text-[#2F43B7] text-sm font-semibold tracking-wide transition-all duration-300 hover:-translate-y-0.5 hover:text-[#4F6BFF]"
+              style={{
+                borderRadius: 10,
+                border: "1.5px solid rgba(47,67,183,0.25)",
+                background: "rgba(79,107,255,0.04)",
+              }}
+            >
+              Partner With Us
             </a>
           </motion.div>
         </div>

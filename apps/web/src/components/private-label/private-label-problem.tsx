@@ -72,12 +72,6 @@ export function PrivateLabelProblem() {
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-px bg-[#2F43B7]" />
-              <span className="text-[13px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
-                The Production Problem
-              </span>
-            </div>
             <h2 className="font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em] mb-8">
               Most Coffee Brands{" "}
               <span
@@ -87,7 +81,6 @@ export function PrivateLabelProblem() {
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
-                  filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
                 }}
               >
                 Stall at Production
@@ -96,29 +89,16 @@ export function PrivateLabelProblem() {
 
             <div className="space-y-5 text-[#475569] text-base lg:text-[17px] leading-[1.78]">
               <p>
-                The idea is there. The brand identity is taking shape. The
-                market opportunity is real. What stops most coffee brands from
-                getting off the ground — or scaling past a certain point — is
-                production.
-              </p>
-              <p>
-                Building your own roastery and manufacturing facility requires
-                capital, equipment, compliance infrastructure, and technical
-                expertise that most brand operators simply don&apos;t have at
-                launch.
-              </p>
-              <p className="font-medium text-[#374151]">
-                That&apos;s the gap private label coffee manufacturing UAE
-                solves.
-              </p>
-              <p>
                 JPLC operates a DMCC-certified production facility so brands can
                 access professional coffee manufacturing capability from day one
-                — without the overhead of building it themselves. Whether the
-                goal is a white label coffee range for a retail chain, a
-                signature house blend for a hotel group, or a fully developed
-                OEM coffee manufacturing programme, the infrastructure is
-                already built. You bring the brand. We handle the rest.
+                without the overhead of building it themselves.
+              </p>
+              <p className="font-medium text-[#374151]">
+                Whether the goal is a white label coffee range for a retail
+                chain, a signature house blend for a hotel group, or a fully
+                developed OEM coffee manufacturing programme for a brand
+                entering the UAE market, the infrastructure is already built.
+                You bring the brand. We handle the rest.
               </p>
             </div>
 

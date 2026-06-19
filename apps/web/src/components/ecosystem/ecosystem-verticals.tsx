@@ -218,7 +218,7 @@ export function EcosystemVerticals() {
             <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
           </div>
           <h2 className="font-black text-[#0F172A] text-4xl lg:text-5xl xl:text-[52px] leading-[1.03] tracking-[-0.03em] mb-4">
-            What a Complete{" "}
+            Coffee Infrastructure{" "}
             <span
               style={{
                 background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
@@ -227,9 +227,8 @@ export function EcosystemVerticals() {
                 backgroundClip: "text",
               }}
             >
-              Coffee Infrastructure Platform UAE
-            </span>{" "}
-            Actually Looks Like
+              Platform in UAE
+            </span>
           </h2>
           <p className="text-[#64748B] text-base lg:text-[17px] leading-relaxed max-w-2xl">
             The JPLC coffee ecosystem is structured across eight integrated

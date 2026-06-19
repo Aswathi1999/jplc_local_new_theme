@@ -16,14 +16,6 @@ const faqs = [
     q: "Can you supply premium coffee beans for Dubai restaurants and hotels?",
     a: "Yes. JPLC works with hotel F&B programmes and restaurants requiring consistent, high-quality premium coffee beans Dubai-wide and across the UAE, including bulk supply, custom blends, and managed replenishment.",
   },
-  {
-    q: "What's the minimum order for wholesale coffee beans UAE supply?",
-    a: "Minimum order quantities vary depending on the product and format. Contact our supply team directly for wholesale pricing, formats, and delivery schedules tailored to your operation.",
-  },
-  {
-    q: "Do you offer samples before committing to a supply agreement?",
-    a: "Yes. We offer cupping sessions and sample lots for prospective partners, particularly for single-origin programmes and custom blend development. It's the right way to start the conversation.",
-  },
 ];
 
 const fadeUp: Variants = {

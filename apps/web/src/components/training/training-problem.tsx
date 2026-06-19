@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function TrainingProblem() {
   return (
-    <section className="relative bg-white overflow-hidden py-16 lg:py-24">
+    <section className="relative bg-white overflow-hidden py-10 lg:py-16">
       {/* Background depth shapes */}
       <div
         className="absolute -top-32 -left-32 w-[700px] h-[700px] rounded-full pointer-events-none"
@@ -32,18 +32,11 @@ export function TrainingProblem() {
           transition={{ duration: 0.85, ease: [0.22, 0.61, 0.36, 1] }}
           className="mb-10 lg:mb-14"
         >
-          <div className="flex items-center gap-3 mb-7">
-            <div className="w-8 h-[1.5px] bg-[#2F43B7]" />
-            <span className="text-[#2F43B7] text-[10px] font-bold tracking-[0.5em] uppercase">
-              Barista Training Excellence
-            </span>
-          </div>
-          <h2 className="font-black text-[#0F172A] text-[46px] lg:text-[58px] xl:text-[66px] leading-[0.95] tracking-[-0.04em]">
-            Good Baristas Aren&apos;t
-            <br />
+          <h2 className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em]">
+            Good Baristas Aren&apos;t{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
@@ -108,13 +101,10 @@ export function TrainingProblem() {
 
             {/* Body paragraph */}
             <p className="text-[#64748B] text-[15px] leading-[1.87] mb-6">
-              There&apos;s a gap in most cafés between the standard expected and
-              the training invested in reaching it. Owners want consistent
-              espresso, clean milk work, and a team that can hold the bar
-              together through a busy service. What they often have is staff who
-              learned by watching, never had their technique formally assessed,
-              and don&apos;t fully understand why the extraction changes when
-              the weather does.
+              Barista training isn&apos;t a one-time onboarding exercise.
+              It&apos;s the foundation of a café&apos;s product quality — and it
+              needs to be structured, practical, and connected to the actual
+              equipment and coffee on the bar.
             </p>
 
             {/* Highlighted key sentence */}
@@ -123,7 +113,8 @@ export function TrainingProblem() {
               style={{ borderLeft: "2.5px solid #2F43B7" }}
             >
               <p className="text-[#0F172A] font-semibold text-[15px] lg:text-base leading-[1.7]">
-                That gap shows up in the cup. Every day.
+                Generic courses that teach theory on unfamiliar machines
+                don&apos;t close the gap. They just tick a box.
               </p>
             </div>
           </motion.div>
@@ -189,12 +180,10 @@ export function TrainingProblem() {
 
             {/* Body paragraph */}
             <p className="text-[#64748B] text-[15px] leading-[1.87] mb-6">
-              Barista training isn&apos;t a one-time onboarding exercise.
-              It&apos;s the foundation of a café&apos;s product quality — and it
-              needs to be structured, practical, and connected to the actual
-              equipment and coffee on the bar. Generic courses that teach theory
-              on unfamiliar machines and send staff back to a completely
-              different setup don&apos;t close the gap. They just tick a box.
+              JPLC barista training UAE is built differently. Every programme is
+              designed around the café&apos;s own workflow, equipment, and
+              coffee — so what&apos;s learned translates directly to the service
+              from day one.
             </p>
 
             {/* Highlighted key sentence */}
@@ -203,10 +192,8 @@ export function TrainingProblem() {
               style={{ borderLeft: "2.5px solid #4F6BFF" }}
             >
               <p className="text-[#0F172A] font-semibold text-[15px] lg:text-base leading-[1.7]">
-                JPLC barista training UAE is built differently. Every programme
-                is designed around the café&apos;s own workflow, equipment, and
-                coffee. So what&apos;s learned translates directly to the
-                service from day one.
+                What&apos;s learned translates directly to the service from day
+                one.
               </p>
             </div>
           </motion.div>

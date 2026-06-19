@@ -11,11 +11,6 @@ const fadeUp: Variants = {
   }),
 };
 
-const stats = [
-  { value: "6", label: "Integrated Business Verticals" },
-  { value: "40+", label: "Enterprise Partnerships" },
-];
-
 export function AboutSection() {
   return (
     <section
@@ -57,58 +52,29 @@ export function AboutSection() {
             {/* Vertical accent line */}
 
             <h2 className="font-sans font-extrabold text-3xl lg:text-4xl xl:text-[42px] text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-7">
-              More Than a Coffee Company —{" "}
+              More Than a Coffee{" "}
               <span
-                className="relative inline-block"
                 style={{
                   background:
                     "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
-                  filter: "drop-shadow(0 0 28px rgba(47,67,183,0.28))",
                 }}
               >
-                A Precision-Built Infrastructure
+                Company
               </span>
             </h2>
 
-            {/* â"€â"€ STATS GRID â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
-            <div className="grid grid-cols-3 gap-4 mt-2 mb-8">
-              {stats.map((s, i) => (
-                <motion.div
-                  key={s.label}
-                  custom={0.1 + i * 0.08}
-                  variants={fadeUp}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: "-40px" }}
-                  className="group relative p-5 rounded-sm border border-[#2F43B7]/12 bg-white/70 backdrop-blur-sm hover:border-[#2F43B7]/35 hover:bg-white transition-all duration-300 hover:shadow-[0_8px_32px_rgba(47,67,183,0.10)]"
-                >
-                  {/* Top accent */}
-                  <div className="absolute top-0 left-0 right-0 h-[2px] rounded-t-sm bg-gradient-to-r from-[#2F43B7]/60 via-[#4056D6]/40 to-transparent" />
-
-                  <p
-                    className="font-extrabold text-3xl lg:text-[38px] tracking-tight mb-1.5 leading-none"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                      backgroundClip: "text",
-                    }}
-                  >
-                    {s.value}
-                  </p>
-                  <p className="text-[#64748B] text-[11px] leading-snug tracking-wide font-medium">
-                    {s.label}
-                  </p>
-
-                  {/* Hover glow */}
-                  <div className="absolute inset-0 rounded-sm bg-[#2F43B7]/0 group-hover:bg-[#2F43B7]/[0.025] transition-colors duration-300 pointer-events-none" />
-                </motion.div>
-              ))}
+            {/* ── IMAGE ─────────────────────────────────────────── */}
+            <div className="relative rounded-xl overflow-hidden mb-8 shadow-md shadow-[#2F43B7]/10">
+              <img
+                src="/images/image_4.png"
+                alt="JPLC coffee company"
+                className="w-full h-[220px] lg:h-[260px] object-cover"
+              />
             </div>
+
             {/* CTA Button */}
             <a
               href="/about"
@@ -156,17 +122,6 @@ export function AboutSection() {
                   over every stage — from green bean procurement and coffee
                   roasting to equipment engineering, private label coffee
                   manufacturing, and end-to-end commercial coffee solutions.
-                </p>
-                <p>
-                  Working with JPLC means one partner instead of four. One point
-                  of accountability across supply, quality, equipment, and
-                  training.
-                </p>
-                <p>
-                  Over the years, we have built an operation that café owners,
-                  hotel groups, corporate campuses, and F&B brands across the
-                  UAE rely on — not just for consistent supply, but for the
-                  technical depth that actually moves their business forward.
                 </p>
               </div>
 

@@ -104,17 +104,16 @@ export function EngineeringSection() {
           </div>
 
           <h2 className="font-sans font-extrabold text-4xl lg:text-5xl text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-5">
-            Commercial Coffee Machine Supplier —{" "}
+            Commercial Coffee Machine{" "}
             <span
               style={{
                 background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
-                filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
               }}
             >
-              Industrial Precision, Applied to Every Gram
+              Supplier
             </span>
           </h2>
 

@@ -16,14 +16,6 @@ const faqs = [
     q: "What is roast profile engineering and why does it matter?",
     a: "Roast profile engineering is the systematic development and documentation of roast curves, controlling time, temperature, airflow, and development ratios to produce a specific, repeatable flavour outcome. It matters because without it, roast consistency depends on operator feel rather than documented process which means the product changes every time conditions vary.",
   },
-  {
-    q: "How does coffee extraction science apply to a commercial operation?",
-    a: "Coffee extraction science identifies the variables that determine what ends up in the cup — grind size, water temperature, contact time, pressure, and water chemistry. Understanding these variables allows JPLC to set extraction parameters for commercial equipment that are grounded in data rather than default factory settings.",
-  },
-  {
-    q: "Does JPLC offer coffee product development UAE for new beverage launches?",
-    a: "Yes. JPLC handles full coffee product development from initial brief through lab formulation, iterative testing, and commercial production handover, including capsule development, RTD formulation, and new café beverage creation.",
-  },
 ];
 
 const fadeUp: Variants = {
@@ -130,19 +122,18 @@ export function RdFaq() {
               viewport={{ once: true }}
               transition={{ duration: 0.85, ease: [0.25, 0.46, 0.45, 0.94] }}
             >
-              <h2 className="font-black text-[#0F172A] text-3xl lg:text-[40px] xl:text-[46px] leading-[1.06] tracking-[-0.03em] mb-6">
-                Access Coffee R&amp;D Lab UAE Capability
-                <br />
+              <h2 className="font-sans font-extrabold text-[#0F172A] text-3xl lg:text-4xl xl:text-5xl leading-[1.08] tracking-[-0.03em] mb-6">
+                Access Coffee{" "}
                 <span
                   style={{
                     background:
-                      "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                      "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
                   }}
                 >
-                  Without Building Your Own
+                  R&amp;D Lab in UAE
                 </span>
               </h2>
               <p className="text-[#475569] text-base lg:text-[17px] leading-[1.78] mb-10 max-w-lg">
@@ -240,7 +231,7 @@ export function RdFaq() {
                 FAQ
               </p>
             </div>
-            <h2 className="font-black text-[#0F172A] text-3xl lg:text-4xl leading-[1.1] tracking-[-0.03em]">
+            <h2 className="font-sans font-extrabold text-[#0F172A] text-3xl lg:text-4xl leading-[1.08] tracking-[-0.03em]">
               Frequently Asked Questions
             </h2>
           </motion.div>

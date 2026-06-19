@@ -72,14 +72,8 @@ export function WholesaleProblem() {
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
           >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-px bg-[#2F43B7]" />
-              <span className="text-[13px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
-                The Supply Problem
-              </span>
-            </div>
             <h2 className="font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em] mb-8">
-              Wholesale Coffee Supply Gets{" "}
+              Wholesale Coffee Gets{" "}
               <span
                 style={{
                   background:
@@ -87,33 +81,23 @@ export function WholesaleProblem() {
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
-                  filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
                 }}
               >
-                Mismanaged More Than Most Operators Realise
+                Mismanaged. Here&apos;s Why.
               </span>
             </h2>
 
             <div className="space-y-5 text-[#475569] text-base lg:text-[17px] leading-[1.78]">
               <p>
-                A wholesale coffee relationship looks simple on paper. You
-                order, they deliver. The problem shows up when the delivery is
-                late, the batch tastes different from last month, or the
-                supplier can&apos;t tell you why.
+                Ordering coffee looks simple. The problems show up when the
+                delivery is late, the batch tastes different, or the supplier
+                can&apos;t explain why.
               </p>
               <p className="font-medium text-[#374151]">
-                For high-volume operations — a hotel running breakfast service
-                for 300 guests, a restaurant group across five locations, a
-                corporate campus with three espresso machines running from 7am —
-                inconsistency in wholesale coffee supply isn&apos;t a minor
-                inconvenience. It&apos;s a service problem that lands on your
-                team every single morning.
-              </p>
-              <p>
-                The wholesale coffee supplier relationship most operators have
-                is transactional. JPLC is structured to be operational —
-                embedded in your supply cycle, forecasting your demand, and
-                managing the process so your team doesn&apos;t have to.
+                For hotels, restaurant groups, and corporate campuses, that
+                inconsistency isn&apos;t minor — it hits the team every single
+                morning. JPLC is embedded in your supply cycle. Not just
+                delivering — managing it.
               </p>
             </div>
 

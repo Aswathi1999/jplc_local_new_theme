@@ -16,14 +16,6 @@ const faqs = [
     q: "Can JPLC handle coffee solutions for hotels and restaurants in the UAE under one agreement?",
     a: "Yes. For hospitality groups operating both hotel and restaurant outlets, JPLC structures a single supply and service agreement covering all outlet types — consolidated invoicing, unified account management, and consistent product across every setting.",
   },
-  {
-    q: "What makes JPLC different from a standard commercial coffee supplier?",
-    a: "Most commercial coffee supplier arrangements cover product delivery and little else. JPLC operates as a full hospitality coffee supplier UAE — supply, equipment, technical services, and training under one roof, with active account management built into every programme. One call covers everything.",
-  },
-  {
-    q: "Do you offer restaurant coffee solutions for independent restaurants as well as groups?",
-    a: "Yes. JPLC works with independent restaurants and multi-site groups. Restaurant coffee solutions are structured around the specific operation — volume, workflow, equipment, and team — regardless of the size of the account.",
-  },
 ];
 
 function FaqItem({ q, a, index }: { q: string; a: string; index: number }) {
@@ -137,20 +129,19 @@ export function HospitalityFaq() {
                 </span>
               </div>
 
-              <h2 className="font-black text-[#0F172A] text-[28px] lg:text-[36px] xl:text-[42px] leading-[1.1] tracking-[-0.03em] mb-7">
-                One Partner for All Your{" "}
+              <h2 className="font-sans font-extrabold text-[#0F172A] text-3xl lg:text-4xl xl:text-5xl leading-[1.08] tracking-[-0.03em] mb-7">
+                Commercial Coffee{" "}
                 <span
                   style={{
                     background:
-                      "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                      "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
                   }}
                 >
-                  Commercial Coffee Solutions UAE
-                </span>{" "}
-                Needs
+                  Solutions in UAE
+                </span>
               </h2>
 
               <p className="text-[#475569] text-[15px] lg:text-[16px] leading-[1.82] mb-10">
@@ -257,7 +248,7 @@ export function HospitalityFaq() {
                 FAQ
               </p>
             </div>
-            <h2 className="font-black text-[#0F172A] text-3xl lg:text-4xl leading-[1.1] tracking-[-0.03em]">
+            <h2 className="font-sans font-extrabold text-[#0F172A] text-3xl lg:text-4xl leading-[1.08] tracking-[-0.03em]">
               Frequently Asked Questions
             </h2>
           </motion.div>

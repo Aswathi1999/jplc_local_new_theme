@@ -34,7 +34,7 @@ export function EcosystemProblem() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-xl shadow-[#2F43B7]/10">
               <img
-                src="/partnership.jpg"
+                src="/ecosystem/ecosystem_parteners.jpg"
                 alt="Coffee supply chain accountability — JPLC UAE"
                 className="w-full h-[440px] object-cover"
               />
@@ -88,7 +88,7 @@ export function EcosystemProblem() {
             </div>
 
             <h2 className="font-black text-[#0F172A] text-3xl lg:text-[40px] xl:text-[44px] leading-[1.08] tracking-[-0.03em] mb-6">
-              Most Coffee Supply Chain Problems{" "}
+              Too Many Vendors, Not Enough{" "}
               <span
                 style={{
                   background:
@@ -98,26 +98,21 @@ export function EcosystemProblem() {
                   backgroundClip: "text",
                 }}
               >
-                Start With Too Many Vendors
+                Accountability
               </span>
             </h2>
 
             <div className="space-y-5 text-[#475569] text-base lg:text-[17px] leading-[1.78]">
               <p>
-                Running a coffee programme — whether it&apos;s a café, a hotel
-                F&amp;B operation, or a corporate office setup — typically means
-                managing a bean supplier, a separate equipment provider, an
-                independent technician, and a training resource. Each one
-                working in isolation. When something goes wrong — inconsistent
-                extraction, a supply gap, a machine fault — there&apos;s no
-                single point of accountability. Everyone points elsewhere.
+                Most coffee programmes are held together by four different
+                suppliers who&apos;ve never spoken to each other. When something
+                goes wrong — a supply gap, a machine fault, inconsistent
+                extraction — everyone points elsewhere.
               </p>
               <p className="font-medium text-[#374151]">
-                That&apos;s the gap JPLC was built to close. As a specialty
-                coffee ecosystem company, we bring every critical function under
-                one roof: coffee sourcing, coffee roasting, engineering, coffee
-                manufacturing, distribution, training, and brand development.
-                One partner. Full accountability across the entire coffee supply
+                JPLC was built to close that gap. One partner across sourcing,
+                roasting, engineering, manufacturing, distribution, and
+                training. Full accountability across the entire coffee supply
                 chain.
               </p>
             </div>

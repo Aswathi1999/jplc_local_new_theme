@@ -5,14 +5,6 @@ import { motion, AnimatePresence, type Variants } from "framer-motion";
 
 const faqs = [
   {
-    q: "What is a coffee ecosystem?",
-    a: "A coffee ecosystem is an integrated operational model that connects every stage of the coffee supply chain — sourcing, roasting, manufacturing, engineering, distribution, and training — under a single infrastructure. Rather than working with multiple independent suppliers, businesses access consistent quality and accountability across all functions through one partner.",
-  },
-  {
-    q: "What makes JPLC different from a standard coffee supplier?",
-    a: "Most suppliers operate in one or two verticals. JPLC operates across eight — from direct-trade coffee sourcing and roasting through to equipment engineering, coffee manufacturing, logistics, and barista training. That depth means fewer handoffs, tighter quality control, and a partner with full visibility across your entire coffee programme.",
-  },
-  {
     q: "Does JPLC work with businesses outside the UAE?",
     a: "Yes. While JPLC is headquartered at the DMCC Coffee Centre in Dubai, our coffee supply chain and sourcing partnerships operate across international origin markets. We work with café groups, hospitality brands, and F&B operators regionally and globally.",
   },
@@ -150,12 +142,6 @@ export function EcosystemFaq() {
               </span>
             </h2>
 
-            <p className="text-white text-base lg:text-[17px] leading-[1.78] mb-4 max-w-2xl mx-auto font-light">
-              Whether you&apos;re scaling a café group, launching a private
-              label coffee brand, or looking for end-to-end coffee solutions UAE
-              — the JPLC coffee ecosystem is built to be the backbone of your
-              operation.
-            </p>
             <p className="text-white text-base lg:text-[17px] leading-[1.78] mb-10 max-w-2xl mx-auto font-light">
               Tell us where you are and what you&apos;re building. We&apos;ll
               show you exactly where the integrated coffee ecosystem UAE

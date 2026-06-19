@@ -16,14 +16,6 @@ const faqs = [
     q: "Do you offer sustainable coffee packaging UAE for private label products?",
     a: "Yes. JPLC offers eco-friendly coffee packaging options for private label and OEM partners, including compostable barrier bags, recyclable formats, and reduced-plastic packaging across retail, capsule, and foodservice formats.",
   },
-  {
-    q: "How does JPLC verify ethical coffee sourcing at origin?",
-    a: "Ethical coffee sourcing verification at JPLC involves direct producer relationships, on-the-ground sourcing partnerships in origin countries, and assessment of farming and labour practices before purchasing commitments are made. We don't rely solely on third-party certifications — direct relationship and verified practice is the standard.",
-  },
-  {
-    q: "Is JPLC a sustainable coffee company UAE with formal environmental commitments?",
-    a: "Yes. JPLC operates internal environmental targets across sourcing, production, and packaging — covering energy use, waste reduction, packaging material composition, and supply chain partner standards. Formal reporting and targets are reviewed annually. Contact our team for current sustainability reporting.",
-  },
 ];
 
 function FaqItem({ q, a, index }: { q: string; a: string; index: number }) {
@@ -130,8 +122,8 @@ export function SustainabilityFaq() {
               </span>
             </div>
 
-            <h2 className="font-black text-white text-[38px] lg:text-[50px] xl:text-[56px] leading-[1.0] tracking-[-0.035em] mb-7">
-              Work With a Sustainable Coffee Company UAE{" "}
+            <h2 className="font-sans font-extrabold text-white text-3xl lg:text-4xl xl:text-5xl leading-[1.08] tracking-[-0.03em] mb-7">
+              Work With a Sustainable Coffee{" "}
               <span
                 style={{
                   background:
@@ -141,7 +133,7 @@ export function SustainabilityFaq() {
                   backgroundClip: "text",
                 }}
               >
-                That Can Demonstrate It
+                Company in UAE
               </span>
             </h2>
 
@@ -205,7 +197,7 @@ export function SustainabilityFaq() {
                 FAQ
               </p>
             </div>
-            <h2 className="font-black text-[#0F172A] text-3xl lg:text-4xl leading-[1.1] tracking-[-0.03em]">
+            <h2 className="font-sans font-extrabold text-[#0F172A] text-3xl lg:text-4xl leading-[1.08] tracking-[-0.03em]">
               Frequently Asked Questions
             </h2>
           </motion.div>

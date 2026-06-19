@@ -7,27 +7,27 @@ const steps = [
   {
     number: "01",
     title: "Equipment Audit",
-    body: "Every new service account starts with a full audit — machine condition, current extraction parameters, water quality, grinder calibration, and maintenance history. We need to know what we're working with before we can manage it properly.",
+    body: "Full audit before anything starts — machine condition, extraction parameters, water quality, grinder calibration, and maintenance history.",
   },
   {
     number: "02",
-    title: "Service Programme Design",
-    body: "Based on the audit, we structure a coffee equipment service programme — visit frequency, scope of each visit, parts replacement schedule, and response time commitments for breakdown cover. Built around the equipment and the operation, not a standard tier.",
+    title: "Programme Design",
+    body: "Visit frequency, scope, parts schedule, and breakdown response — built around the equipment, not a standard tier.",
   },
   {
     number: "03",
-    title: "Scheduled Coffee Machine Maintenance UAE",
-    body: "Maintenance visits run to the agreed schedule — not rescheduled when it's inconvenient for the service team. Each visit is documented with pre and post-service extraction data so there's a clear record of equipment condition over time.",
+    title: "Scheduled Maintenance",
+    body: "Visits run to schedule, fully documented with pre and post-service extraction data every time.",
   },
   {
     number: "04",
-    title: "Coffee Machine Repair Response",
-    body: "Breakdown calls are handled with direct triage — remote diagnosis where possible, on-site response where required. Parts availability is managed proactively so common failure components aren't waiting on international shipping when a machine goes down.",
+    title: "Repair Response",
+    body: "Direct triage, remote diagnosis where possible, on-site where required. Parts managed proactively — no waiting on international shipping.",
   },
   {
     number: "05",
-    title: "Ongoing Reporting & Review",
-    body: "Service accounts receive regular equipment performance reports — maintenance history, fault frequency, parts replaced, and extraction consistency data. The information operators need to make decisions about equipment lifecycle, not just a receipt after each visit.",
+    title: "Reporting & Review",
+    body: "Regular performance reports covering maintenance history, fault frequency, and extraction data — not just a receipt after each visit.",
   },
 ];
 
@@ -54,11 +54,11 @@ export function EquipmentServiceProcess() {
             <div className="w-3 h-[2px] rounded-full bg-[#4F6BFF]/40" />
             <div className="w-1.5 h-[2px] rounded-full bg-[#4F6BFF]/15" />
           </div>
-          <h2 className="font-black text-[#0F172A] text-4xl lg:text-5xl leading-[1.04] tracking-[-0.03em]">
+          <h2 className="font-sans font-extrabold text-[#0F172A] text-4xl lg:text-5xl leading-[1.08] tracking-[-0.03em]">
             The Way JPLC Manages{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #2F43B7 0%, #4F6BFF 100%)",
+                background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",

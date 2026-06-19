@@ -54,7 +54,7 @@ export function PrivateLabelHero() {
               {...fadeUp(0.1)}
               className="font-extrabold text-[#0F172A] text-4xl sm:text-5xl lg:text-[50px] xl:text-[54px] leading-[1.06] tracking-[-0.035em] mb-7"
             >
-              Private Label Coffee &amp; OEM Coffee Manufacturing{" "}
+              Private Label Coffee{" "}
               <span
                 style={{
                   background:
@@ -64,7 +64,7 @@ export function PrivateLabelHero() {
                   backgroundClip: "text",
                 }}
               >
-                in UAE
+                Manufacturing UAE
               </span>
             </motion.h1>
 

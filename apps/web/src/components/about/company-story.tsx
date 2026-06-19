@@ -32,9 +32,7 @@ const storyBlocks = [
     tag: "Market Context",
     title: "Where We Sit in the UAE Coffee Market",
     paragraphs: [
-      "The UAE coffee market has grown fast. Specialty cafés, hotel F&B programmes, corporate coffee culture, private label brands — the demand is real and expanding.",
-      "What hasn't kept pace is the infrastructure behind it. Most operators still piece together their coffee programme from multiple vendors; a supplier here, a technician there, a training provider somewhere else. The result is inconsistency, gaps in accountability, and a programme that's only as strong as its weakest handoff.",
-      "JPLC was built to address exactly that. Not as another supplier entering a crowded market, but as an infrastructure platform that sits behind coffee businesses and gives them the operational backbone to run well and scale with confidence.",
+      "The UAE coffee market has grown fast. The infrastructure behind it hasn't. Most operators are still patching together four different vendors and wondering why the programme feels fragile. JPLC was built to fix that — one partner, full accountability, built for scale.",
     ],
   },
   {
@@ -42,9 +40,7 @@ const storyBlocks = [
     tag: "What We've Built",
     title: "What We've Built",
     paragraphs: [
-      "JPLC operates across eight integrated verticals: green coffee procurement, roasting and production engineering, research and development, machine engineering and technical services, distribution and logistics, hospitality and retail operations, brand development and manufacturing, and coffee training and education.",
-      "Each vertical functions independently. The value compounds when they work together and that integration is what separates JPLC from any single-function coffee company in this region.",
-      "We hold a DMCC certification and operate from one of the most recognised coffee trade hubs in the world — a deliberate choice that places us at the centre of the supply chains, partnerships, and market relationships that matter most to our clients.",
+      "Eight integrated verticals — sourcing, roasting, R&D, engineering, distribution, hospitality, manufacturing, and training. Each one is functional on its own. Far more valuable when they work together. DMCC-certified, based in Dubai, and built to be the operational backbone serious coffee businesses actually need.",
     ],
   },
 ];
@@ -142,46 +138,57 @@ export function CompanyStory() {
       {/* ── Bean Brew sub-section ── */}
       <div className="relative bg-[#EEF3FF] overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 pt-16 pb-6 lg:pt-24 lg:pb-10">
-          <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-12 items-stretch">
-            {/* LEFT: Three Bean Brew images staggered */}
+          <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 lg:gap-12 items-center">
+            {/* LEFT: Four about images in staggered 2-column grid */}
             <motion.div
               variants={slideFromLeft}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-80px" }}
-              className="flex items-start gap-2 lg:gap-3 lg:min-h-[880px]"
+              className="grid grid-cols-2 gap-3 lg:gap-4"
             >
-              {/* Image 1 — up */}
-              <div className="relative rounded-2xl overflow-hidden group flex-1 h-[220px] sm:h-[360px] lg:h-[720px]">
-                <Image
-                  src="/bean_brew_1.png"
-                  alt="Bean Brew Coffee Shop"
-                  fill
-                  quality={88}
-                  className="object-contain object-center transition-transform duration-500 group-hover:scale-[1.03]"
-                />
+              {/* Left column — images 1 & 3 */}
+              <div className="flex flex-col gap-3 lg:gap-4">
+                <div className="relative rounded-2xl overflow-hidden group h-[200px] lg:h-[280px]">
+                  <Image
+                    src="/about/about_1.png"
+                    alt="JPLC About"
+                    fill
+                    quality={88}
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div className="relative rounded-2xl overflow-hidden group h-[200px] lg:h-[280px]">
+                  <Image
+                    src="/about/about_3.jpg"
+                    alt="JPLC About"
+                    fill
+                    quality={88}
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
               </div>
 
-              {/* Image 2 — down */}
-              <div className="relative rounded-2xl overflow-hidden group flex-1 h-[220px] sm:h-[360px] lg:h-[720px] lg:mt-[120px]">
-                <Image
-                  src="/bean brew_2.png"
-                  alt="Bean Brew Subscription"
-                  fill
-                  quality={88}
-                  className="object-contain object-center transition-transform duration-500 group-hover:scale-[1.03]"
-                />
-              </div>
-
-              {/* Image 3 — up */}
-              <div className="relative rounded-2xl overflow-hidden group flex-1 h-[220px] sm:h-[360px] lg:h-[720px]">
-                <Image
-                  src="/bean_brew_3.webp"
-                  alt="Bean Brew Experience"
-                  fill
-                  quality={88}
-                  className="object-contain object-center transition-transform duration-500 group-hover:scale-[1.03]"
-                />
+              {/* Right column — images 2 & 4, shifted down */}
+              <div className="flex flex-col gap-3 lg:gap-4 lg:mt-10">
+                <div className="relative rounded-2xl overflow-hidden group h-[200px] lg:h-[280px]">
+                  <Image
+                    src="/about/about_2.png"
+                    alt="JPLC About"
+                    fill
+                    quality={88}
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
+                <div className="relative rounded-2xl overflow-hidden group h-[200px] lg:h-[280px]">
+                  <Image
+                    src="/about/about_4.jpg"
+                    alt="JPLC About"
+                    fill
+                    quality={88}
+                    className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                </div>
               </div>
             </motion.div>
 
@@ -239,7 +246,7 @@ export function CompanyStory() {
                   number: "02",
                   tag: "The Coffee Subscription",
                   title: "The Coffee Subscription",
-                  body: "Bean Brew's subscription programme gives coffee drinkers access to freshly roasted coffee on a yearly basis — collected directly from the shop. Choose your preferred coffee, subscribe for the year, and collect at your convenience. It's the simplest way to stay connected to quality coffee — without reordering every time you run out. The same coffee, consistently roasted, ready when you are.",
+                  body: "Bean Brew's subscription programme gives coffee drinkers access to freshly roasted coffee on a yearly basis — collected directly from the shop. Choose your preferred coffee, subscribe for the year, and collect at your convenience.",
                 },
               ].map((card, index, arr) => (
                 <motion.div

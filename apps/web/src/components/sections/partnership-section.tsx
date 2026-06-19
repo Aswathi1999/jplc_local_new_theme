@@ -96,7 +96,7 @@ export function PartnershipSection() {
             </div>
 
             <h2 className="font-sans font-extrabold text-3xl lg:text-4xl xl:text-5xl text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-6">
-              Build the Future of Specialty Coffee With Us —{" "}
+              Build the Future of Coffee{" "}
               <span
                 style={{
                   background:
@@ -104,10 +104,9 @@ export function PartnershipSection() {
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
-                  filter: "drop-shadow(0 0 24px rgba(47,67,183,0.22))",
                 }}
               >
-                Coffee Solutions for Every Scale
+                With Us
               </span>
             </h2>
 
