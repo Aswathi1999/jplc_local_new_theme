@@ -151,11 +151,11 @@ export function AboutHero() {
             }}
           >
             <Image
-              src="/about_hero_image.jpg"
+              src="/machine_images/image_new_6.jpg"
               alt="JPLC Holdings"
               fill
               priority
-              quality={93}
+              quality={100}
               className="object-cover"
               style={{ objectPosition: "55% center" }}
             />
@@ -166,14 +166,14 @@ export function AboutHero() {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(180deg, rgba(15,23,42,0.5) 0%, transparent 28%, transparent 52%, rgba(15,23,42,0.68) 100%)",
+                "linear-gradient(180deg, rgba(15,23,42,0.22) 0%, transparent 28%, transparent 52%, rgba(15,23,42,0.30) 100%)",
             }}
           />
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(180deg, rgba(47,67,183,0.28) 0%, transparent 38%)",
+                "linear-gradient(180deg, rgba(47,67,183,0.12) 0%, transparent 38%)",
             }}
           />
           {/* Right-edge fade to white for seamless merge */}
@@ -330,7 +330,7 @@ export function AboutHero() {
               >
                 <span
                   style={{
-                    backgroundImage: "url('/about_hero_image.jpg')",
+                    backgroundImage: "url('/machine_images/image_new_6.jpg')",
                     backgroundClip: "text",
                     WebkitBackgroundClip: "text",
                     color: "transparent",
@@ -514,11 +514,11 @@ export function AboutHero() {
           }}
         >
           <Image
-            src="/about_hero_image.jpg"
+            src="/machine_images/image_new_6.jpg"
             alt="JPLC Holdings"
             fill
             priority
-            quality={90}
+            quality={100}
             className="object-cover"
             style={{ objectPosition: "center 40%" }}
           />
@@ -526,7 +526,7 @@ export function AboutHero() {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(180deg, rgba(47,67,183,0.32) 0%, transparent 38%, rgba(15,23,42,0.52) 100%)",
+                "linear-gradient(180deg, rgba(47,67,183,0.14) 0%, transparent 38%, rgba(15,23,42,0.25) 100%)",
             }}
           />
           {/* Index label top-right */}
@@ -581,7 +581,7 @@ export function AboutHero() {
             <span style={{ display: "block", fontWeight: 900 }}>
               <span
                 style={{
-                  backgroundImage: "url('/about_hero_image.jpg')",
+                  backgroundImage: "url('/machine_images/image_new_6.jpg')",
                   backgroundClip: "text",
                   WebkitBackgroundClip: "text",
                   color: "transparent",

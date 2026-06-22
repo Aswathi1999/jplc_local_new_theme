@@ -16,7 +16,7 @@ const offerings = [
     title: "Beverage R&D & Menu Engineering",
     description:
       "Structured recipe development and menu innovation aligned with your brand positioning, target market, and commercial objectives.",
-    image: "/bevarage.jpg",
+    image: "/bewarage.png",
   },
   {
     id: "03",

@@ -86,7 +86,7 @@ export function CommercialMachinesProblem() {
           >
             <div className="relative rounded-xl overflow-hidden shadow-xl shadow-[#2F43B7]/10">
               <img
-                src="/coffee_machine_engg.jpg"
+                src="/machine_images/image_new_4.jpg"
                 alt="Commercial coffee machine engineering"
                 className="w-full h-[580px] object-cover"
               />

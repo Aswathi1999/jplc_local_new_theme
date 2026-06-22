@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 /* ── images ──────────────────────────────────────────────── */
-const IMG_FLOAT_1 = "/coffee_machine_engg.jpg";
-const IMG_FLOAT_2 = "/manufacturing.jpg";
+const IMG_FLOAT_1 = "/machine_images/image_new_22.webp";
+const IMG_FLOAT_2 = "/machine_images/image_new_8.jpg";
 
 /* ── animation helpers ────────────────────────────────────── */
 const fadeUp = (delay = 0) => ({

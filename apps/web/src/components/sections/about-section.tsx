@@ -23,91 +23,65 @@ export function AboutSection() {
       <div className="absolute bottom-0 -left-40 w-[500px] h-[400px] rounded-full bg-[#4056D6] opacity-[0.05] blur-[100px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 lg:px-8">
-        {/* â"€â"€ EYEBROW â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
+        {/* EYEBROW + HEADING — full width above grid */}
         <motion.div
           custom={0}
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex items-center gap-4 mb-10"
+          className="mb-10"
         >
-          <div className="w-8 h-px bg-[#2F43B7]" />
-          <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
-            About JPLC
-          </p>
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-8 h-px bg-[#2F43B7]" />
+            <p className="text-[14px] font-semibold tracking-[0.18em] uppercase text-[#2F43B7]">
+              About JPLC
+            </p>
+          </div>
+          <h2 className="font-sans font-extrabold text-3xl lg:text-4xl xl:text-[42px] text-[#0F172A] leading-[1.08] tracking-[-0.03em]">
+            More Than a Coffee{" "}
+            <span
+              style={{
+                background: "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              Company
+            </span>
+          </h2>
         </motion.div>
 
-        {/* â"€â"€ MAIN GRID â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
-        <div className="grid lg:grid-cols-[5fr_7fr] gap-14 lg:gap-20 items-start">
-          {/* â"€â"€ LEFT COLUMN â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
+        {/* MAIN GRID — image left, card+button right, same start line */}
+        <div className="grid lg:grid-cols-[5fr_7fr] gap-14 lg:gap-20 items-stretch">
+          {/* LEFT — image fills full column height */}
           <motion.div
             custom={0.05}
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
-            className="relative"
+            className="relative rounded-xl overflow-hidden shadow-md shadow-[#2F43B7]/10 min-h-[320px] lg:min-h-[400px]"
           >
-            {/* Vertical accent line */}
-
-            <h2 className="font-sans font-extrabold text-3xl lg:text-4xl xl:text-[42px] text-[#0F172A] leading-[1.08] tracking-[-0.03em] mb-7">
-              More Than a Coffee{" "}
-              <span
-                style={{
-                  background:
-                    "linear-gradient(135deg, #2F43B7 0%, #6074E8 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
-                Company
-              </span>
-            </h2>
-
-            {/* ── IMAGE ─────────────────────────────────────────── */}
-            <div className="relative rounded-xl overflow-hidden mb-8 shadow-md shadow-[#2F43B7]/10">
-              <img
-                src="/images/image_4.png"
-                alt="JPLC coffee company"
-                className="w-full h-[220px] lg:h-[260px] object-cover"
-              />
-            </div>
-
-            {/* CTA Button */}
-            <a
-              href="/about"
-              className="group inline-flex items-center gap-3 px-6 py-3 bg-[#2F43B7] text-white text-[13px] font-semibold tracking-[0.08em] uppercase rounded-sm hover:bg-[#4056D6] transition-colors duration-300 shadow-md shadow-[#2F43B7]/25"
-            >
-              Discover Our Story
-              <svg
-                className="w-4 h-4 translate-x-0 group-hover:translate-x-1 transition-transform duration-300"
-                fill="none"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M3 8h10M9 4l4 4-4 4"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </a>
+            <img
+              src="/machine_images/image_new_7.jpg"
+              alt="JPLC coffee company"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
           </motion.div>
 
-          {/* â"€â"€ RIGHT COLUMN â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
+          {/* RIGHT — card grows to match image, button pinned bottom */}
           <motion.div
             custom={0.15}
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
-            className="relative"
+            className="relative flex flex-col justify-between"
           >
             {/* Subtle glass panel */}
-            <div className="relative p-8 lg:p-10 rounded-sm border border-[#E2E8F0]/80 bg-white/60 backdrop-blur-sm shadow-[0_4px_40px_rgba(15,23,42,0.04)]">
+            <div className="relative p-8 lg:p-10 rounded-sm border border-[#E2E8F0]/80 bg-white/60 backdrop-blur-sm shadow-[0_4px_40px_rgba(15,23,42,0.04)] flex-1 mb-6">
               {/* Corner accent — top right */}
               <div className="absolute top-0 right-0 w-12 h-px bg-[#2F43B7]/40" />
               <div className="absolute top-0 right-0 w-px h-12 bg-[#2F43B7]/40" />
@@ -125,7 +99,7 @@ export function AboutSection() {
                 </p>
               </div>
 
-              {/* ── BLOCKQUOTE ─────────────────────────────────── */}
+              {/* BLOCKQUOTE */}
               <div className="relative mt-8 pl-6">
                 {/* Left accent bar */}
                 <div className="absolute left-0 top-0 bottom-0 w-[3px] rounded-full bg-gradient-to-b from-[#2F43B7] via-[#4056D6] to-[#2F43B7]/30" />
@@ -137,6 +111,29 @@ export function AboutSection() {
                   focus on the experience.&rdquo;
                 </blockquote>
               </div>
+            </div>
+
+            {/* CTA Button — aligned right */}
+            <div className="flex justify-end">
+              <a
+                href="/about"
+                className="group inline-flex items-center gap-3 px-6 py-3 bg-[#2F43B7] text-white text-[13px] font-semibold tracking-[0.08em] uppercase rounded-sm hover:bg-[#4056D6] transition-colors duration-300 shadow-md shadow-[#2F43B7]/25"
+              >
+                Discover Our Story
+                <svg
+                  className="w-4 h-4 translate-x-0 group-hover:translate-x-1 transition-transform duration-300"
+                  fill="none"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3 8h10M9 4l4 4-4 4"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </a>
             </div>
           </motion.div>
         </div>

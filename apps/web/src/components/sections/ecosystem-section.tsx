@@ -31,7 +31,7 @@ const pillars = [
     title: "Coffee Roasting & Production Engineering",
     description:
       "Roast profile development, batch consistency controls, and private label coffee manufacturing UAE-wide for brands that demand repeatable output at scale. Whether the requirement is a signature house blend, a single-origin programme, or an OEM private label range — we build it to specification.",
-    image: "/images/roasting.jpg",
+    image: "/machine_images/image_new_4.jpg",
     icon: (
       <svg
         className="w-5 h-5"
@@ -53,7 +53,7 @@ const pillars = [
     title: "Research & Development",
     description:
       "Extraction science, brew optimisation, flavour profiling, and new beverage formulation — all developed in-house. This is what keeps JPLC's products and systems ahead of market standards.",
-    image: "/images/research.jpg",
+    image: "/machine_images/image_new_1.jpg",
     icon: (
       <svg
         className="w-5 h-5"
@@ -75,7 +75,7 @@ const pillars = [
     title: "Commercial Coffee Machine Supplier & Technical Services",
     description:
       "PID-controlled extraction systems, IoT diagnostics, grinder calibration, and preventive maintenance infrastructure. As a full-service coffee equipment supplier, JPLC doesn't just deliver machines — we engineer, calibrate, and service them. A system that drifts by a few degrees costs quality on every shot pulled.",
-    image: "/images/image_5.png",
+    image: "/machine_images/image_new_5.jpg",
     icon: (
       <svg
         className="w-5 h-5"
@@ -153,7 +153,7 @@ const pillars = [
     title: "Private Label Coffee Supplier & Brand Manufacturing",
     description:
       "End-to-end private label coffee manufacturing UAE capabilities — capsule development, RTD formulations, retail packaging, and contract manufacturing partnerships. Your brand identity, backed by our production facility.",
-    image: "/manufacturing.jpg",
+    image: "/machine_images/image_new_10.jpg",
     icon: (
       <svg
         className="w-5 h-5"
@@ -245,7 +245,7 @@ export function EcosystemSection() {
 
       <div className="relative max-w-7xl mx-auto px-4 lg:px-8">
         {/* â"€â"€ HEADER ROW â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€â"€ */}
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-16 lg:mb-20">
+        <div className="mb-16 lg:mb-20">
           <motion.div
             custom={0}
             variants={fadeUp}
@@ -288,74 +288,6 @@ export function EcosystemSection() {
               Most coffee suppliers do one or two things well. JPLC does eight —
               and every vertical connects to the next.
             </p>
-          </motion.div>
-
-          {/*FEATURED IMAGE*/}
-          <motion.div
-            custom={0.1}
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="relative h-[280px] lg:h-[340px] rounded-sm overflow-hidden group"
-          >
-            {/* Ring border */}
-            <div className="absolute inset-0 rounded-sm ring-1 ring-[#2F43B7]/20 z-20 pointer-events-none group-hover:ring-[#2F43B7]/45 transition-all duration-500" />
-
-            <Image
-              src="/eco_sysytem_image.jpg"
-              alt="JPLC coffee ecosystem operations"
-              fill
-              quality={85}
-              className="object-cover object-center transition-transform duration-[6s] ease-out group-hover:scale-[1.04]"
-            />
-
-            {/* Overlays */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/80 via-[#0F172A]/30 to-[#0F172A]/10" />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/30 via-transparent to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-[#2F43B7]/20 to-transparent pointer-events-none" />
-
-            {/* Blueprint grid on image */}
-            <div
-              className="absolute inset-0 pointer-events-none opacity-[0.07]"
-              style={{
-                backgroundImage:
-                  "linear-gradient(rgba(79,107,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(79,107,255,1) 1px, transparent 1px)",
-                backgroundSize: "60px 60px",
-                maskImage:
-                  "linear-gradient(to bottom, transparent 0%, black 40%, black 70%, transparent 100%)",
-                WebkitMaskImage:
-                  "linear-gradient(to bottom, transparent 0%, black 40%, black 70%, transparent 100%)",
-              }}
-            />
-
-            {/* Corner brackets */}
-            <div className="absolute top-4 left-4 w-6 h-px bg-[#4F6BFF]/60 z-10" />
-            <div className="absolute top-4 left-4 w-px h-6 bg-[#4F6BFF]/60 z-10" />
-            <div className="absolute top-4 right-4 w-6 h-px bg-[#4F6BFF]/60 z-10" />
-            <div className="absolute top-4 right-4 w-px h-6 bg-[#4F6BFF]/60 z-10" />
-
-            {/* Glass caption strip */}
-            <div
-              className="absolute bottom-0 left-0 right-0 px-6 py-4 flex items-center justify-between z-10"
-              style={{
-                background: "rgba(15,23,42,0.65)",
-                backdropFilter: "blur(10px)",
-              }}
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-4 h-px bg-[#4F6BFF]" />
-                <span className="text-white/80 text-xs tracking-[0.25em] uppercase font-medium">
-                  Global Operations
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#4F6BFF] animate-pulse" />
-                <span className="text-white/40 text-[10px] tracking-[0.25em] uppercase">
-                  Active
-                </span>
-              </div>
-            </div>
           </motion.div>
         </div>
 

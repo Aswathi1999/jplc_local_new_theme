@@ -164,7 +164,7 @@ export function HospitalitySection() {
                 className="group relative h-[300px] lg:h-[340px] rounded-sm overflow-hidden shadow-lg"
               >
                 <Image
-                  src="/images/hospitality_6_lg.jpg"
+                  src="/machine_images/image_new_19.jpg"
                   alt="Coffee supply chain operations"
                   fill
                   quality={85}
